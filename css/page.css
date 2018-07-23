@@ -1750,11 +1750,20 @@
 }
 
 /* line 689, ../sass/page.scss */
+.div_table,
+.Inerter_Status1,
+.Inerter_Status2,
+.Inerter_Status3,
 .Inerter_Status {
+  clear: both;
   width: 100%;
   margin-top: 20px;
 }
-/* line 692, ../sass/page.scss */
+/* line 697, ../sass/page.scss */
+.div_table .Inerter_Status_L,
+.Inerter_Status1 .Inerter_Status_L,
+.Inerter_Status2 .Inerter_Status_L,
+.Inerter_Status3 .Inerter_Status_L,
 .Inerter_Status .Inerter_Status_L {
   width: 49%;
   float: left;
@@ -1763,7 +1772,21 @@
   border-radius: 30px 0 0 30px;
   overflow: hidden;
 }
-/* line 693, ../sass/page.scss */
+@media screen and (min-width: 1900px) {
+  /* line 697, ../sass/page.scss */
+  .div_table .Inerter_Status_L,
+  .Inerter_Status1 .Inerter_Status_L,
+  .Inerter_Status2 .Inerter_Status_L,
+  .Inerter_Status3 .Inerter_Status_L,
+  .Inerter_Status .Inerter_Status_L {
+    border-radius: 40px 0 0 40px;
+  }
+}
+/* line 700, ../sass/page.scss */
+.div_table .Inerter_Status_R,
+.Inerter_Status1 .Inerter_Status_R,
+.Inerter_Status2 .Inerter_Status_R,
+.Inerter_Status3 .Inerter_Status_R,
 .Inerter_Status .Inerter_Status_R {
   width: 50%;
   float: left;
@@ -1771,7 +1794,21 @@
   border-radius: 0 30px 30px 0;
   overflow: hidden;
 }
-/* line 697, ../sass/page.scss */
+@media screen and (min-width: 1900px) {
+  /* line 700, ../sass/page.scss */
+  .div_table .Inerter_Status_R,
+  .Inerter_Status1 .Inerter_Status_R,
+  .Inerter_Status2 .Inerter_Status_R,
+  .Inerter_Status3 .Inerter_Status_R,
+  .Inerter_Status .Inerter_Status_R {
+    border-radius: 0 40px 40px 0;
+  }
+}
+/* line 703, ../sass/page.scss */
+.div_table .Inerter_Status_LT,
+.Inerter_Status1 .Inerter_Status_LT,
+.Inerter_Status2 .Inerter_Status_LT,
+.Inerter_Status3 .Inerter_Status_LT,
 .Inerter_Status .Inerter_Status_LT {
   background-image: url("../images/bg_Inerter_Status_LT.gif");
   background-repeat: repeat-x;
@@ -1779,7 +1816,11 @@
   padding-right: 5px;
   padding-bottom: 30px;
 }
-/* line 704, ../sass/page.scss */
+/* line 710, ../sass/page.scss */
+.div_table .Inerter_Status_LB,
+.Inerter_Status1 .Inerter_Status_LB,
+.Inerter_Status2 .Inerter_Status_LB,
+.Inerter_Status3 .Inerter_Status_LB,
 .Inerter_Status .Inerter_Status_LB {
   background-image: url("../images/bg_Inerter_Status_LB.gif");
   background-repeat: repeat-x;
@@ -1787,7 +1828,11 @@
   padding-right: 5px;
   padding-top: 30px;
 }
-/* line 711, ../sass/page.scss */
+/* line 717, ../sass/page.scss */
+.div_table .Inerter_Status_RT,
+.Inerter_Status1 .Inerter_Status_RT,
+.Inerter_Status2 .Inerter_Status_RT,
+.Inerter_Status3 .Inerter_Status_RT,
 .Inerter_Status .Inerter_Status_RT {
   background-image: url("../images/bg_Inerter_Status_LT.gif");
   background-repeat: repeat-x;
@@ -1795,7 +1840,11 @@
   padding-left: 5px;
   padding-bottom: 30px;
 }
-/* line 718, ../sass/page.scss */
+/* line 724, ../sass/page.scss */
+.div_table .Inerter_Status_RB,
+.Inerter_Status1 .Inerter_Status_RB,
+.Inerter_Status2 .Inerter_Status_RB,
+.Inerter_Status3 .Inerter_Status_RB,
 .Inerter_Status .Inerter_Status_RB {
   background-image: url("../images/bg_Inerter_Status_LB.gif");
   background-repeat: repeat-x;
@@ -1803,62 +1852,106 @@
   padding-left: 5px;
   padding-top: 30px;
 }
-/* line 725, ../sass/page.scss */
+/* line 732, ../sass/page.scss */
+.div_table table,
+.Inerter_Status1 table,
+.Inerter_Status2 table,
+.Inerter_Status3 table,
 .Inerter_Status table {
   background-color: #ebebeb;
   width: 100%;
   padding: 5px 0;
 }
-/* line 730, ../sass/page.scss */
+/* line 737, ../sass/page.scss */
+.div_table table tr td,
+.Inerter_Status1 table tr td,
+.Inerter_Status2 table tr td,
+.Inerter_Status3 table tr td,
 .Inerter_Status table tr td {
   padding: 3px 0;
 }
 @media screen and (min-width: 1800px) {
-  /* line 730, ../sass/page.scss */
+  /* line 737, ../sass/page.scss */
+  .div_table table tr td,
+  .Inerter_Status1 table tr td,
+  .Inerter_Status2 table tr td,
+  .Inerter_Status3 table tr td,
   .Inerter_Status table tr td {
     padding: 2px 0;
   }
 }
-/* line 733, ../sass/page.scss */
+/* line 740, ../sass/page.scss */
+.div_table table tr td:nth-child(1),
+.Inerter_Status1 table tr td:nth-child(1),
+.Inerter_Status2 table tr td:nth-child(1),
+.Inerter_Status3 table tr td:nth-child(1),
 .Inerter_Status table tr td:nth-child(1) {
   text-align: right;
 }
-/* line 736, ../sass/page.scss */
+/* line 743, ../sass/page.scss */
+.div_table table tr td:nth-child(2),
+.Inerter_Status1 table tr td:nth-child(2),
+.Inerter_Status2 table tr td:nth-child(2),
+.Inerter_Status3 table tr td:nth-child(2),
 .Inerter_Status table tr td:nth-child(2) {
   width: 45%;
 }
-/* line 739, ../sass/page.scss */
+/* line 746, ../sass/page.scss */
+.div_table table tr td b,
+.Inerter_Status1 table tr td b,
+.Inerter_Status2 table tr td b,
+.Inerter_Status3 table tr td b,
 .Inerter_Status table tr td b {
   background-color: #f7f7f7;
   font-weight: normal;
   padding: 3px 5px;
 }
-/* line 743, ../sass/page.scss */
+/* line 750, ../sass/page.scss */
+.div_table table tr td b i,
+.Inerter_Status1 table tr td b i,
+.Inerter_Status2 table tr td b i,
+.Inerter_Status3 table tr td b i,
 .Inerter_Status table tr td b i {
   font-style: normal;
   font-size: .5em;
   font-weight: normal;
 }
 @media screen and (min-width: 1300px) {
-  /* line 743, ../sass/page.scss */
+  /* line 750, ../sass/page.scss */
+  .div_table table tr td b i,
+  .Inerter_Status1 table tr td b i,
+  .Inerter_Status2 table tr td b i,
+  .Inerter_Status3 table tr td b i,
   .Inerter_Status table tr td b i {
     font-size: .6em;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 743, ../sass/page.scss */
+  /* line 750, ../sass/page.scss */
+  .div_table table tr td b i,
+  .Inerter_Status1 table tr td b i,
+  .Inerter_Status2 table tr td b i,
+  .Inerter_Status3 table tr td b i,
   .Inerter_Status table tr td b i {
     font-size: .7em;
   }
 }
-/* line 750, ../sass/page.scss */
+/* line 757, ../sass/page.scss */
+.div_table table tr td ol,
+.Inerter_Status1 table tr td ol,
+.Inerter_Status2 table tr td ol,
+.Inerter_Status3 table tr td ol,
 .Inerter_Status table tr td ol {
   background-color: #f7f7f7;
   padding-left: 20px;
   padding-right: 5px;
   margin-right: 8px;
 }
-/* line 755, ../sass/page.scss */
+/* line 762, ../sass/page.scss */
+.div_table table tr td ol li,
+.Inerter_Status1 table tr td ol li,
+.Inerter_Status2 table tr td ol li,
+.Inerter_Status3 table tr td ol li,
 .Inerter_Status table tr td ol li {
   background-color: #cccccc;
   display: inline-block;
@@ -1868,7 +1961,11 @@
   margin-right: 6%;
   position: relative;
 }
-/* line 763, ../sass/page.scss */
+/* line 770, ../sass/page.scss */
+.div_table table tr td ol li::before,
+.Inerter_Status1 table tr td ol li::before,
+.Inerter_Status2 table tr td ol li::before,
+.Inerter_Status3 table tr td ol li::before,
 .Inerter_Status table tr td ol li::before {
   content: "";
   position: absolute;
@@ -1881,20 +1978,174 @@
   left: -4px;
 }
 @media screen and (min-width: 1200px) {
-  /* line 763, ../sass/page.scss */
+  /* line 770, ../sass/page.scss */
+  .div_table table tr td ol li::before,
+  .Inerter_Status1 table tr td ol li::before,
+  .Inerter_Status2 table tr td ol li::before,
+  .Inerter_Status3 table tr td ol li::before,
   .Inerter_Status table tr td ol li::before {
     width: 6px;
     left: -6px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 763, ../sass/page.scss */
+  /* line 770, ../sass/page.scss */
+  .div_table table tr td ol li::before,
+  .Inerter_Status1 table tr td ol li::before,
+  .Inerter_Status2 table tr td ol li::before,
+  .Inerter_Status3 table tr td ol li::before,
   .Inerter_Status table tr td ol li::before {
     width: 8px;
     left: -8px;
   }
 }
-/* line 777, ../sass/page.scss */
+/* line 784, ../sass/page.scss */
+.div_table table tr td ol li.red::before,
+.Inerter_Status1 table tr td ol li.red::before,
+.Inerter_Status2 table tr td ol li.red::before,
+.Inerter_Status3 table tr td ol li.red::before,
 .Inerter_Status table tr td ol li.red::before {
   background-image: url("../images/tag_bsr.gif");
+}
+/* line 790, ../sass/page.scss */
+.div_table table.table1,
+.Inerter_Status1 table.table1,
+.Inerter_Status2 table.table1,
+.Inerter_Status3 table.table1,
+.Inerter_Status table.table1 {
+  width: 50%;
+  float: left;
+}
+/* line 795, ../sass/page.scss */
+.div_table table.table3 tr,
+.Inerter_Status1 table.table3 tr,
+.Inerter_Status2 table.table3 tr,
+.Inerter_Status3 table.table3 tr,
+.Inerter_Status table.table3 tr {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 1.5%;
+}
+/* line 800, ../sass/page.scss */
+.div_table table.table3 tr:nth-child(1), .div_table table.table3 tr:nth-child(3),
+.Inerter_Status1 table.table3 tr:nth-child(1),
+.Inerter_Status1 table.table3 tr:nth-child(3),
+.Inerter_Status2 table.table3 tr:nth-child(1),
+.Inerter_Status2 table.table3 tr:nth-child(3),
+.Inerter_Status3 table.table3 tr:nth-child(1),
+.Inerter_Status3 table.table3 tr:nth-child(3),
+.Inerter_Status table.table3 tr:nth-child(1),
+.Inerter_Status table.table3 tr:nth-child(3) {
+  border-right: #808080 solid 2px;
+}
+/* line 804, ../sass/page.scss */
+.div_table table.table3 tr td,
+.Inerter_Status1 table.table3 tr td,
+.Inerter_Status2 table.table3 tr td,
+.Inerter_Status3 table.table3 tr td,
+.Inerter_Status table.table3 tr td {
+  display: block;
+  width: 100%;
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+/* line 810, ../sass/page.scss */
+.div_table table.table3 tr td:nth-child(2),
+.Inerter_Status1 table.table3 tr td:nth-child(2),
+.Inerter_Status2 table.table3 tr td:nth-child(2),
+.Inerter_Status3 table.table3 tr td:nth-child(2),
+.Inerter_Status table.table3 tr td:nth-child(2) {
+  display: block;
+  width: 100%;
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+/* line 817, ../sass/page.scss */
+.div_table table.table3 tr td ol,
+.Inerter_Status1 table.table3 tr td ol,
+.Inerter_Status2 table.table3 tr td ol,
+.Inerter_Status3 table.table3 tr td ol,
+.Inerter_Status table.table3 tr td ol {
+  margin-right: 0px;
+  padding-left: 14%;
+}
+/* line 821, ../sass/page.scss */
+.div_table table.table3 tr td b,
+.Inerter_Status1 table.table3 tr td b,
+.Inerter_Status2 table.table3 tr td b,
+.Inerter_Status3 table.table3 tr td b,
+.Inerter_Status table.table3 tr td b {
+  text-align: center;
+}
+
+/* line 830, ../sass/page.scss */
+.div_table,
+.Inerter_Status1,
+.Inerter_Status2,
+.Inerter_Status3 {
+  display: inline-block;
+}
+/* line 835, ../sass/page.scss */
+.div_table table,
+.Inerter_Status1 table,
+.Inerter_Status2 table,
+.Inerter_Status3 table {
+  background-color: #c9c9c9;
+}
+/* line 839, ../sass/page.scss */
+.div_table table tr td:nth-child(2),
+.Inerter_Status1 table tr td:nth-child(2),
+.Inerter_Status2 table tr td:nth-child(2),
+.Inerter_Status3 table tr td:nth-child(2) {
+  width: 35%;
+}
+/* line 842, ../sass/page.scss */
+.div_table table tr td ol,
+.Inerter_Status1 table tr td ol,
+.Inerter_Status2 table tr td ol,
+.Inerter_Status3 table tr td ol {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+/* line 845, ../sass/page.scss */
+.div_table table tr td ol li,
+.Inerter_Status1 table tr td ol li,
+.Inerter_Status2 table tr td ol li,
+.Inerter_Status3 table tr td ol li {
+  width: 20%;
+  margin-right: 8%;
+  padding: 0;
+}
+/* line 854, ../sass/page.scss */
+.div_table b,
+.Inerter_Status1 b,
+.Inerter_Status2 b,
+.Inerter_Status3 b {
+  display: block;
+}
+
+/* line 858, ../sass/page.scss */
+.div_table {
+  width: 45%;
+  position: absolute;
+}
+
+/* line 859, ../sass/page.scss */
+.Inerter_Status1 {
+  width: 33%;
+}
+
+/* line 860, ../sass/page.scss */
+.Inerter_Status2 {
+  width: 66%;
+}
+
+/* line 861, ../sass/page.scss */
+.Inerter_Status3 {
+  width: 30%;
+  position: absolute;
+  margin-left: 10px;
 }

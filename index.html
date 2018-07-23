@@ -56,54 +56,104 @@
             </div>
             <div class="system_status">
                 <h2>系統狀態</h2>
-                <div class="system_status_text">顯示系統目前是否斷訊，需要維修狀況</div>
+                <div class="system_status_text">
+                    Inverter 狀態：StandbyB2<br/>
+                    燃料電池狀態：STANDBYR5 <br/>
+                    儲能電池狀態：idle
+                </div>
+            </div>
+            <div class="btn_curve_information">
+                <a href="Curve_information.html"><h2>詳細頁面資訊</h2></a>
             </div>
         </section>
         <section class="data_list">
             <img class="night" src="images/bg_index_night.jpg">
             <img class="day" src="images/bg_index_day.jpg">
             <div class="solar_energy">
-                <img src="images/bg_data_list.png">
-                <ul><h2>太陽能</h2>
-                    <li>
-                        <b>累積發電量</b>
-                        <b>00.00</b>
-                        <b>KWH</b>
-                    </li>
-                    <li>
-                        <b>累積日發電量</b>
-                        <b>00.00</b>
-                        <b>KWH</b>
-                    </li>
-                    <li>
-                        <b>累積月發電量</b>
-                        <b>12345678</b>
-                        <b>KWH</b>
-                    </li>
-                </ul>
+                <div id="fade_block1">
+                    <div class="ad">
+                        <ul><h2>太陽能</h2>
+                            <li>
+                                <b>設置容量</b>
+                                <b>00.00</b>
+                                <b>KWH</b>
+                            </li>
+                            <li>
+                                <b>CO2減碳量</b>
+                                <b>00.00</b>
+                                <b>KWH</b>
+                            </li>
+                            <li>
+                                <b>即時發電量</b>
+                                <b>12345678</b>
+                                <b>KWH</b>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ad">
+                        <ul><h2>太陽能</h2>
+                            <li>
+                                <b>累積發電量</b>
+                                <b>00.00</b>
+                                <b>KWH</b>
+                            </li>
+                            <li>
+                                <b>累積日發電量</b>
+                                <b>00.00</b>
+                                <b>KWH</b>
+                            </li>
+                            <li>
+                                <b>累積月發電量</b>
+                                <b>12345678</b>
+                                <b>KWH</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="wind_power">
-                <img src="images/bg_data_list.png">
-                <ul><h2>風力發電</h2>
-                    <li>
-                        <b>累積發電量</b>
-                        <b>00.00</b>
-                        <b>KWH</b>
-                    </li>
-                    <li>
-                        <b>累積日發電量</b>
-                        <b>00.00</b>
-                        <b>KWH</b>
-                    </li>
-                    <li>
-                        <b>累積月發電量</b>
-                        <b>00.00</b>
-                        <b>KWH</b>
-                    </li>
-                </ul>
+                <div id="fade_block2">
+                    <div class="ad">
+                        <ul><h2>風力發電</h2>
+                            <li>
+                                <b>設置容量</b>
+                                <b>00.00</b>
+                                <b>KWH</b>
+                            </li>
+                            <li>
+                                <b>CO2減碳量</b>
+                                <b>00.00</b>
+                                <b>KWH</b>
+                            </li>
+                            <li>
+                                <b>即時發電量</b>
+                                <b>12345678</b>
+                                <b>KWH</b>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ad">
+                        <ul><h2>風力發電</h2>
+                            <li>
+                                <b>累積發電量</b>
+                                <b>00.00</b>
+                                <b>KWH</b>
+                            </li>
+                            <li>
+                                <b>累積日發電量</b>
+                                <b>00.00</b>
+                                <b>KWH</b>
+                            </li>
+                            <li>
+                                <b>累積月發電量</b>
+                                <b>12345678</b>
+                                <b>KWH</b>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             <div class="storage_battery">
-                <img src="images/bg_data_list.png">
                 <ul><h2>儲能電池</h2>
                     <li>
                         <b>設置容量</b>
@@ -123,7 +173,6 @@
                 </ul>
             </div>
             <div class="fuel_battery">
-                <img src="images/bg_data_list.png">
                 <ul><h2>燃料電池</h2>
                     <li>
                         <b>設定功率</b>
@@ -138,7 +187,6 @@
                 </ul>
             </div>
             <div class="user_point">
-                <img src="images/bg_data_list.png">
                 <ul><h2>30戶用點</h2>
                     <li>
                         <b>裝設前月用電</b>
@@ -159,7 +207,7 @@
                     <li><b>燃料電池</b></li>
                     <li><b>太陽能</b></li>
                 </ul>
-                <span>65%</span>
+                <!--span>65%</span-->
             </div>
             <div id="chartdiv">
             </div>
@@ -185,10 +233,23 @@
     <script src="https://www.amcharts.com/lib/3/pie.js"></script>
     <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
     <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
-    <script>
+<script>
         var chart = AmCharts.makeChart("chartdiv", {
             "type": "pie",
             "theme": "light",
+            "allLabels": [{
+                "text": "20%",
+                "align": "center",
+                "bold": true,
+                "y": "45%",
+                "color": "#6faf3d",
+                "size": 32
+            }, {
+                "text": "",
+                "align": "center",
+                "bold": false,
+                "y": "49%",
+            }],
             "innerRadius": "70%",
             "gradientRatio": [-0.4, -0.4, -0.4, -0.4, -0.4, -0.4, 0, 0.1, 0.2, 0.1, 0, -0.2, -0.5],
             "dataProvider": [{
@@ -208,11 +269,20 @@
                 "color": "#f590a3",
                 "litres": 700
             }],
-            "balloonText": "[[value]]",
+            "balloonText": "[[energy]]:[[value]]",
             "valueField": "litres",
             "titleField": "energy",
             "colorField": "color",
             "labelText": "",
+            "balloon": {
+                "drop": true,
+                "adjustBorderColor": false,
+                "color": "#FFFFFF",
+                "fontSize": 16
+            },
+            "export": {
+                "enabled": true
+            }
         });
     </script>
 </body>
