@@ -1,0 +1,1773 @@
+@charset "UTF-8";
+/* line 6, ../sass/index.scss */
+#footer {
+  font: 0/0 a;
+  color: transparent;
+}
+
+/*------------------------------------------------------------------
+Reset HTML5
+------------------------------------------------------------------*/
+/* line 13, ../sass/index.scss */
+article, aside, dialog, footer, header, section, footer, nav, figure, menu, details, figcaption, figure, hgroup {
+  display: block;
+}
+
+/* line 14, ../sass/index.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 15, ../sass/index.scss */
+audio:not([controls]) {
+  display: none;
+}
+
+/* line 16, ../sass/index.scss */
+[hidden] {
+  display: none;
+}
+
+/*------------------------------------------------------------------
+Reset
+------------------------------------------------------------------*/
+/* line 20, ../sass/index.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 21, ../sass/index.scss */
+html, body {
+  min-width: 1024px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "微軟正黑體","Ubuntu", Helvetica, "Heiti TC", "Microsoft Sans Serif", "Microsoft Sans Serif", "Helvetica", "Geneva", "sans-serif";
+}
+
+/* line 22, ../sass/index.scss */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* line 23, ../sass/index.scss */
+a {
+  outline: none;
+}
+
+/* line 24, ../sass/index.scss */
+a, a:active, a:hover {
+  text-decoration: none;
+}
+
+/* line 25, ../sass/index.scss */
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 26, ../sass/index.scss */
+body.night {
+  background-color: #696969;
+}
+/* line 28, ../sass/index.scss */
+body.night img.day {
+  display: none;
+}
+
+/* line 32, ../sass/index.scss */
+body.day {
+  background-color: #49c1f1;
+}
+/* line 34, ../sass/index.scss */
+body.day img.night {
+  display: none;
+}
+
+/* line 38, ../sass/index.scss */
+#header {
+  display: block;
+  width: 100%;
+  min-height: 70px;
+  background-image: url("../images/bg_index_header.gif");
+  background-size: contain;
+  background-repeat: repeat-x;
+  color: white;
+  position: relative;
+}
+/* line 48, ../sass/index.scss */
+#header a {
+  color: white;
+}
+/* line 51, ../sass/index.scss */
+#header .header_ul {
+  position: relative;
+}
+/* line 53, ../sass/index.scss */
+#header .header_ul li {
+  display: inline-block;
+  margin-left: 2.5%;
+}
+/* line 57, ../sass/index.scss */
+#header .header_ul .logo_ntcg {
+  max-width: 228px;
+  width: 13%;
+  position: relative;
+}
+/* line 62, ../sass/index.scss */
+#header .header_ul .logo_tier {
+  max-width: 211px;
+  width: 12%;
+}
+/* line 66, ../sass/index.scss */
+#header .header_ul .logo_dudu {
+  max-width: 123px;
+  width: 7%;
+}
+/* line 70, ../sass/index.scss */
+#header .header_ul .logo_name {
+  max-width: 374px;
+  width: 20%;
+}
+/* line 78, ../sass/index.scss */
+#header .header_ul .logo_ntcg img,
+#header .header_ul .logo_tier img,
+#header .header_ul .logo_dudu img,
+#header .header_ul .logo_name img {
+  width: 100% !important;
+  height: unset !important;
+}
+/* line 83, ../sass/index.scss */
+#header .header_ul .logo {
+  font-size: 1em;
+  font-weight: bold;
+}
+/* line 87, ../sass/index.scss */
+#header .header_ul .info {
+  position: absolute;
+  top: 20px;
+  right: 120px;
+}
+@media screen and (min-width: 1200px) {
+  /* line 87, ../sass/index.scss */
+  #header .header_ul .info {
+    top: 25px;
+    font-size: 1.15em;
+    right: 160px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  /* line 87, ../sass/index.scss */
+  #header .header_ul .info {
+    top: 28px;
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 1350px) {
+  /* line 87, ../sass/index.scss */
+  #header .header_ul .info {
+    top: 28px;
+    font-size: 1.3em;
+  }
+}
+@media screen and (min-width: 1400px) {
+  /* line 87, ../sass/index.scss */
+  #header .header_ul .info {
+    top: 28px;
+    font-size: 1.4em;
+    right: 170px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  /* line 87, ../sass/index.scss */
+  #header .header_ul .info {
+    top: 30px;
+    font-size: 1.5em;
+    right: 200px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  /* line 87, ../sass/index.scss */
+  #header .header_ul .info {
+    top: 30px;
+    font-size: 1.6em;
+  }
+}
+@media screen and (min-width: 1700px) {
+  /* line 87, ../sass/index.scss */
+  #header .header_ul .info {
+    top: 30px;
+    font-size: 1.7em;
+  }
+}
+@media screen and (min-width: 1800px) {
+  /* line 87, ../sass/index.scss */
+  #header .header_ul .info {
+    top: 30px;
+    font-size: 1.75em;
+  }
+}
+/* line 114, ../sass/index.scss */
+#header .header_ul .time {
+  display: inline-block;
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 1em;
+}
+/* line 120, ../sass/index.scss */
+#header .header_ul .temperature {
+  display: inline-block;
+  font-size: 1.4em;
+  position: relative;
+}
+/* line 124, ../sass/index.scss */
+#header .header_ul .temperature span {
+  font-size: .5em;
+  position: absolute;
+  right: -16px;
+  top: 1px;
+}
+@media screen and (min-width: 1500px) {
+  /* line 124, ../sass/index.scss */
+  #header .header_ul .temperature span {
+    right: -22px;
+  }
+}
+/* line 134, ../sass/index.scss */
+#header .header_ul .weather {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  right: -40px;
+  overflow: hidden;
+  top: 0px;
+  width: 200px;
+  height: 100px;
+  transform: scale(0.56) translateY(-1em);
+  /*
+  @media screen and (min-width: 1200px){right: 7.8%;img{width: 95px;}}
+  @media screen and (min-width: 1350px){right: 7.8%;img{width: 105px;}}
+  @media screen and (min-width: 1400px){right: 7.8%;img{width: 110px;}}
+  @media screen and (min-width: 1500px){right: 7.8%;img{width: 120px;}}
+  @media screen and (min-width: 1600px){right: 7.8%;img{width: 125px;}}
+  @media screen and (min-width: 1700px){right: 7.8%;img{width: 130px;}}
+  */
+}
+/* line 144, ../sass/index.scss */
+#header .header_ul .weather iframe {
+  position: absolute !important;
+}
+@media screen and (min-width: 1100px) {
+  /* line 134, ../sass/index.scss */
+  #header .header_ul .weather {
+    top: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 134, ../sass/index.scss */
+  #header .header_ul .weather {
+    top: 0;
+    transform: scale(0.7);
+    right: -20px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  /* line 134, ../sass/index.scss */
+  #header .header_ul .weather {
+    top: 2px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  /* line 134, ../sass/index.scss */
+  #header .header_ul .weather {
+    top: 8px;
+    transform: scale(0.8);
+    right: -30px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  /* line 134, ../sass/index.scss */
+  #header .header_ul .weather {
+    top: 12px;
+    transform: scale(0.9);
+    right: 0;
+  }
+}
+@media screen and (min-width: 1600px) {
+  /* line 134, ../sass/index.scss */
+  #header .header_ul .weather {
+    top: 16px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  /* line 134, ../sass/index.scss */
+  #header .header_ul .weather {
+    top: 17px;
+    transform: scale(0.95);
+  }
+}
+
+/* line 166, ../sass/index.scss */
+#main_content {
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+/* line 172, ../sass/index.scss */
+.info_block {
+  min-width: 190px;
+  max-width: 358px;
+  width: 19%;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+/* line 179, ../sass/index.scss */
+.info_block .system_status,
+.info_block .community_photo {
+  width: 100%;
+  background-color: #ffc0b5;
+  margin-top: 12px;
+  padding: 0px 10px 8px 10px;
+  box-sizing: border-box;
+}
+/* line 186, ../sass/index.scss */
+.info_block .system_status h2,
+.info_block .community_photo h2 {
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 1.7em;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+@media screen and (min-width: 1250px) {
+  /* line 186, ../sass/index.scss */
+  .info_block .system_status h2,
+  .info_block .community_photo h2 {
+    font-size: 1.65em;
+  }
+}
+@media screen and (min-width: 1300px) {
+  /* line 186, ../sass/index.scss */
+  .info_block .system_status h2,
+  .info_block .community_photo h2 {
+    font-size: 1.7em;
+  }
+}
+@media screen and (min-width: 1350px) {
+  /* line 186, ../sass/index.scss */
+  .info_block .system_status h2,
+  .info_block .community_photo h2 {
+    font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 1400px) {
+  /* line 186, ../sass/index.scss */
+  .info_block .system_status h2,
+  .info_block .community_photo h2 {
+    font-size: 1.9em;
+  }
+}
+/* line 206, ../sass/index.scss */
+.info_block .system_status .system_status_text,
+.info_block .system_status .community_photo_img,
+.info_block .community_photo .system_status_text,
+.info_block .community_photo .community_photo_img {
+  background-color: #ffece6;
+  width: 100%;
+}
+/* line 210, ../sass/index.scss */
+.info_block .system_status .system_status_text img,
+.info_block .system_status .community_photo_img img,
+.info_block .community_photo .system_status_text img,
+.info_block .community_photo .community_photo_img img {
+  width: 100% !important;
+  height: unset !important;
+}
+/* line 215, ../sass/index.scss */
+.info_block .system_status .system_status_text,
+.info_block .community_photo .system_status_text {
+  padding: 2%;
+  box-sizing: border-box;
+  color: #d10007;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.3em;
+  font-size: .9em;
+}
+@media screen and (min-width: 1100px) {
+  /* line 215, ../sass/index.scss */
+  .info_block .system_status .system_status_text,
+  .info_block .community_photo .system_status_text {
+    font-size: .95em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 215, ../sass/index.scss */
+  .info_block .system_status .system_status_text,
+  .info_block .community_photo .system_status_text {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 1300px) {
+  /* line 215, ../sass/index.scss */
+  .info_block .system_status .system_status_text,
+  .info_block .community_photo .system_status_text {
+    font-size: 1.1em;
+  }
+}
+@media screen and (min-width: 1350px) {
+  /* line 215, ../sass/index.scss */
+  .info_block .system_status .system_status_text,
+  .info_block .community_photo .system_status_text {
+    font-size: 1.15em;
+  }
+}
+@media screen and (min-width: 1400px) {
+  /* line 215, ../sass/index.scss */
+  .info_block .system_status .system_status_text,
+  .info_block .community_photo .system_status_text {
+    font-size: 1.2em;
+  }
+}
+
+/* line 241, ../sass/index.scss */
+.data_list {
+  width: 100%;
+  min-width: 1024px;
+  min-height: 540px;
+  max-height: 507px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+  position: relative;
+}
+/* line 254, ../sass/index.scss */
+.data_list img {
+  width: 100% !important;
+  height: unset !important;
+}
+/* line 258, ../sass/index.scss */
+.data_list .solar_energy,
+.data_list .wind_power,
+.data_list .storage_battery,
+.data_list .fuel_battery,
+.data_list .user_point {
+  width: 18%;
+  min-width: 190px;
+  min-height: 122px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+@media screen and (min-width: 1100px) {
+  /* line 258, ../sass/index.scss */
+  .data_list .solar_energy,
+  .data_list .wind_power,
+  .data_list .storage_battery,
+  .data_list .fuel_battery,
+  .data_list .user_point {
+    width: 17%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 258, ../sass/index.scss */
+  .data_list .solar_energy,
+  .data_list .wind_power,
+  .data_list .storage_battery,
+  .data_list .fuel_battery,
+  .data_list .user_point {
+    width: 16.5%;
+  }
+}
+/* line 278, ../sass/index.scss */
+.data_list .solar_energy h2,
+.data_list .wind_power h2,
+.data_list .storage_battery h2,
+.data_list .fuel_battery h2,
+.data_list .user_point h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 2px;
+}
+@media screen and (min-width: 1500px) {
+  /* line 278, ../sass/index.scss */
+  .data_list .solar_energy h2,
+  .data_list .wind_power h2,
+  .data_list .storage_battery h2,
+  .data_list .fuel_battery h2,
+  .data_list .user_point h2 {
+    margin-bottom: 5px;
+  }
+}
+@media screen and (min-width: 1650px) {
+  /* line 278, ../sass/index.scss */
+  .data_list .solar_energy h2,
+  .data_list .wind_power h2,
+  .data_list .storage_battery h2,
+  .data_list .fuel_battery h2,
+  .data_list .user_point h2 {
+    margin-bottom: 10px;
+  }
+}
+/* line 290, ../sass/index.scss */
+.data_list .solar_energy ul,
+.data_list .wind_power ul,
+.data_list .storage_battery ul,
+.data_list .fuel_battery ul,
+.data_list .user_point ul {
+  position: absolute;
+  top: 14%;
+  width: 100%;
+  font-size: .7em;
+  padding: 0 0%;
+}
+@media screen and (min-width: 1100px) {
+  /* line 290, ../sass/index.scss */
+  .data_list .solar_energy ul,
+  .data_list .wind_power ul,
+  .data_list .storage_battery ul,
+  .data_list .fuel_battery ul,
+  .data_list .user_point ul {
+    font-size: .75em;
+    padding: 0 2%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 290, ../sass/index.scss */
+  .data_list .solar_energy ul,
+  .data_list .wind_power ul,
+  .data_list .storage_battery ul,
+  .data_list .fuel_battery ul,
+  .data_list .user_point ul {
+    font-size: .75em;
+  }
+}
+@media screen and (min-width: 1250px) {
+  /* line 290, ../sass/index.scss */
+  .data_list .solar_energy ul,
+  .data_list .wind_power ul,
+  .data_list .storage_battery ul,
+  .data_list .fuel_battery ul,
+  .data_list .user_point ul {
+    font-size: .8em;
+  }
+}
+@media screen and (min-width: 1300px) {
+  /* line 290, ../sass/index.scss */
+  .data_list .solar_energy ul,
+  .data_list .wind_power ul,
+  .data_list .storage_battery ul,
+  .data_list .fuel_battery ul,
+  .data_list .user_point ul {
+    font-size: .82em;
+  }
+}
+@media screen and (min-width: 1370px) {
+  /* line 290, ../sass/index.scss */
+  .data_list .solar_energy ul,
+  .data_list .wind_power ul,
+  .data_list .storage_battery ul,
+  .data_list .fuel_battery ul,
+  .data_list .user_point ul {
+    font-size: .85em;
+    margin-top: 1px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  /* line 290, ../sass/index.scss */
+  .data_list .solar_energy ul,
+  .data_list .wind_power ul,
+  .data_list .storage_battery ul,
+  .data_list .fuel_battery ul,
+  .data_list .user_point ul {
+    font-size: .87em;
+  }
+}
+@media screen and (min-width: 1500px) {
+  /* line 290, ../sass/index.scss */
+  .data_list .solar_energy ul,
+  .data_list .wind_power ul,
+  .data_list .storage_battery ul,
+  .data_list .fuel_battery ul,
+  .data_list .user_point ul {
+    font-size: .9em;
+  }
+}
+@media screen and (min-width: 1550px) {
+  /* line 290, ../sass/index.scss */
+  .data_list .solar_energy ul,
+  .data_list .wind_power ul,
+  .data_list .storage_battery ul,
+  .data_list .fuel_battery ul,
+  .data_list .user_point ul {
+    font-size: .95em;
+  }
+}
+@media screen and (min-width: 1600px) {
+  /* line 290, ../sass/index.scss */
+  .data_list .solar_energy ul,
+  .data_list .wind_power ul,
+  .data_list .storage_battery ul,
+  .data_list .fuel_battery ul,
+  .data_list .user_point ul {
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  /* line 290, ../sass/index.scss */
+  .data_list .solar_energy ul,
+  .data_list .wind_power ul,
+  .data_list .storage_battery ul,
+  .data_list .fuel_battery ul,
+  .data_list .user_point ul {
+    font-size: 1.05em;
+  }
+}
+@media screen and (min-width: 1800px) {
+  /* line 290, ../sass/index.scss */
+  .data_list .solar_energy ul,
+  .data_list .wind_power ul,
+  .data_list .storage_battery ul,
+  .data_list .fuel_battery ul,
+  .data_list .user_point ul {
+    font-size: 1.1em;
+  }
+}
+/* line 331, ../sass/index.scss */
+.data_list .solar_energy ul li,
+.data_list .wind_power ul li,
+.data_list .storage_battery ul li,
+.data_list .fuel_battery ul li,
+.data_list .user_point ul li {
+  display: block;
+  width: 100%;
+  line-height: 1.6em;
+}
+/* line 334, ../sass/index.scss */
+.data_list .solar_energy ul li::after,
+.data_list .wind_power ul li::after,
+.data_list .storage_battery ul li::after,
+.data_list .fuel_battery ul li::after,
+.data_list .user_point ul li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* line 339, ../sass/index.scss */
+.data_list .solar_energy ul li b,
+.data_list .wind_power ul li b,
+.data_list .storage_battery ul li b,
+.data_list .fuel_battery ul li b,
+.data_list .user_point ul li b {
+  display: inline-block;
+  float: left;
+}
+/* line 343, ../sass/index.scss */
+.data_list .solar_energy ul li b:nth-child(1),
+.data_list .wind_power ul li b:nth-child(1),
+.data_list .storage_battery ul li b:nth-child(1),
+.data_list .fuel_battery ul li b:nth-child(1),
+.data_list .user_point ul li b:nth-child(1) {
+  width: 40%;
+  text-align: right;
+}
+/* line 347, ../sass/index.scss */
+.data_list .solar_energy ul li b:nth-child(2),
+.data_list .wind_power ul li b:nth-child(2),
+.data_list .storage_battery ul li b:nth-child(2),
+.data_list .fuel_battery ul li b:nth-child(2),
+.data_list .user_point ul li b:nth-child(2) {
+  width: 40%;
+  text-align: right;
+  color: #d20915;
+               /*
+@media screen and (min-width: 1100px){
+    padding-left: 4%;
+}
+@media screen and (min-width: 1500px){
+    padding-left: 7%;
+}
+@media screen and (min-width: 1600px){
+    padding-left: 9%;
+}
+@media screen and (min-width: 1650px){
+    padding-left: 10%;
+}
+@media screen and (min-width: 1850px){
+    padding-left: 12%;
+}*/
+}
+/* line 367, ../sass/index.scss */
+.data_list .solar_energy ul li b:nth-child(3),
+.data_list .wind_power ul li b:nth-child(3),
+.data_list .storage_battery ul li b:nth-child(3),
+.data_list .fuel_battery ul li b:nth-child(3),
+.data_list .user_point ul li b:nth-child(3) {
+  text-align: left;
+  padding-left: 3px;
+}
+/* line 377, ../sass/index.scss */
+.data_list .solar_energy {
+  color: #f04902;
+  top: 60px;
+  left: 20%;
+}
+/* line 382, ../sass/index.scss */
+.data_list .wind_power {
+  color: #c21f3d;
+  top: 250px;
+  left: 20%;
+}
+/* line 387, ../sass/index.scss */
+.data_list .storage_battery {
+  color: #918a23;
+  top: 177px;
+  right: 5%;
+}
+/* line 392, ../sass/index.scss */
+.data_list .fuel_battery {
+  color: #55872f;
+  top: 295px;
+  right: 12%;
+}
+/* line 396, ../sass/index.scss */
+.data_list .fuel_battery ul {
+  top: 22%;
+}
+/* line 400, ../sass/index.scss */
+.data_list .user_point {
+  color: #0014f2;
+  top: 410px;
+  right: 5%;
+}
+/* line 404, ../sass/index.scss */
+.data_list .user_point ul {
+  top: 22%;
+}
+@media screen and (min-width: 1100px) {
+  /* line 409, ../sass/index.scss */
+  .data_list .solar_energy {
+    top: 65px;
+  }
+  /* line 410, ../sass/index.scss */
+  .data_list .wind_power {
+    top: 255px;
+  }
+  /* line 411, ../sass/index.scss */
+  .data_list .storage_battery {
+    top: 182px;
+  }
+  /* line 412, ../sass/index.scss */
+  .data_list .fuel_battery {
+    top: 294px;
+  }
+  /* line 413, ../sass/index.scss */
+  .data_list .user_point {
+    top: 405px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 416, ../sass/index.scss */
+  .data_list .solar_energy {
+    top: 70px;
+  }
+  /* line 417, ../sass/index.scss */
+  .data_list .wind_power {
+    top: 260px;
+  }
+  /* line 418, ../sass/index.scss */
+  .data_list .storage_battery {
+    top: 187px;
+  }
+  /* line 419, ../sass/index.scss */
+  .data_list .fuel_battery {
+    top: 310px;
+  }
+  /* line 420, ../sass/index.scss */
+  .data_list .user_point {
+    top: 430px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  /* line 423, ../sass/index.scss */
+  .data_list .solar_energy {
+    top: 72px;
+  }
+  /* line 424, ../sass/index.scss */
+  .data_list .wind_power {
+    top: 280px;
+  }
+  /* line 425, ../sass/index.scss */
+  .data_list .storage_battery {
+    top: 218px;
+  }
+  /* line 426, ../sass/index.scss */
+  .data_list .fuel_battery {
+    top: 350px;
+    right: 13%;
+  }
+  /* line 427, ../sass/index.scss */
+  .data_list .user_point {
+    top: 480px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  /* line 430, ../sass/index.scss */
+  .data_list .solar_energy {
+    top: 75px;
+  }
+  /* line 431, ../sass/index.scss */
+  .data_list .wind_power {
+    top: 300px;
+  }
+  /* line 432, ../sass/index.scss */
+  .data_list .storage_battery {
+    top: 228px;
+  }
+  /* line 433, ../sass/index.scss */
+  .data_list .fuel_battery {
+    top: 366px;
+  }
+  /* line 434, ../sass/index.scss */
+  .data_list .user_point {
+    top: 500px;
+  }
+}
+@media screen and (min-width: 1350px) {
+  /* line 437, ../sass/index.scss */
+  .data_list .solar_energy {
+    top: 78px;
+  }
+  /* line 438, ../sass/index.scss */
+  .data_list .wind_power {
+    top: 305px;
+  }
+  /* line 439, ../sass/index.scss */
+  .data_list .storage_battery {
+    top: 228px;
+  }
+  /* line 440, ../sass/index.scss */
+  .data_list .fuel_battery {
+    top: 366px;
+  }
+  /* line 441, ../sass/index.scss */
+  .data_list .user_point {
+    top: 500px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  /* line 444, ../sass/index.scss */
+  .data_list .solar_energy {
+    top: 79px;
+  }
+  /* line 445, ../sass/index.scss */
+  .data_list .wind_power {
+    top: 315px;
+  }
+  /* line 446, ../sass/index.scss */
+  .data_list .storage_battery {
+    top: 246px;
+  }
+  /* line 447, ../sass/index.scss */
+  .data_list .fuel_battery {
+    top: 390px;
+  }
+  /* line 448, ../sass/index.scss */
+  .data_list .user_point {
+    top: 530px;
+  }
+}
+@media screen and (min-width: 1450px) {
+  /* line 451, ../sass/index.scss */
+  .data_list .solar_energy {
+    top: 79px;
+    left: 20.1%;
+  }
+  /* line 452, ../sass/index.scss */
+  .data_list .wind_power {
+    top: 325px;
+    left: 20.1%;
+  }
+  /* line 453, ../sass/index.scss */
+  .data_list .storage_battery {
+    top: 256px;
+  }
+  /* line 454, ../sass/index.scss */
+  .data_list .fuel_battery {
+    top: 405px;
+    right: 13%;
+  }
+  /* line 455, ../sass/index.scss */
+  .data_list .user_point {
+    top: 550px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  /* line 458, ../sass/index.scss */
+  .data_list .solar_energy {
+    top: 79px;
+  }
+  /* line 459, ../sass/index.scss */
+  .data_list .wind_power {
+    top: 335px;
+  }
+  /* line 460, ../sass/index.scss */
+  .data_list .storage_battery {
+    top: 260px;
+  }
+  /* line 461, ../sass/index.scss */
+  .data_list .fuel_battery {
+    top: 410px;
+    right: 13%;
+  }
+  /* line 462, ../sass/index.scss */
+  .data_list .user_point {
+    top: 555px;
+  }
+}
+@media screen and (min-width: 1550px) {
+  /* line 465, ../sass/index.scss */
+  .data_list .solar_energy {
+    top: 79px;
+  }
+  /* line 466, ../sass/index.scss */
+  .data_list .wind_power {
+    top: 350px;
+  }
+  /* line 467, ../sass/index.scss */
+  .data_list .storage_battery {
+    top: 265px;
+  }
+  /* line 468, ../sass/index.scss */
+  .data_list .fuel_battery {
+    top: 420px;
+    right: 13%;
+  }
+  /* line 469, ../sass/index.scss */
+  .data_list .user_point {
+    top: 570px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  /* line 472, ../sass/index.scss */
+  .data_list .solar_energy {
+    top: 79px;
+  }
+  /* line 473, ../sass/index.scss */
+  .data_list .wind_power {
+    top: 365px;
+  }
+  /* line 474, ../sass/index.scss */
+  .data_list .storage_battery {
+    top: 275px;
+  }
+  /* line 475, ../sass/index.scss */
+  .data_list .fuel_battery {
+    top: 435px;
+    right: 13%;
+  }
+  /* line 476, ../sass/index.scss */
+  .data_list .user_point {
+    top: 590px;
+  }
+}
+@media screen and (min-width: 1650px) {
+  /* line 479, ../sass/index.scss */
+  .data_list .solar_energy {
+    top: 79px;
+  }
+  /* line 480, ../sass/index.scss */
+  .data_list .wind_power {
+    top: 375px;
+  }
+  /* line 481, ../sass/index.scss */
+  .data_list .storage_battery {
+    top: 290px;
+  }
+  /* line 482, ../sass/index.scss */
+  .data_list .fuel_battery {
+    top: 460px;
+    right: 13%;
+  }
+  /* line 483, ../sass/index.scss */
+  .data_list .user_point {
+    top: 628px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  /* line 486, ../sass/index.scss */
+  .data_list .solar_energy {
+    top: 79px;
+  }
+  /* line 487, ../sass/index.scss */
+  .data_list .wind_power {
+    top: 385px;
+  }
+  /* line 488, ../sass/index.scss */
+  .data_list .storage_battery {
+    top: 292px;
+  }
+  /* line 489, ../sass/index.scss */
+  .data_list .fuel_battery {
+    top: 465px;
+    right: 13%;
+  }
+  /* line 490, ../sass/index.scss */
+  .data_list .user_point {
+    top: 632px;
+  }
+}
+@media screen and (min-width: 1750px) {
+  /* line 493, ../sass/index.scss */
+  .data_list .solar_energy {
+    top: 79px;
+  }
+  /* line 494, ../sass/index.scss */
+  .data_list .wind_power {
+    top: 395px;
+  }
+  /* line 495, ../sass/index.scss */
+  .data_list .storage_battery {
+    top: 300px;
+  }
+  /* line 496, ../sass/index.scss */
+  .data_list .fuel_battery {
+    top: 475px;
+    right: 13%;
+  }
+  /* line 497, ../sass/index.scss */
+  .data_list .user_point {
+    top: 645px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  /* line 500, ../sass/index.scss */
+  .data_list .solar_energy {
+    top: 79px;
+  }
+  /* line 501, ../sass/index.scss */
+  .data_list .wind_power {
+    top: 405px;
+  }
+  /* line 502, ../sass/index.scss */
+  .data_list .storage_battery {
+    top: 310px;
+  }
+  /* line 503, ../sass/index.scss */
+  .data_list .fuel_battery {
+    top: 490px;
+    right: 13%;
+  }
+  /* line 504, ../sass/index.scss */
+  .data_list .user_point {
+    top: 665px;
+  }
+}
+@media screen and (min-width: 1850px) {
+  /* line 507, ../sass/index.scss */
+  .data_list .solar_energy {
+    top: 79px;
+  }
+  /* line 508, ../sass/index.scss */
+  .data_list .wind_power {
+    top: 411px;
+  }
+  /* line 509, ../sass/index.scss */
+  .data_list .storage_battery {
+    top: 315px;
+  }
+  /* line 510, ../sass/index.scss */
+  .data_list .fuel_battery {
+    top: 500px;
+    right: 13%;
+  }
+  /* line 511, ../sass/index.scss */
+  .data_list .user_point {
+    top: 679px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  /* line 514, ../sass/index.scss */
+  .data_list .solar_energy {
+    top: 79px;
+  }
+  /* line 515, ../sass/index.scss */
+  .data_list .wind_power {
+    top: 421px;
+  }
+  /* line 516, ../sass/index.scss */
+  .data_list .storage_battery {
+    top: 328px;
+  }
+  /* line 517, ../sass/index.scss */
+  .data_list .fuel_battery {
+    top: 526px;
+    right: 13%;
+  }
+  /* line 518, ../sass/index.scss */
+  .data_list .user_point {
+    top: 720px;
+  }
+}
+/* line 520, ../sass/index.scss */
+.data_list .doughnut {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  /*
+  width: 180px; height: 180px;position: absolute; top: 0px; right: 20px;
+  @media screen and (min-width: 1100px){
+      width: 190px; height: 190px;
+  }
+  @media screen and (min-width: 1200px){
+      width: 200px; height: 200px;
+  }
+  @media screen and (min-width: 1300px){
+      width: 210px; height: 210px;
+  }
+  @media screen and (min-width: 1350px){
+      width: 215px; height: 215px;
+  }
+  @media screen and (min-width: 1400px){
+      width: 220px; height: 220px;
+  }
+  @media screen and (min-width: 1450px){
+      width: 230px; height: 230px;
+  }
+  @media screen and (min-width: 1500px){
+      width: 240px; height: 240px;
+  }
+  @media screen and (min-width: 1550px){
+      width: 250px; height: 250px;
+  }
+  @media screen and (min-width: 1600px){
+      width: 260px; height: 260px;
+  }
+  @media screen and (min-width: 1650px){
+      width: 270px; height: 270px;
+  }
+  @media screen and (min-width: 1700px){
+      width: 280px; height: 280px;
+  }
+  @media screen and (min-width: 1750px){
+      width: 290px; height: 290px;
+  }
+  @media screen and (min-width: 1800px){
+      width: 295px; height: 295px;
+  }
+  */
+}
+@media screen and (min-width: 1100px) {
+  /* line 520, ../sass/index.scss */
+  .data_list .doughnut {
+    right: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 520, ../sass/index.scss */
+  .data_list .doughnut {
+    right: 20px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  /* line 520, ../sass/index.scss */
+  .data_list .doughnut {
+    top: 20px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  /* line 520, ../sass/index.scss */
+  .data_list .doughnut {
+    top: 30px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  /* line 520, ../sass/index.scss */
+  .data_list .doughnut {
+    top: 40px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  /* line 520, ../sass/index.scss */
+  .data_list .doughnut {
+    top: 50px;
+    right: 60px;
+  }
+}
+/* line 528, ../sass/index.scss */
+.data_list .doughnut span {
+  color: #61bc86;
+  position: absolute;
+  top: 69px;
+  right: 196px;
+  font-size: 2em;
+}
+@media screen and (min-width: 1050px) {
+  /* line 528, ../sass/index.scss */
+  .data_list .doughnut span {
+    right: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 528, ../sass/index.scss */
+  .data_list .doughnut span {
+    font-size: 2.1em;
+    top: 68px;
+    right: 203px;
+  }
+}
+@media screen and (min-width: 1270px) {
+  /* line 528, ../sass/index.scss */
+  .data_list .doughnut span {
+    font-size: 2.1em;
+    top: 68px;
+    right: 213px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  /* line 528, ../sass/index.scss */
+  .data_list .doughnut span {
+    font-size: 2.15em;
+    top: 68px;
+    right: 205px;
+  }
+}
+@media screen and (min-width: 1350px) {
+  /* line 528, ../sass/index.scss */
+  .data_list .doughnut span {
+    font-size: 2.2em;
+    top: 68px;
+    right: 210px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  /* line 528, ../sass/index.scss */
+  .data_list .doughnut span {
+    font-size: 2.25em;
+    top: 67px;
+    right: 213px;
+  }
+}
+@media screen and (min-width: 1450px) {
+  /* line 528, ../sass/index.scss */
+  .data_list .doughnut span {
+    font-size: 2.3em;
+    top: 67px;
+    right: 215px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  /* line 528, ../sass/index.scss */
+  .data_list .doughnut span {
+    font-size: 2.5em;
+    top: 66px;
+    right: 218px;
+  }
+}
+@media screen and (min-width: 1550px) {
+  /* line 528, ../sass/index.scss */
+  .data_list .doughnut span {
+    font-size: 2.8em;
+    top: 66px;
+    right: 220px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  /* line 528, ../sass/index.scss */
+  .data_list .doughnut span {
+    font-size: 3em;
+    top: 65px;
+    right: 223px;
+  }
+}
+@media screen and (min-width: 1650px) {
+  /* line 528, ../sass/index.scss */
+  .data_list .doughnut span {
+    font-size: 3.2em;
+    top: 65px;
+    right: 225px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  /* line 528, ../sass/index.scss */
+  .data_list .doughnut span {
+    font-size: 3.3em;
+    top: 64px;
+    right: 240px;
+  }
+}
+@media screen and (min-width: 1750px) {
+  /* line 528, ../sass/index.scss */
+  .data_list .doughnut span {
+    font-size: 3.4em;
+    top: 64px;
+    right: 250px;
+  }
+}
+@media screen and (min-width: 1780px) {
+  /* line 528, ../sass/index.scss */
+  .data_list .doughnut span {
+    font-size: 3.5em;
+    top: 64px;
+    right: 260px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  /* line 528, ../sass/index.scss */
+  .data_list .doughnut span {
+    font-size: 3.6em;
+    top: 63px;
+    right: 270px;
+  }
+}
+@media screen and (min-width: 1850px) {
+  /* line 528, ../sass/index.scss */
+  .data_list .doughnut span {
+    font-size: 3.7em;
+    top: 68px;
+    right: 285px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  /* line 528, ../sass/index.scss */
+  .data_list .doughnut span {
+    font-size: 3.8em;
+    top: 61px;
+    right: 250px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  /* line 528, ../sass/index.scss */
+  .data_list .doughnut span {
+    font-size: 4em;
+    top: 60px;
+    right: 253px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  /* line 554, ../sass/index.scss */
+  .data_list .doughnut ul {
+    font-size: 1.1em;
+  }
+}
+@media screen and (min-width: 1800px) {
+  /* line 554, ../sass/index.scss */
+  .data_list .doughnut ul {
+    font-size: 1.2em;
+  }
+}
+/* line 557, ../sass/index.scss */
+.data_list .doughnut ul li {
+  color: #fff;
+  margin: 10px 0;
+}
+/* line 562, ../sass/index.scss */
+.data_list .doughnut ul li b {
+  display: inline-block;
+  padding: 6px 10px;
+  position: relative;
+}
+/* line 564, ../sass/index.scss */
+.data_list .doughnut ul li b::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/icon1.png");
+  background-size: cover;
+  left: -32px;
+  top: 0;
+}
+@media screen and (min-width: 1800px) {
+  /* line 564, ../sass/index.scss */
+  .data_list .doughnut ul li b::before {
+    width: 44px;
+    height: 44px;
+    top: -6px;
+    left: -48px;
+  }
+}
+/* line 579, ../sass/index.scss */
+.data_list .doughnut ul li:nth-child(1) b {
+  background-color: #0224ba;
+}
+/* line 581, ../sass/index.scss */
+.data_list .doughnut ul li:nth-child(2) {
+  margin-left: -20px;
+}
+/* line 583, ../sass/index.scss */
+.data_list .doughnut ul li:nth-child(2) b {
+  background-color: #f590a3;
+}
+/* line 584, ../sass/index.scss */
+.data_list .doughnut ul li:nth-child(2) b::before {
+  background-image: url("../images/icon2.png");
+}
+/* line 590, ../sass/index.scss */
+.data_list .doughnut ul li:nth-child(3) b {
+  background-color: #6faf3d;
+}
+/* line 591, ../sass/index.scss */
+.data_list .doughnut ul li:nth-child(3) b::before {
+  background-image: url("../images/icon3.png");
+}
+/* line 596, ../sass/index.scss */
+.data_list .doughnut ul li:nth-child(4) {
+  margin-left: -20px;
+}
+/* line 598, ../sass/index.scss */
+.data_list .doughnut ul li:nth-child(4) b {
+  background-color: #f3ea6b;
+}
+/* line 599, ../sass/index.scss */
+.data_list .doughnut ul li:nth-child(4) b::before {
+  background-image: url("../images/icon4.png");
+}
+/* line 650, ../sass/index.scss */
+.data_list #chartdiv {
+  width: 100%;
+  height: 280px;
+}
+/* line 653, ../sass/index.scss */
+.data_list #chartdiv path {
+  stroke-opacity: 0;
+}
+/* line 656, ../sass/index.scss */
+.data_list #chartdiv .amcharts-main-div {
+  position: absolute !important;
+  right: -285px;
+  top: -40px;
+}
+@media screen and (min-width: 1050px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    right: -295px;
+  }
+}
+@media screen and (min-width: 1070px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    right: -300px;
+  }
+}
+@media screen and (min-width: 1085px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    right: -305px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.1);
+    right: -305px;
+  }
+}
+@media screen and (min-width: 1120px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.1);
+    right: -315px;
+  }
+}
+@media screen and (min-width: 1140px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.1);
+    right: -325px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.1);
+    right: -335px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.1);
+    right: -345px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.15);
+    top: -38px;
+  }
+}
+@media screen and (min-width: 1230px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.15);
+    top: -38px;
+    right: -355px;
+  }
+}
+@media screen and (min-width: 1250px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.15);
+    top: -38px;
+    right: -365px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.15);
+    top: -37px;
+    right: -375px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.2);
+    top: -36px;
+    right: -385px;
+  }
+}
+@media screen and (min-width: 1310px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.2);
+    top: -35px;
+    right: -390px;
+  }
+}
+@media screen and (min-width: 1330px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.2);
+    top: -35px;
+    right: -400px;
+  }
+}
+@media screen and (min-width: 1350px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.2);
+    top: -34px;
+    right: -410px;
+  }
+}
+@media screen and (min-width: 1365px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.2);
+    top: -34px;
+    right: -415px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.2);
+    top: -33px;
+    right: -420px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.25);
+    top: -33px;
+    right: -430px;
+  }
+}
+@media screen and (min-width: 1410px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.25);
+    top: -32px;
+    right: -440px;
+  }
+}
+@media screen and (min-width: 1430px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.25);
+    top: -32px;
+    right: -450px;
+  }
+}
+@media screen and (min-width: 1450px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.25);
+    top: -31px;
+    right: -460px;
+  }
+}
+@media screen and (min-width: 1480px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.25);
+    top: -30px;
+    right: -470px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.3);
+    top: -30px;
+    right: -480px;
+  }
+}
+@media screen and (min-width: 1530px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.3);
+    top: -30px;
+    right: -490px;
+  }
+}
+@media screen and (min-width: 1550px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.3);
+    top: -30px;
+    right: -500px;
+  }
+}
+@media screen and (min-width: 1580px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.3);
+    top: -30px;
+    right: -510px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.35);
+    top: -30px;
+    right: -520px;
+  }
+}
+@media screen and (min-width: 1630px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.35);
+    top: -30px;
+    right: -530px;
+  }
+}
+@media screen and (min-width: 1650px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.35);
+    top: -28px;
+    right: -540px;
+  }
+}
+@media screen and (min-width: 1680px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.35);
+    top: -25px;
+    right: -550px;
+  }
+}
+@media screen and (min-width: 1700px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.4);
+    top: -23px;
+    right: -550px;
+  }
+}
+@media screen and (min-width: 1730px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.4);
+    top: -22px;
+    right: -550px;
+  }
+}
+@media screen and (min-width: 1750px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.4);
+    top: -20px;
+    right: -550px;
+  }
+}
+@media screen and (min-width: 1780px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.4);
+    top: -15px;
+    right: -555px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.45);
+    top: -10px;
+    right: -560px;
+  }
+}
+@media screen and (min-width: 1830px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.45);
+    top: -5px;
+    right: -565px;
+  }
+}
+@media screen and (min-width: 1850px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.45);
+    top: 0px;
+    right: -570px;
+  }
+}
+@media screen and (min-width: 1880px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.45);
+    top: 5px;
+    right: -575px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  /* line 656, ../sass/index.scss */
+  .data_list #chartdiv .amcharts-main-div {
+    transform: scale(1.5);
+    top: 10px;
+    right: -580px;
+  }
+}
+/* line 702, ../sass/index.scss */
+.data_list #chartdiv tspan {
+  display: none;
+  font-size: 1.2em;
+  display: block;
+  width: 100px;
+  height: 100px;
+  text-shadow: #fff 1px 1px 5px, #fff 1px 1px 8px ,#fff 1px 1px 10px;
+  font-weight: bold;
+}
+/* line 711, ../sass/index.scss */
+.data_list #chartdiv text,
+.data_list #chartdiv .amcharts-pie-tick {
+  display: none;
+}
