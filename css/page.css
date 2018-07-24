@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 11, ../sass/page.scss */
 .content .article .Meter_THD_block li div b::before, .content .article .maximum::before {
   content: "";
@@ -2148,4 +2149,64 @@
   width: 30%;
   position: absolute;
   margin-left: 10px;
+}
+
+/* line 863, ../sass/page.scss */
+.abgne_tab {
+  clear: left;
+  margin-top: -44px;
+}
+
+/* line 867, ../sass/page.scss */
+ul.tabs {
+  width: 100%;
+}
+
+/* line 873, ../sass/page.scss */
+ul.tabs li {
+  float: left;
+  height: 2.5em;
+  line-height: 2.5em;
+  overflow: hidden;
+  position: relative;
+  margin: 0px 8px;
+  margin-bottom: -1px;
+  /* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+  border-left: none;
+}
+
+/* line 885, ../sass/page.scss */
+ul.tabs li a {
+  display: block;
+  padding: 0 25px;
+  color: #f48400;
+  border: 4px solid #005858;
+  text-decoration: none;
+  background-color: #009696;
+  font-size: 1.4em;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+
+/* line 899, ../sass/page.scss */
+ul.tabs li.active a {
+  border: 4px solid #009696;
+  background-color: #00ffff;
+}
+
+/* line 907, ../sass/page.scss */
+div.tab_container {
+  clear: left;
+  width: 100%;
+  border-top: none;
+}
+
+/* line 914, ../sass/page.scss */
+div.tab_container .tab_content {
+  padding: 20px;
+}
+
+/* line 917, ../sass/page.scss */
+div.tab_container .tab_content h2 {
+  margin: 0 0 20px;
 }
