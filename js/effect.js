@@ -258,3 +258,22 @@ $(function () {
         });
     });
 });
+
+$(function () {
+
+    var minWidth = 0;
+
+    $('.table1').each(function () {
+        minWidth = Math.max($(this).width(), minWidth);
+    }).width(minWidth);
+
+
+    $(window).resize(function () {
+        var minWidth = 0;
+        $('.table1').removeAttr("style");
+        $('.table1').each(function () {
+            minWidth = Math.max($(this).width(), minWidth);
+        }).width(minWidth);
+    });
+
+});
