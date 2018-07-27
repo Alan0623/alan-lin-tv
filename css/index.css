@@ -434,9 +434,54 @@ body.day img.night {
   box-sizing: border-box;
   color: #d10007;
   font-weight: bold;
-  text-align: center;
   line-height: 1.3em;
   font-size: .7em;
+}
+/* line 241, ../sass/index.scss */
+.info_block .btn_curve_information .system_status_text li,
+.info_block .system_status .system_status_text li,
+.info_block .community_photo .system_status_text li {
+  padding: 2px 0;
+}
+/* line 242, ../sass/index.scss */
+.info_block .btn_curve_information .system_status_text b,
+.info_block .system_status .system_status_text b,
+.info_block .community_photo .system_status_text b {
+  color: #422419;
+  text-align: left;
+}
+/* line 243, ../sass/index.scss */
+.info_block .btn_curve_information .system_status_text i,
+.info_block .system_status .system_status_text i,
+.info_block .community_photo .system_status_text i {
+  font-size: .6em;
+  color: #d10007;
+  text-align: right;
+  font-style: normal;
+}
+@media screen and (min-width: 1450px) {
+  /* line 243, ../sass/index.scss */
+  .info_block .btn_curve_information .system_status_text i,
+  .info_block .system_status .system_status_text i,
+  .info_block .community_photo .system_status_text i {
+    float: right;
+  }
+}
+@media screen and (min-width: 1700px) {
+  /* line 243, ../sass/index.scss */
+  .info_block .btn_curve_information .system_status_text i,
+  .info_block .system_status .system_status_text i,
+  .info_block .community_photo .system_status_text i {
+    font-size: .7em;
+  }
+}
+@media screen and (min-width: 1800px) {
+  /* line 243, ../sass/index.scss */
+  .info_block .btn_curve_information .system_status_text i,
+  .info_block .system_status .system_status_text i,
+  .info_block .community_photo .system_status_text i {
+    font-size: .75em;
+  }
 }
 @media screen and (min-width: 1050px) {
   /* line 233, ../sass/index.scss */
@@ -451,7 +496,7 @@ body.day img.night {
   .info_block .btn_curve_information .system_status_text,
   .info_block .system_status .system_status_text,
   .info_block .community_photo .system_status_text {
-    font-size: .95em;
+    font-size: .8em;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -459,10 +504,42 @@ body.day img.night {
   .info_block .btn_curve_information .system_status_text,
   .info_block .system_status .system_status_text,
   .info_block .community_photo .system_status_text {
-    font-size: 1em;
+    font-size: .82em;
   }
 }
 @media screen and (min-width: 1300px) {
+  /* line 233, ../sass/index.scss */
+  .info_block .btn_curve_information .system_status_text,
+  .info_block .system_status .system_status_text,
+  .info_block .community_photo .system_status_text {
+    font-size: .85em;
+  }
+}
+@media screen and (min-width: 1350px) {
+  /* line 233, ../sass/index.scss */
+  .info_block .btn_curve_information .system_status_text,
+  .info_block .system_status .system_status_text,
+  .info_block .community_photo .system_status_text {
+    font-size: .87em;
+  }
+}
+@media screen and (min-width: 1400px) {
+  /* line 233, ../sass/index.scss */
+  .info_block .btn_curve_information .system_status_text,
+  .info_block .system_status .system_status_text,
+  .info_block .community_photo .system_status_text {
+    font-size: .9em;
+  }
+}
+@media screen and (min-width: 1500px) {
+  /* line 233, ../sass/index.scss */
+  .info_block .btn_curve_information .system_status_text,
+  .info_block .system_status .system_status_text,
+  .info_block .community_photo .system_status_text {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 1600px) {
   /* line 233, ../sass/index.scss */
   .info_block .btn_curve_information .system_status_text,
   .info_block .system_status .system_status_text,
@@ -470,15 +547,7 @@ body.day img.night {
     font-size: 1.1em;
   }
 }
-@media screen and (min-width: 1350px) {
-  /* line 233, ../sass/index.scss */
-  .info_block .btn_curve_information .system_status_text,
-  .info_block .system_status .system_status_text,
-  .info_block .community_photo .system_status_text {
-    font-size: 1.15em;
-  }
-}
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1700px) {
   /* line 233, ../sass/index.scss */
   .info_block .btn_curve_information .system_status_text,
   .info_block .system_status .system_status_text,
@@ -486,17 +555,17 @@ body.day img.night {
     font-size: 1.2em;
   }
 }
-/* line 261, ../sass/index.scss */
+/* line 278, ../sass/index.scss */
 .info_block .btn_curve_information {
   padding: 0;
 }
-/* line 263, ../sass/index.scss */
+/* line 280, ../sass/index.scss */
 .info_block .btn_curve_information a {
   display: block;
   width: 100%;
   height: auto;
 }
-/* line 268, ../sass/index.scss */
+/* line 285, ../sass/index.scss */
 .info_block .btn_curve_information a h2 {
   color: #fff;
   font-size: 1.2em;
@@ -504,31 +573,31 @@ body.day img.night {
   padding: .2em 0;
 }
 @media screen and (min-width: 1250px) {
-  /* line 268, ../sass/index.scss */
+  /* line 285, ../sass/index.scss */
   .info_block .btn_curve_information a h2 {
     font-size: 1.25em;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 268, ../sass/index.scss */
+  /* line 285, ../sass/index.scss */
   .info_block .btn_curve_information a h2 {
     font-size: 1.3em;
   }
 }
 @media screen and (min-width: 1350px) {
-  /* line 268, ../sass/index.scss */
+  /* line 285, ../sass/index.scss */
   .info_block .btn_curve_information a h2 {
     font-size: 1.4em;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 268, ../sass/index.scss */
+  /* line 285, ../sass/index.scss */
   .info_block .btn_curve_information a h2 {
     font-size: 1.5em;
   }
 }
 
-/* line 289, ../sass/index.scss */
+/* line 306, ../sass/index.scss */
 .data_list {
   width: 100%;
   min-width: 1024px;
@@ -540,12 +609,12 @@ body.day img.night {
   background-position: top right;
   position: relative;
 }
-/* line 302, ../sass/index.scss */
+/* line 319, ../sass/index.scss */
 .data_list img {
   width: 100% !important;
   height: unset !important;
 }
-/* line 306, ../sass/index.scss */
+/* line 323, ../sass/index.scss */
 .data_list .solar_energy,
 .data_list .wind_power,
 .data_list .storage_battery,
@@ -561,7 +630,7 @@ body.day img.night {
   position: absolute;
 }
 @media screen and (min-width: 1100px) {
-  /* line 306, ../sass/index.scss */
+  /* line 323, ../sass/index.scss */
   .data_list .solar_energy,
   .data_list .wind_power,
   .data_list .storage_battery,
@@ -571,7 +640,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 306, ../sass/index.scss */
+  /* line 323, ../sass/index.scss */
   .data_list .solar_energy,
   .data_list .wind_power,
   .data_list .storage_battery,
@@ -580,7 +649,7 @@ body.day img.night {
     width: 17.5%;
   }
 }
-/* line 328, ../sass/index.scss */
+/* line 345, ../sass/index.scss */
 .data_list .solar_energy h2,
 .data_list .wind_power h2,
 .data_list .storage_battery h2,
@@ -592,7 +661,7 @@ body.day img.night {
   margin-bottom: 2px;
 }
 @media screen and (min-width: 1500px) {
-  /* line 328, ../sass/index.scss */
+  /* line 345, ../sass/index.scss */
   .data_list .solar_energy h2,
   .data_list .wind_power h2,
   .data_list .storage_battery h2,
@@ -602,7 +671,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1650px) {
-  /* line 328, ../sass/index.scss */
+  /* line 345, ../sass/index.scss */
   .data_list .solar_energy h2,
   .data_list .wind_power h2,
   .data_list .storage_battery h2,
@@ -611,7 +680,7 @@ body.day img.night {
     margin-bottom: 10px;
   }
 }
-/* line 340, ../sass/index.scss */
+/* line 357, ../sass/index.scss */
 .data_list .solar_energy ul,
 .data_list .wind_power ul,
 .data_list .storage_battery ul,
@@ -623,7 +692,7 @@ body.day img.night {
   padding: 0 0%;
 }
 @media screen and (min-width: 1100px) {
-  /* line 340, ../sass/index.scss */
+  /* line 357, ../sass/index.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -634,7 +703,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 340, ../sass/index.scss */
+  /* line 357, ../sass/index.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -644,7 +713,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1250px) {
-  /* line 340, ../sass/index.scss */
+  /* line 357, ../sass/index.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -654,7 +723,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 340, ../sass/index.scss */
+  /* line 357, ../sass/index.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -664,7 +733,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1370px) {
-  /* line 340, ../sass/index.scss */
+  /* line 357, ../sass/index.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -675,7 +744,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 340, ../sass/index.scss */
+  /* line 357, ../sass/index.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -685,7 +754,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 340, ../sass/index.scss */
+  /* line 357, ../sass/index.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -695,7 +764,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1550px) {
-  /* line 340, ../sass/index.scss */
+  /* line 357, ../sass/index.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -705,7 +774,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 340, ../sass/index.scss */
+  /* line 357, ../sass/index.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -715,7 +784,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 340, ../sass/index.scss */
+  /* line 357, ../sass/index.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -725,7 +794,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 340, ../sass/index.scss */
+  /* line 357, ../sass/index.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -734,7 +803,7 @@ body.day img.night {
     font-size: 1.1em;
   }
 }
-/* line 381, ../sass/index.scss */
+/* line 398, ../sass/index.scss */
 .data_list .solar_energy ul li,
 .data_list .wind_power ul li,
 .data_list .storage_battery ul li,
@@ -744,7 +813,7 @@ body.day img.night {
   width: 100%;
   line-height: 1.6em;
 }
-/* line 384, ../sass/index.scss */
+/* line 401, ../sass/index.scss */
 .data_list .solar_energy ul li::after,
 .data_list .wind_power ul li::after,
 .data_list .storage_battery ul li::after,
@@ -754,7 +823,7 @@ body.day img.night {
   display: block;
   clear: both;
 }
-/* line 389, ../sass/index.scss */
+/* line 406, ../sass/index.scss */
 .data_list .solar_energy ul li b,
 .data_list .wind_power ul li b,
 .data_list .storage_battery ul li b,
@@ -763,7 +832,7 @@ body.day img.night {
   display: inline-block;
   float: left;
 }
-/* line 393, ../sass/index.scss */
+/* line 410, ../sass/index.scss */
 .data_list .solar_energy ul li b:nth-child(1),
 .data_list .wind_power ul li b:nth-child(1),
 .data_list .storage_battery ul li b:nth-child(1),
@@ -772,7 +841,7 @@ body.day img.night {
   width: 40%;
   text-align: right;
 }
-/* line 397, ../sass/index.scss */
+/* line 414, ../sass/index.scss */
 .data_list .solar_energy ul li b:nth-child(2),
 .data_list .wind_power ul li b:nth-child(2),
 .data_list .storage_battery ul li b:nth-child(2),
@@ -798,7 +867,7 @@ body.day img.night {
     padding-left: 12%;
 }*/
 }
-/* line 417, ../sass/index.scss */
+/* line 434, ../sass/index.scss */
 .data_list .solar_energy ul li b:nth-child(3),
 .data_list .wind_power ul li b:nth-child(3),
 .data_list .storage_battery ul li b:nth-child(3),
@@ -807,7 +876,7 @@ body.day img.night {
   text-align: left;
   padding-left: 3px;
 }
-/* line 427, ../sass/index.scss */
+/* line 444, ../sass/index.scss */
 .data_list .solar_energy {
   border-top: none;
   border-bottom: none;
@@ -817,30 +886,30 @@ body.day img.night {
   background-color: unset;
 }
 @media screen and (min-width: 1100px) {
-  /* line 427, ../sass/index.scss */
+  /* line 444, ../sass/index.scss */
   .data_list .solar_energy {
     border-width: 6px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 427, ../sass/index.scss */
+  /* line 444, ../sass/index.scss */
   .data_list .solar_energy {
     border-width: 7px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 427, ../sass/index.scss */
+  /* line 444, ../sass/index.scss */
   .data_list .solar_energy {
     border-width: 8px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 427, ../sass/index.scss */
+  /* line 444, ../sass/index.scss */
   .data_list .solar_energy {
     border-width: 9px;
   }
 }
-/* line 440, ../sass/index.scss */
+/* line 457, ../sass/index.scss */
 .data_list .wind_power {
   border-top: none;
   border-bottom: none;
@@ -850,30 +919,30 @@ body.day img.night {
   background-color: unset;
 }
 @media screen and (min-width: 1100px) {
-  /* line 440, ../sass/index.scss */
+  /* line 457, ../sass/index.scss */
   .data_list .wind_power {
     border-width: 6px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 440, ../sass/index.scss */
+  /* line 457, ../sass/index.scss */
   .data_list .wind_power {
     border-width: 7px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 440, ../sass/index.scss */
+  /* line 457, ../sass/index.scss */
   .data_list .wind_power {
     border-width: 8px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 440, ../sass/index.scss */
+  /* line 457, ../sass/index.scss */
   .data_list .wind_power {
     border-width: 9px;
   }
 }
-/* line 453, ../sass/index.scss */
+/* line 470, ../sass/index.scss */
 .data_list .storage_battery {
   border: #70e5b1 solid 5px;
   border-top: none;
@@ -883,30 +952,30 @@ body.day img.night {
   right: 5%;
 }
 @media screen and (min-width: 1100px) {
-  /* line 453, ../sass/index.scss */
+  /* line 470, ../sass/index.scss */
   .data_list .storage_battery {
     border-width: 6px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 453, ../sass/index.scss */
+  /* line 470, ../sass/index.scss */
   .data_list .storage_battery {
     border-width: 7px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 453, ../sass/index.scss */
+  /* line 470, ../sass/index.scss */
   .data_list .storage_battery {
     border-width: 8px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 453, ../sass/index.scss */
+  /* line 470, ../sass/index.scss */
   .data_list .storage_battery {
     border-width: 9px;
   }
 }
-/* line 465, ../sass/index.scss */
+/* line 482, ../sass/index.scss */
 .data_list .fuel_battery {
   border: #6faf3d solid 5px;
   border-top: none;
@@ -916,34 +985,34 @@ body.day img.night {
   right: 12%;
 }
 @media screen and (min-width: 1100px) {
-  /* line 465, ../sass/index.scss */
+  /* line 482, ../sass/index.scss */
   .data_list .fuel_battery {
     border-width: 6px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 465, ../sass/index.scss */
+  /* line 482, ../sass/index.scss */
   .data_list .fuel_battery {
     border-width: 7px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 465, ../sass/index.scss */
+  /* line 482, ../sass/index.scss */
   .data_list .fuel_battery {
     border-width: 8px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 465, ../sass/index.scss */
+  /* line 482, ../sass/index.scss */
   .data_list .fuel_battery {
     border-width: 9px;
   }
 }
-/* line 476, ../sass/index.scss */
+/* line 493, ../sass/index.scss */
 .data_list .fuel_battery ul {
   top: 22%;
 }
-/* line 480, ../sass/index.scss */
+/* line 497, ../sass/index.scss */
 .data_list .user_point {
   border: #0224ba solid 5px;
   border-top: none;
@@ -953,399 +1022,399 @@ body.day img.night {
   right: 5%;
 }
 @media screen and (min-width: 1100px) {
-  /* line 480, ../sass/index.scss */
+  /* line 497, ../sass/index.scss */
   .data_list .user_point {
     border-width: 6px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 480, ../sass/index.scss */
+  /* line 497, ../sass/index.scss */
   .data_list .user_point {
     border-width: 7px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 480, ../sass/index.scss */
+  /* line 497, ../sass/index.scss */
   .data_list .user_point {
     border-width: 8px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 480, ../sass/index.scss */
+  /* line 497, ../sass/index.scss */
   .data_list .user_point {
     border-width: 9px;
   }
 }
-/* line 491, ../sass/index.scss */
+/* line 508, ../sass/index.scss */
 .data_list .user_point ul {
   top: 22%;
 }
 @media screen and (min-width: 1100px) {
-  /* line 496, ../sass/index.scss */
+  /* line 513, ../sass/index.scss */
   .data_list .solar_energy {
     top: 65px;
   }
-  /* line 497, ../sass/index.scss */
+  /* line 514, ../sass/index.scss */
   .data_list .wind_power {
     top: 255px;
   }
-  /* line 498, ../sass/index.scss */
+  /* line 515, ../sass/index.scss */
   .data_list .storage_battery {
     top: 182px;
   }
-  /* line 499, ../sass/index.scss */
+  /* line 516, ../sass/index.scss */
   .data_list .fuel_battery {
     top: 294px;
   }
-  /* line 500, ../sass/index.scss */
+  /* line 517, ../sass/index.scss */
   .data_list .user_point {
     top: 405px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 503, ../sass/index.scss */
+  /* line 520, ../sass/index.scss */
   .data_list .solar_energy {
     top: 70px;
   }
-  /* line 504, ../sass/index.scss */
+  /* line 521, ../sass/index.scss */
   .data_list .wind_power {
     top: 260px;
   }
-  /* line 505, ../sass/index.scss */
+  /* line 522, ../sass/index.scss */
   .data_list .storage_battery {
     top: 187px;
   }
-  /* line 506, ../sass/index.scss */
+  /* line 523, ../sass/index.scss */
   .data_list .fuel_battery {
     top: 310px;
   }
-  /* line 507, ../sass/index.scss */
+  /* line 524, ../sass/index.scss */
   .data_list .user_point {
     top: 430px;
   }
 }
 @media screen and (min-width: 1250px) {
-  /* line 510, ../sass/index.scss */
+  /* line 527, ../sass/index.scss */
   .data_list .solar_energy {
     top: 72px;
   }
-  /* line 511, ../sass/index.scss */
+  /* line 528, ../sass/index.scss */
   .data_list .wind_power {
     top: 280px;
   }
-  /* line 512, ../sass/index.scss */
+  /* line 529, ../sass/index.scss */
   .data_list .storage_battery {
     top: 218px;
   }
-  /* line 513, ../sass/index.scss */
+  /* line 530, ../sass/index.scss */
   .data_list .fuel_battery {
     top: 350px;
     right: 13%;
   }
-  /* line 514, ../sass/index.scss */
+  /* line 531, ../sass/index.scss */
   .data_list .user_point {
     top: 480px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 517, ../sass/index.scss */
+  /* line 534, ../sass/index.scss */
   .data_list .solar_energy {
     top: 75px;
   }
-  /* line 518, ../sass/index.scss */
+  /* line 535, ../sass/index.scss */
   .data_list .wind_power {
     top: 300px;
   }
-  /* line 519, ../sass/index.scss */
+  /* line 536, ../sass/index.scss */
   .data_list .storage_battery {
     top: 228px;
   }
-  /* line 520, ../sass/index.scss */
+  /* line 537, ../sass/index.scss */
   .data_list .fuel_battery {
     top: 366px;
   }
-  /* line 521, ../sass/index.scss */
+  /* line 538, ../sass/index.scss */
   .data_list .user_point {
     top: 500px;
   }
 }
 @media screen and (min-width: 1350px) {
-  /* line 524, ../sass/index.scss */
+  /* line 541, ../sass/index.scss */
   .data_list .solar_energy {
     top: 78px;
   }
-  /* line 525, ../sass/index.scss */
+  /* line 542, ../sass/index.scss */
   .data_list .wind_power {
     top: 305px;
   }
-  /* line 526, ../sass/index.scss */
+  /* line 543, ../sass/index.scss */
   .data_list .storage_battery {
     top: 228px;
   }
-  /* line 527, ../sass/index.scss */
+  /* line 544, ../sass/index.scss */
   .data_list .fuel_battery {
     top: 366px;
   }
-  /* line 528, ../sass/index.scss */
+  /* line 545, ../sass/index.scss */
   .data_list .user_point {
     top: 500px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 531, ../sass/index.scss */
+  /* line 548, ../sass/index.scss */
   .data_list .solar_energy {
     top: 79px;
   }
-  /* line 532, ../sass/index.scss */
+  /* line 549, ../sass/index.scss */
   .data_list .wind_power {
     top: 315px;
   }
-  /* line 533, ../sass/index.scss */
+  /* line 550, ../sass/index.scss */
   .data_list .storage_battery {
     top: 246px;
   }
-  /* line 534, ../sass/index.scss */
+  /* line 551, ../sass/index.scss */
   .data_list .fuel_battery {
     top: 390px;
   }
-  /* line 535, ../sass/index.scss */
+  /* line 552, ../sass/index.scss */
   .data_list .user_point {
     top: 530px;
   }
 }
 @media screen and (min-width: 1450px) {
-  /* line 538, ../sass/index.scss */
+  /* line 555, ../sass/index.scss */
   .data_list .solar_energy {
     top: 79px;
     left: 20.1%;
   }
-  /* line 539, ../sass/index.scss */
+  /* line 556, ../sass/index.scss */
   .data_list .wind_power {
     top: 325px;
     left: 20.1%;
   }
-  /* line 540, ../sass/index.scss */
+  /* line 557, ../sass/index.scss */
   .data_list .storage_battery {
     top: 256px;
   }
-  /* line 541, ../sass/index.scss */
+  /* line 558, ../sass/index.scss */
   .data_list .fuel_battery {
     top: 405px;
     right: 13%;
   }
-  /* line 542, ../sass/index.scss */
+  /* line 559, ../sass/index.scss */
   .data_list .user_point {
     top: 550px;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 545, ../sass/index.scss */
+  /* line 562, ../sass/index.scss */
   .data_list .solar_energy {
     top: 79px;
   }
-  /* line 546, ../sass/index.scss */
+  /* line 563, ../sass/index.scss */
   .data_list .wind_power {
     top: 335px;
   }
-  /* line 547, ../sass/index.scss */
+  /* line 564, ../sass/index.scss */
   .data_list .storage_battery {
     top: 260px;
   }
-  /* line 548, ../sass/index.scss */
+  /* line 565, ../sass/index.scss */
   .data_list .fuel_battery {
     top: 410px;
     right: 13%;
   }
-  /* line 549, ../sass/index.scss */
+  /* line 566, ../sass/index.scss */
   .data_list .user_point {
     top: 555px;
   }
 }
 @media screen and (min-width: 1550px) {
-  /* line 552, ../sass/index.scss */
+  /* line 569, ../sass/index.scss */
   .data_list .solar_energy {
     top: 79px;
   }
-  /* line 553, ../sass/index.scss */
+  /* line 570, ../sass/index.scss */
   .data_list .wind_power {
     top: 350px;
   }
-  /* line 554, ../sass/index.scss */
+  /* line 571, ../sass/index.scss */
   .data_list .storage_battery {
     top: 265px;
   }
-  /* line 555, ../sass/index.scss */
+  /* line 572, ../sass/index.scss */
   .data_list .fuel_battery {
     top: 420px;
     right: 13%;
   }
-  /* line 556, ../sass/index.scss */
+  /* line 573, ../sass/index.scss */
   .data_list .user_point {
     top: 570px;
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 559, ../sass/index.scss */
+  /* line 576, ../sass/index.scss */
   .data_list .solar_energy {
     top: 79px;
   }
-  /* line 560, ../sass/index.scss */
+  /* line 577, ../sass/index.scss */
   .data_list .wind_power {
     top: 365px;
   }
-  /* line 561, ../sass/index.scss */
+  /* line 578, ../sass/index.scss */
   .data_list .storage_battery {
     top: 275px;
   }
-  /* line 562, ../sass/index.scss */
+  /* line 579, ../sass/index.scss */
   .data_list .fuel_battery {
     top: 435px;
     right: 13%;
   }
-  /* line 563, ../sass/index.scss */
+  /* line 580, ../sass/index.scss */
   .data_list .user_point {
     top: 590px;
   }
 }
 @media screen and (min-width: 1650px) {
-  /* line 566, ../sass/index.scss */
+  /* line 583, ../sass/index.scss */
   .data_list .solar_energy {
     top: 79px;
   }
-  /* line 567, ../sass/index.scss */
+  /* line 584, ../sass/index.scss */
   .data_list .wind_power {
     top: 375px;
   }
-  /* line 568, ../sass/index.scss */
+  /* line 585, ../sass/index.scss */
   .data_list .storage_battery {
     top: 290px;
   }
-  /* line 569, ../sass/index.scss */
+  /* line 586, ../sass/index.scss */
   .data_list .fuel_battery {
     top: 460px;
     right: 13%;
   }
-  /* line 570, ../sass/index.scss */
+  /* line 587, ../sass/index.scss */
   .data_list .user_point {
     top: 628px;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 573, ../sass/index.scss */
+  /* line 590, ../sass/index.scss */
   .data_list .solar_energy {
     top: 79px;
   }
-  /* line 574, ../sass/index.scss */
+  /* line 591, ../sass/index.scss */
   .data_list .wind_power {
     top: 385px;
   }
-  /* line 575, ../sass/index.scss */
+  /* line 592, ../sass/index.scss */
   .data_list .storage_battery {
     top: 292px;
   }
-  /* line 576, ../sass/index.scss */
+  /* line 593, ../sass/index.scss */
   .data_list .fuel_battery {
     top: 465px;
     right: 13%;
   }
-  /* line 577, ../sass/index.scss */
+  /* line 594, ../sass/index.scss */
   .data_list .user_point {
     top: 632px;
   }
 }
 @media screen and (min-width: 1750px) {
-  /* line 580, ../sass/index.scss */
+  /* line 597, ../sass/index.scss */
   .data_list .solar_energy {
     top: 79px;
   }
-  /* line 581, ../sass/index.scss */
+  /* line 598, ../sass/index.scss */
   .data_list .wind_power {
     top: 395px;
   }
-  /* line 582, ../sass/index.scss */
+  /* line 599, ../sass/index.scss */
   .data_list .storage_battery {
     top: 300px;
   }
-  /* line 583, ../sass/index.scss */
+  /* line 600, ../sass/index.scss */
   .data_list .fuel_battery {
     top: 475px;
     right: 13%;
   }
-  /* line 584, ../sass/index.scss */
+  /* line 601, ../sass/index.scss */
   .data_list .user_point {
     top: 645px;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 587, ../sass/index.scss */
+  /* line 604, ../sass/index.scss */
   .data_list .solar_energy {
     top: 79px;
   }
-  /* line 588, ../sass/index.scss */
+  /* line 605, ../sass/index.scss */
   .data_list .wind_power {
     top: 405px;
   }
-  /* line 589, ../sass/index.scss */
+  /* line 606, ../sass/index.scss */
   .data_list .storage_battery {
     top: 310px;
   }
-  /* line 590, ../sass/index.scss */
+  /* line 607, ../sass/index.scss */
   .data_list .fuel_battery {
     top: 490px;
     right: 13%;
   }
-  /* line 591, ../sass/index.scss */
+  /* line 608, ../sass/index.scss */
   .data_list .user_point {
     top: 665px;
   }
 }
 @media screen and (min-width: 1850px) {
-  /* line 594, ../sass/index.scss */
+  /* line 611, ../sass/index.scss */
   .data_list .solar_energy {
     top: 79px;
   }
-  /* line 595, ../sass/index.scss */
+  /* line 612, ../sass/index.scss */
   .data_list .wind_power {
     top: 411px;
   }
-  /* line 596, ../sass/index.scss */
+  /* line 613, ../sass/index.scss */
   .data_list .storage_battery {
     top: 315px;
   }
-  /* line 597, ../sass/index.scss */
+  /* line 614, ../sass/index.scss */
   .data_list .fuel_battery {
     top: 500px;
     right: 13%;
   }
-  /* line 598, ../sass/index.scss */
+  /* line 615, ../sass/index.scss */
   .data_list .user_point {
     top: 679px;
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 601, ../sass/index.scss */
+  /* line 618, ../sass/index.scss */
   .data_list .solar_energy {
     top: 79px;
   }
-  /* line 602, ../sass/index.scss */
+  /* line 619, ../sass/index.scss */
   .data_list .wind_power {
     top: 421px;
   }
-  /* line 603, ../sass/index.scss */
+  /* line 620, ../sass/index.scss */
   .data_list .storage_battery {
     top: 328px;
   }
-  /* line 604, ../sass/index.scss */
+  /* line 621, ../sass/index.scss */
   .data_list .fuel_battery {
     top: 526px;
     right: 13%;
   }
-  /* line 605, ../sass/index.scss */
+  /* line 622, ../sass/index.scss */
   .data_list .user_point {
     top: 720px;
   }
 }
-/* line 607, ../sass/index.scss */
+/* line 624, ../sass/index.scss */
 .data_list .doughnut {
   position: absolute;
   top: 10px;
@@ -1394,43 +1463,43 @@ body.day img.night {
   */
 }
 @media screen and (min-width: 1100px) {
-  /* line 607, ../sass/index.scss */
+  /* line 624, ../sass/index.scss */
   .data_list .doughnut {
     right: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 607, ../sass/index.scss */
+  /* line 624, ../sass/index.scss */
   .data_list .doughnut {
     right: 20px;
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 607, ../sass/index.scss */
+  /* line 624, ../sass/index.scss */
   .data_list .doughnut {
     top: 20px;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 607, ../sass/index.scss */
+  /* line 624, ../sass/index.scss */
   .data_list .doughnut {
     top: 30px;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 607, ../sass/index.scss */
+  /* line 624, ../sass/index.scss */
   .data_list .doughnut {
     top: 40px;
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 607, ../sass/index.scss */
+  /* line 624, ../sass/index.scss */
   .data_list .doughnut {
     top: 50px;
     right: 60px;
   }
 }
-/* line 615, ../sass/index.scss */
+/* line 632, ../sass/index.scss */
 .data_list .doughnut span {
   color: #61bc86;
   position: absolute;
@@ -1439,13 +1508,13 @@ body.day img.night {
   font-size: 2em;
 }
 @media screen and (min-width: 1050px) {
-  /* line 615, ../sass/index.scss */
+  /* line 632, ../sass/index.scss */
   .data_list .doughnut span {
     right: 200px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 615, ../sass/index.scss */
+  /* line 632, ../sass/index.scss */
   .data_list .doughnut span {
     font-size: 2.1em;
     top: 68px;
@@ -1453,7 +1522,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1270px) {
-  /* line 615, ../sass/index.scss */
+  /* line 632, ../sass/index.scss */
   .data_list .doughnut span {
     font-size: 2.1em;
     top: 68px;
@@ -1461,7 +1530,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 615, ../sass/index.scss */
+  /* line 632, ../sass/index.scss */
   .data_list .doughnut span {
     font-size: 2.15em;
     top: 68px;
@@ -1469,7 +1538,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1350px) {
-  /* line 615, ../sass/index.scss */
+  /* line 632, ../sass/index.scss */
   .data_list .doughnut span {
     font-size: 2.2em;
     top: 68px;
@@ -1477,7 +1546,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 615, ../sass/index.scss */
+  /* line 632, ../sass/index.scss */
   .data_list .doughnut span {
     font-size: 2.25em;
     top: 67px;
@@ -1485,7 +1554,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1450px) {
-  /* line 615, ../sass/index.scss */
+  /* line 632, ../sass/index.scss */
   .data_list .doughnut span {
     font-size: 2.3em;
     top: 67px;
@@ -1493,7 +1562,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 615, ../sass/index.scss */
+  /* line 632, ../sass/index.scss */
   .data_list .doughnut span {
     font-size: 2.5em;
     top: 66px;
@@ -1501,7 +1570,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1550px) {
-  /* line 615, ../sass/index.scss */
+  /* line 632, ../sass/index.scss */
   .data_list .doughnut span {
     font-size: 2.8em;
     top: 66px;
@@ -1509,7 +1578,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 615, ../sass/index.scss */
+  /* line 632, ../sass/index.scss */
   .data_list .doughnut span {
     font-size: 3em;
     top: 65px;
@@ -1517,7 +1586,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1650px) {
-  /* line 615, ../sass/index.scss */
+  /* line 632, ../sass/index.scss */
   .data_list .doughnut span {
     font-size: 3.2em;
     top: 65px;
@@ -1525,7 +1594,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 615, ../sass/index.scss */
+  /* line 632, ../sass/index.scss */
   .data_list .doughnut span {
     font-size: 3.3em;
     top: 64px;
@@ -1533,7 +1602,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1750px) {
-  /* line 615, ../sass/index.scss */
+  /* line 632, ../sass/index.scss */
   .data_list .doughnut span {
     font-size: 3.4em;
     top: 64px;
@@ -1541,7 +1610,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1780px) {
-  /* line 615, ../sass/index.scss */
+  /* line 632, ../sass/index.scss */
   .data_list .doughnut span {
     font-size: 3.5em;
     top: 64px;
@@ -1549,7 +1618,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 615, ../sass/index.scss */
+  /* line 632, ../sass/index.scss */
   .data_list .doughnut span {
     font-size: 3.6em;
     top: 63px;
@@ -1557,7 +1626,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1850px) {
-  /* line 615, ../sass/index.scss */
+  /* line 632, ../sass/index.scss */
   .data_list .doughnut span {
     font-size: 3.7em;
     top: 68px;
@@ -1565,7 +1634,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 615, ../sass/index.scss */
+  /* line 632, ../sass/index.scss */
   .data_list .doughnut span {
     font-size: 3.8em;
     top: 61px;
@@ -1573,7 +1642,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1920px) {
-  /* line 615, ../sass/index.scss */
+  /* line 632, ../sass/index.scss */
   .data_list .doughnut span {
     font-size: 4em;
     top: 60px;
@@ -1581,29 +1650,29 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 641, ../sass/index.scss */
+  /* line 658, ../sass/index.scss */
   .data_list .doughnut ul {
     font-size: 1.1em;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 641, ../sass/index.scss */
+  /* line 658, ../sass/index.scss */
   .data_list .doughnut ul {
     font-size: 1.2em;
   }
 }
-/* line 644, ../sass/index.scss */
+/* line 661, ../sass/index.scss */
 .data_list .doughnut ul li {
   color: #fff;
   margin: 10px 0;
 }
-/* line 649, ../sass/index.scss */
+/* line 666, ../sass/index.scss */
 .data_list .doughnut ul li b {
   display: inline-block;
   padding: 6px 10px;
   position: relative;
 }
-/* line 651, ../sass/index.scss */
+/* line 668, ../sass/index.scss */
 .data_list .doughnut ul li b::before {
   content: "";
   position: absolute;
@@ -1615,7 +1684,7 @@ body.day img.night {
   top: 0;
 }
 @media screen and (min-width: 1800px) {
-  /* line 651, ../sass/index.scss */
+  /* line 668, ../sass/index.scss */
   .data_list .doughnut ul li b::before {
     width: 44px;
     height: 44px;
@@ -1623,119 +1692,119 @@ body.day img.night {
     left: -48px;
   }
 }
-/* line 666, ../sass/index.scss */
+/* line 683, ../sass/index.scss */
 .data_list .doughnut ul li:nth-child(1) b {
   background-color: #0224ba;
 }
-/* line 668, ../sass/index.scss */
+/* line 685, ../sass/index.scss */
 .data_list .doughnut ul li:nth-child(2) {
   margin-left: -20px;
 }
-/* line 670, ../sass/index.scss */
+/* line 687, ../sass/index.scss */
 .data_list .doughnut ul li:nth-child(2) b {
   background-color: #f590a3;
 }
-/* line 671, ../sass/index.scss */
+/* line 688, ../sass/index.scss */
 .data_list .doughnut ul li:nth-child(2) b::before {
   background-image: url("../images/icon2.png");
 }
-/* line 677, ../sass/index.scss */
+/* line 694, ../sass/index.scss */
 .data_list .doughnut ul li:nth-child(3) b {
   background-color: #6faf3d;
 }
-/* line 678, ../sass/index.scss */
+/* line 695, ../sass/index.scss */
 .data_list .doughnut ul li:nth-child(3) b::before {
   background-image: url("../images/icon3.png");
 }
-/* line 683, ../sass/index.scss */
+/* line 700, ../sass/index.scss */
 .data_list .doughnut ul li:nth-child(4) {
   margin-left: -20px;
 }
-/* line 685, ../sass/index.scss */
+/* line 702, ../sass/index.scss */
 .data_list .doughnut ul li:nth-child(4) b {
   background-color: #f3ea6b;
 }
-/* line 686, ../sass/index.scss */
+/* line 703, ../sass/index.scss */
 .data_list .doughnut ul li:nth-child(4) b::before {
   background-image: url("../images/icon4.png");
 }
-/* line 737, ../sass/index.scss */
+/* line 754, ../sass/index.scss */
 .data_list #chartdiv {
   width: 100%;
   height: 280px;
 }
-/* line 740, ../sass/index.scss */
+/* line 757, ../sass/index.scss */
 .data_list #chartdiv path {
   stroke-opacity: 0;
 }
-/* line 743, ../sass/index.scss */
+/* line 760, ../sass/index.scss */
 .data_list #chartdiv .amcharts-main-div {
   position: absolute !important;
   right: -285px;
   top: -40px;
 }
 @media screen and (min-width: 1050px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     right: -295px;
   }
 }
 @media screen and (min-width: 1070px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     right: -300px;
   }
 }
 @media screen and (min-width: 1085px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     right: -305px;
   }
 }
 @media screen and (min-width: 1100px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.1);
     right: -305px;
   }
 }
 @media screen and (min-width: 1120px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.1);
     right: -315px;
   }
 }
 @media screen and (min-width: 1140px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.1);
     right: -325px;
   }
 }
 @media screen and (min-width: 1150px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.1);
     right: -335px;
   }
 }
 @media screen and (min-width: 1180px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.1);
     right: -345px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.15);
     top: -38px;
   }
 }
 @media screen and (min-width: 1230px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.15);
     top: -38px;
@@ -1743,7 +1812,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1250px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.15);
     top: -38px;
@@ -1751,7 +1820,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1280px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.15);
     top: -37px;
@@ -1759,7 +1828,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.2);
     top: -36px;
@@ -1767,7 +1836,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1310px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.2);
     top: -35px;
@@ -1775,7 +1844,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1330px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.2);
     top: -35px;
@@ -1783,7 +1852,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1350px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.2);
     top: -34px;
@@ -1791,7 +1860,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1365px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.2);
     top: -34px;
@@ -1799,7 +1868,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1380px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.2);
     top: -33px;
@@ -1807,7 +1876,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.25);
     top: -33px;
@@ -1815,7 +1884,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1410px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.25);
     top: -32px;
@@ -1823,7 +1892,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1430px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.25);
     top: -32px;
@@ -1831,7 +1900,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1450px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.25);
     top: -31px;
@@ -1839,7 +1908,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1480px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.25);
     top: -30px;
@@ -1847,7 +1916,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.3);
     top: -30px;
@@ -1855,7 +1924,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1530px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.3);
     top: -30px;
@@ -1863,7 +1932,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1550px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.3);
     top: -30px;
@@ -1871,7 +1940,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1580px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.3);
     top: -30px;
@@ -1879,7 +1948,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.35);
     top: -30px;
@@ -1887,7 +1956,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1630px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.35);
     top: -30px;
@@ -1895,7 +1964,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1650px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.35);
     top: -28px;
@@ -1903,7 +1972,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1680px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.35);
     top: -25px;
@@ -1911,7 +1980,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.4);
     top: -23px;
@@ -1919,7 +1988,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1730px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.4);
     top: -22px;
@@ -1927,7 +1996,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1750px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.4);
     top: -20px;
@@ -1935,7 +2004,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1780px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.4);
     top: -15px;
@@ -1943,7 +2012,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.45);
     top: -10px;
@@ -1951,7 +2020,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1830px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.45);
     top: -5px;
@@ -1959,7 +2028,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1850px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.45);
     top: 0px;
@@ -1967,7 +2036,7 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1880px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.45);
     top: 5px;
@@ -1975,14 +2044,14 @@ body.day img.night {
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 743, ../sass/index.scss */
+  /* line 760, ../sass/index.scss */
   .data_list #chartdiv .amcharts-main-div {
     transform: scale(1.5);
     top: 10px;
     right: -580px;
   }
 }
-/* line 789, ../sass/index.scss */
+/* line 806, ../sass/index.scss */
 .data_list #chartdiv tspan {
   font-size: 1.2em;
   display: block;
@@ -1992,13 +2061,13 @@ body.day img.night {
   font-weight: bold;
 }
 
-/* line 805, ../sass/index.scss */
+/* line 822, ../sass/index.scss */
 #fade_block1, #fade_block2 {
   width: 100%;
   top: 25px;
 }
 
-/* line 810, ../sass/index.scss */
+/* line 827, ../sass/index.scss */
 #fade_block1 .ad, #fade_block2 .ad {
   position: absolute;
   width: 100%;
@@ -2011,62 +2080,62 @@ body.day img.night {
   border-bottom: none;
 }
 @media screen and (min-width: 1100px) {
-  /* line 810, ../sass/index.scss */
+  /* line 827, ../sass/index.scss */
   #fade_block1 .ad, #fade_block2 .ad {
     border-width: 6px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 810, ../sass/index.scss */
+  /* line 827, ../sass/index.scss */
   #fade_block1 .ad, #fade_block2 .ad {
     border-width: 7px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 810, ../sass/index.scss */
+  /* line 827, ../sass/index.scss */
   #fade_block1 .ad, #fade_block2 .ad {
     border-width: 8px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 810, ../sass/index.scss */
+  /* line 827, ../sass/index.scss */
   #fade_block1 .ad, #fade_block2 .ad {
     border-width: 9px;
   }
 }
 
-/* line 821, ../sass/index.scss */
+/* line 838, ../sass/index.scss */
 #fade_block2 .ad {
   border: #f52f53 solid 5px;
   border-top: none;
   border-bottom: none;
 }
 @media screen and (min-width: 1100px) {
-  /* line 821, ../sass/index.scss */
+  /* line 838, ../sass/index.scss */
   #fade_block2 .ad {
     border-width: 6px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 821, ../sass/index.scss */
+  /* line 838, ../sass/index.scss */
   #fade_block2 .ad {
     border-width: 7px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 821, ../sass/index.scss */
+  /* line 838, ../sass/index.scss */
   #fade_block2 .ad {
     border-width: 8px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 821, ../sass/index.scss */
+  /* line 838, ../sass/index.scss */
   #fade_block2 .ad {
     border-width: 9px;
   }
 }
 
-/* line 829, ../sass/index.scss */
+/* line 846, ../sass/index.scss */
 .community_photo_img .control,
 #fade_block1 .control, #fade_block2 .control {
   position: absolute;
@@ -2074,7 +2143,7 @@ body.day img.night {
   top: -10px;
 }
 
-/* line 835, ../sass/index.scss */
+/* line 852, ../sass/index.scss */
 .community_photo_img .control a,
 #fade_block1 .control a, #fade_block2 .control a {
   display: inline-block;
@@ -2087,46 +2156,46 @@ body.day img.night {
   font-size: .7em;
 }
 @media screen and (min-width: 1250px) {
-  /* line 835, ../sass/index.scss */
+  /* line 852, ../sass/index.scss */
   .community_photo_img .control a,
   #fade_block1 .control a, #fade_block2 .control a {
     font-size: .8em;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 835, ../sass/index.scss */
+  /* line 852, ../sass/index.scss */
   .community_photo_img .control a,
   #fade_block1 .control a, #fade_block2 .control a {
     font-size: .9em;
   }
 }
 @media screen and (min-width: 1350px) {
-  /* line 835, ../sass/index.scss */
+  /* line 852, ../sass/index.scss */
   .community_photo_img .control a,
   #fade_block1 .control a, #fade_block2 .control a {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 835, ../sass/index.scss */
+  /* line 852, ../sass/index.scss */
   .community_photo_img .control a,
   #fade_block1 .control a, #fade_block2 .control a {
     font-size: 1.1em;
   }
 }
 
-/* line 859, ../sass/index.scss */
+/* line 876, ../sass/index.scss */
 .community_photo_img .control a {
   padding: 3px 7px;
 }
 @media screen and (min-width: 1300px) {
-  /* line 859, ../sass/index.scss */
+  /* line 876, ../sass/index.scss */
   .community_photo_img .control a {
     padding: 3px 8px;
   }
 }
 
-/* line 864, ../sass/index.scss */
+/* line 881, ../sass/index.scss */
 .community_photo_img .control a.on,
 #fade_block1 .control a.on, #fade_block2 .control a.on {
   font-weight: bold;
