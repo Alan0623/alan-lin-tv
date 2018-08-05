@@ -218,7 +218,7 @@ $(function () {
     timer = setTimeout(autoClick, speed);
 });
 /*///////////////////////////////////////////////////////////
-每300秒
+每300秒 換照片
 ///////////////////////////////////////////////////////////*/
 $(function () {
     var $block = $('.community_photo_img'),
@@ -287,19 +287,81 @@ $(function () {
     // 啟動計時器
     timer = setTimeout(autoClick, speed);
 });
-
+/*///////////////////////////////////////////////////////////
+輪播圖片 固定高度
+///////////////////////////////////////////////////////////*/
 $(function () {
     var imgHeight = 0;
-    
     $('.community_photo_img').each(function () {
         imgHeight = $('.community_photo_img .ad').height();
     }).height(imgHeight + 38);
-
-
     $(window).resize(function () {
         $('.community_photo_img').each(function () {
             imgHeight = $('.community_photo_img .ad').height();
         }).height(imgHeight + 38);
     });
 
+});
+/*///////////////////////////////////////////////////////////
+日期選擇器
+///////////////////////////////////////////////////////////*/
+$(document).ready(function () {
+    var opt1 = {
+        //以下為日期選擇器部分
+        dayNames: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+        dayNamesMin: ["日", "一", "二", "三", "四", "五", "六"],
+        monthNames: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+        monthNamesShort: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+        prevText: "上月",
+        nextText: "次月",
+        weekHeader: "週",
+        showMonthAfterYear: true,
+        dateFormat: "yy-mm-dd",
+        //以下為時間選擇器部分
+        timeOnlyTitle: "選擇時分秒",
+        timeText: "",
+        hourText: "時",
+        minuteText: "分",
+        secondText: "秒",
+        millisecText: "毫秒",
+        timezoneText: "時區",
+        currentText: "今天日期",
+        closeText: "確定",
+        amNames: ["上午", "AM", "A"],
+        pmNames: ["下午", "PM", "P"],
+        showSecond: false,
+        timeFormat: ""//取消時間選擇
+        //timeFormat: "HH:mm:ss"
+    };
+    $(".datetimepicker1").datetimepicker(opt1);
+});
+$(document).ready(function () {
+    var opt2 = {
+        //以下為日期選擇器部分
+        dayNames: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+        dayNamesMin: ["日", "一", "二", "三", "四", "五", "六"],
+        monthNames: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+        monthNamesShort: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+        prevText: "上月",
+        nextText: "次月",
+        weekHeader: "週",
+        showMonthAfterYear: true,
+        dateFormat: "yy-mm-dd",
+        //以下為時間選擇器部分
+        timeOnlyTitle: "選擇時分秒",
+        timeText: "",
+        hourText: "時",
+        minuteText: "分",
+        secondText: "秒",
+        millisecText: "毫秒",
+        timezoneText: "時區",
+        currentText: "今天日期",
+        closeText: "確定",
+        amNames: ["上午", "AM", "A"],
+        pmNames: ["下午", "PM", "P"],
+        showSecond: false,
+        timeFormat: ""//取消時間選擇
+        //timeFormat: "HH:mm:ss"
+    };
+    $(".datetimepicker2").datetimepicker(opt2);
 });
