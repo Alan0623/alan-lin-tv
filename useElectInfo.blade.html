@@ -16,7 +16,7 @@
     <meta name="format-detection" content="telephone=no" />
      <!--[if gte IE 9]><!-->
     <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
-    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/pageDetail.css" type="text/css">
     <link rel="stylesheet" href="css/export.css" type="text/css">
     <!--<![endif]-->
     <!--[if lt IE 9]>
@@ -63,13 +63,13 @@
             <div class="system_menu">
                 <h2>主選單</h2>
                 <ul class="system_menu_text">
-                    <li><a href="instant_curve.html">曲線資訊</a></li>
-                    <li><a href="alarm_handling.html">告警處理</a></li>
-                    <li><a href="maintenance_information.html">維護資訊</a></li>
-                    <li><a href="user_comparison.html">用戶用電資訊</a></li>
+                    <li><a href="curves.blade.html">曲線資訊</a></li>
+                    <li><a href="warningInfo.blade.html">告警處理</a></li>
+                    <li><a href="maintainInfo.blade.html">維護資訊</a></li>
+                    <li><a href="useElectAllInfo.blade.html">用戶用電資訊</a></li>
                     <li><b>用戶:張起零</b><a>登出</a></li>
-                    <li><a href="single_line.html">後端數據</a></li>
-                    <li><a href="user_electricity_query.html">單戶用電介面</a></li>
+                    <li><a href="single.blade.html">後端數據</a></li>
+                    <li><a class="hide" href="useElectInfo.blade.html">單戶用電介面</a></li>
                 </ul>
             </div>
         </section>
@@ -81,11 +81,11 @@
             <div class="data_list_table">
                 <div class="btn_info_table">
                     <ul class="query_table">
-                        <li><b>即時用電量</b><p>1234567</p><i>kW</i></li>
-                        <li><b>當月累積用電量</b><p>123</p><i>度</i></li>
-                        <li><b>當月累積電費</b><p></p><i>元</i></li>
-                        <li><b>與前年當月整體<br/>用電量度數差異</b><p></p><i>度</i></li>
-                        <li><b>當月整體<br/>節電比例</b><p></p><i>度</i></li>
+                        <li><a href="javascript:;" class="active"><b>即時用電量</b><p>1234567</p><i>kW</i></a></li>
+                        <li><a href="javascript:;"><b>當月累積用電量</b><p>123</p><i>度</i></a></li>
+                        <li><a href="javascript:;" class="show_smart_user"><b>當月累積電費</b><p></p><i>元</i></a></li>
+                        <li><a href="javascript:;" class="show_smart_user"><b>與前年當月整體<br/>用電量度數差異</b><p></p><i>度</i></a></li>
+                        <li><a href="javascript:;"><b>當月整體<br/>節電比例</b><p></p><i>度</i></a></li>
                     </ul>
                 </div>
                 <ul class="tool_bar query">
@@ -105,16 +105,24 @@
                     <li>
                         <ul class="time_date">
                             <li>顯示方式：</li>
-                            <li><a href="#">日</a></li>
-                            <li><a href="#">月</a></li>
-                            <li><a href="#">年</a></li>
-                            <li><a href="#">歷史</a></li>
-                            <li><a href="#">重新設定</a></li>
+                            <li onclick="byDay()"><a href="javascript:;">日</a></li>
+                            <li onclick="byMonth()"><a href="javascript:;">月</a></li>
+                            <li onclick="byYears()"><a href="javascript:;">年</a></li>
+                            <li onclick="histery()"><a href="javascript:;">歷史</a></li>
+                            <!--li><a href="#">重新設定</a></li-->
                         </ul>
                     </li>
                 </ul>
                 <div class="instant_curve_chart">
                     <div id="chartdiv" class="line_graph"></div>
+                    <div class="smart_user" style="display: none;">
+                        <ul class="comparison_ul">
+                            <li class="show" id="notSmart">
+                                <span style="background-color:#05c1fe;"></span>未安裝智慧電錶用戶</li>
+                            <li class="show" id="setSmart">
+                                <span style="background-color:#28fa1d;"></span>安裝智慧電錶用戶</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -134,7 +142,7 @@
     </script>
     <script src="js/Chart.min.js"></script>
     <script src="js/moment.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/pageDetail.js"></script>
     <!--script src="js/amcharts.js"></script>
     <script src="js/serial.js"></script>
     <script src="js/pie.js"></script>

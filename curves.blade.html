@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="utf-8">
-    <title>新北市智能生活社區 - 用戶用電資訊</title>
+    <title>新北市智能生活社區 - 曲線資訊</title>
     <!--IE integration -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--viewport integration -->
@@ -16,7 +16,7 @@
     <meta name="format-detection" content="telephone=no" />
      <!--[if gte IE 9]><!-->
     <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
-    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/pageDetail.css" type="text/css">
     <link rel="stylesheet" href="css/export.css" type="text/css">
     <!--<![endif]-->
     <!--[if lt IE 9]>
@@ -63,31 +63,163 @@
             <div class="system_menu">
                 <h2>主選單</h2>
                 <ul class="system_menu_text">
-                    <li><a href="instant_curve.html">曲線資訊</a></li>
-                    <li><a href="alarm_handling.html">告警處理</a></li>
-                    <li><a href="maintenance_information.html">維護資訊</a></li>
-                    <li><a class="active" href="user_comparison.html">用戶用電資訊</a></li>
-                    <li><b>用戶:張起零</b><a>登出</a></li>
-                    <li><a href="single_line.html">後端數據</a></li>
-                    <li><a href="user_electricity_query.html">單戶用電介面</a></li>
+                    <li><a class="active" href="curves.blade.html">曲線資訊</a></li>
+                    <li><a href="warningInfo.blade.html">告警處理</a></li>
+                    <li><a href="maintainInfo.blade.html">維護資訊</a></li>
+                    <li><a href="useElectAllInfo.blade.html">用戶用電資訊</a></li>
+                    <li>
+                        <b>
+                        <input type="text" placeholder="用戶帳號：">
+                        <input type="text" placeholder="用戶密碼：">
+                        </b>
+                        <a>登入</a>
+                    </li>
+                    <li><a class="hide" href="single.blade.html">後端數據</a></li>
+                    <li><a class="hide" href="useElectInfo.blade.html">單戶用電介面</a></li>
                 </ul>
             </div>
         </section>
         <section class="data_list inside_page">
             <div class="data_list_info">
                 <h2>菠爾設備狀態</h2>
-                <div class="exception_message">異常訊息:無</div>
+                <div class="data_list_info_img">
+                    <a href="javascript:;">
+                        <ul class="btn_img">
+                            <li><img src="images/icon_curve10.png"></li>
+                            <li>
+                                <ul>
+                                    <li>減碳量</li>
+                                    <li>127</li>
+                                    <li>kg-CO2／kWh</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </a>
+                    <a href="javascript:;">
+                        <ul class="btn_img">
+                            <li><img src="images/icon_curve2.png"></li>
+                            <li>
+                                <ul>
+                                    <li>日照計</li>
+                                    <li>127</li>
+                                    <li>Lux</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </a>
+                    <a href="javascript:;">
+                        <ul class="btn_img">
+                            <li><img src="images/icon_curve4.png"></li>
+                            <li>
+                                <ul>
+                                    <li>風速計</li>
+                                    <li>127</li>
+                                    <li>km/h</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </a>
+                </div>
             </div>
             <div class="data_list_table">
-                <div class="comparison">
-                    <h2 class="show action">30戶用電比對</h2>
-                    <h2 class="show">對比差曲線</h2>
-                    <ul class="comparison_ul">
-                        <li class="show">未安裝智慧電錶用戶</li>
-                        <li class="show">安裝智慧電錶用戶</li>
-                        <li class="hide">對比差曲線</li>
-                    </ul>
+                <div class="btn_info_img">
+                    <a href="javascript:;" class="active">
+                        <ul class="btn_img">
+                            <li><img src="images/icon_curve1.png"></li>
+                            <li>太陽能</li>
+                            <li>127</li>
+                            <li>度/月</li>
+                        </ul>
+                    </a>
+                    <a href="javascript:;">
+                        <ul class="btn_img">
+                            <li><img src="images/icon_curve3.png"></li>
+                            <li>風力</li>
+                            <li>127</li>
+                            <li>度/月</li>
+                        </ul>
+                    </a>
+                    <a href="javascript:;">
+                        <ul class="btn_img">
+                            <li><img src="images/icon_curve5.png"></li>
+                            <li>創能</li>
+                            <li>127</li>
+                            <li>度/月</li>
+                        </ul>
+                    </a>
+                    <a href="javascript:;" class="show_compare_time">
+                        <ul class="btn_img">
+                            <li><img src="images/icon_curve6.png"></li>
+                            <li>大公用電</li>
+                            <li>127</li>
+                            <li>度/月</li>
+                        </ul>
+                    </a>
+                    <a href="javascript:;" class="show_compare_time">
+                        <ul class="btn_img">
+                            <li><img src="images/icon_curve7.png"></li>
+                            <li>30戶用電</li>
+                            <li>127</li>
+                            <li>度/月</li>
+                        </ul>
+                    </a>
+                    <a href="javascript:;">
+                        <ul class="btn_img">
+                            <li><img src="images/icon_curve8.png"></li>
+                            <li>儲能電池</li>
+                            <li>127</li>
+                            <li>度/月</li>
+                        </ul>
+                    </a>
+                    <a href="javascript:;">
+                        <ul class="btn_img">
+                            <li><img src="images/icon_curve9.png"></li>
+                            <li>燃料電池</li>
+                            <li>127</li>
+                            <li>度/月</li>
+                        </ul>
+                    </a>
                 </div>
+                <ul class="tool_bar">
+                    <li id="theCurvesTitle">太陽能即時發電資訊</li>
+                    <li class="sub_title"></li>
+                    <li>
+                        <ul class="time_picker time_interval" id="timeRange">
+                            <li>時間區間：</li>
+                            <li>
+                                <input class="datetimepicker1" type="text" placeholder="年 - 月 - 日" />
+                            </li>
+                            <li>~</li>
+                            <li>
+                                <input class="datetimepicker2" type="text" placeholder="年 - 月 - 日" />
+                            </li>
+                        </ul>
+                            
+                        <ul class="time_picker compare_time" id="timeRange" style="display: none;">
+                            <li>比較時間：</li>
+                            <li>
+                                <input class="datetimepicker3" type="text" placeholder="年 - 月 - 日" />
+                            </li>
+                            <li>~</li>
+                            <li>
+                                <input class="datetimepicker4" type="text" placeholder="年 - 月 - 日" />
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="time_date">
+                            <li>顯示方式：</li>
+                            <li onclick="byDay()"><a href="javascript:;">日</a></li>
+                            <li onclick="byMonth()"><a href="javascript:;">月</a></li>
+                            <li onclick="byYears()"><a href="javascript:;">年</a></li>
+                            <li onclick="histery()"><a href="javascript:;">歷史</a></li>
+                            <!--li><a href="javascript:;">重新設定</a></li-->
+                        </ul>
+                    </li>
+                </ul>
                 <div class="instant_curve_chart">
                     <div id="chartdiv" class="line_graph"></div>
                 </div>
@@ -109,7 +241,7 @@
     </script>
     <script src="js/Chart.min.js"></script>
     <script src="js/moment.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/pageDetail.js"></script>
     <!--script src="js/amcharts.js"></script>
     <script src="js/serial.js"></script>
     <script src="js/pie.js"></script>

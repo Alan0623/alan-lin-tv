@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="utf-8">
-    <title>新北市智能生活社區 - 維護資訊</title>
+    <title>新北市智能生活社區 - 告警處理</title>
     <!--IE integration -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--viewport integration -->
@@ -16,7 +16,7 @@
     <meta name="format-detection" content="telephone=no" />
      <!--[if gte IE 9]><!-->
     <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
-    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <link rel="stylesheet" href="css/pageDetail.css" type="text/css">
     <link rel="stylesheet" href="css/export.css" type="text/css">
     <!--<![endif]-->
     <!--[if lt IE 9]>
@@ -63,13 +63,13 @@
             <div class="system_menu">
                 <h2>主選單</h2>
                 <ul class="system_menu_text">
-                    <li><a href="instant_curve.html">曲線資訊</a></li>
-                    <li><a href="alarm_handling.html">告警處理</a></li>
-                    <li><a class="active" href="maintenance_information.html">維護資訊</a></li>
-                    <li><a href="user_comparison.html">用戶用電資訊</a></li>
+                    <li><a href="curves.blade.html">曲線資訊</a></li>
+                    <li><a class="active" href="warningInfo.blade.html">告警處理</a></li>
+                    <li><a href="maintainInfo.blade.html">維護資訊</a></li>
+                    <li><a href="useElectAllInfo.blade.html">用戶用電資訊</a></li>
                     <li><b>用戶:張起零</b><a>登出</a></li>
-                    <li><a href="single_line.html">後端數據</a></li>
-                    <li><a href="user_electricity_query.html">單戶用電介面</a></li>
+                    <li><a href="single.blade.html">後端數據</a></li>
+                    <li><a class="hide" href="useElectInfo.blade.html">單戶用電介面</a></li>
                 </ul>
             </div>
         </section>
@@ -79,7 +79,7 @@
                 <div class="exception_message">異常訊息:無</div>
             </div>
             <div class="data_list_table">
-                <h2>維護資訊</h2>
+                <h2>告警處理</h2>
                 <div class="download"><a href="#">報表下載</a></div>
                 <ul class="time_picker">
                     <li>時間：</li>
@@ -88,108 +88,157 @@
                     <li><input class="datetimepicker2" type="text" placeholder="年 - 月 - 日"/></li>
                 </ul>
                 <div class="search"><a href="#">搜尋</a></div>
-                <table class="maintenance" width=100% cellpadding=0 cellspacing=0 border='0'>
+                <table class="alarm" width=100% cellpadding=0 cellspacing=0 border='0'>
                     <thead>
                         <tr>
-                            <th>序號</th>
-                            <th>維護原因</th>
-                            <th>派工時間</th>
-                            <th>維護人員</th>
-                            <th>維護時間</th>
-                            <th>維護訊息</th>
+                            <th>警告級別</th>
+                            <th>故障訊息</th>
+                            <th>故障代碼</th>
+                            <th>故障時間</th>
+                            <th>覆歸時間</th>
                             <th>目前<br>系統狀態</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>1</td>
+                            <td>2</td>
                             <td>燃料電池的燃料低落，前往進行燃料加入動作燃料電池的燃料低落，前往進行燃料加入動作</td>
-                            <td><b>2018-07-26</b><b>08:00</b></td>
-                            <td>張嘉文</td>
-                            <td><b>2018-07-26</b><b>08:30 ~ 09:30</b></td>
+                            <td>04</td>
+                            <td>
+                                <b>2018-07-26</b>
+                                <b>08:00</b>
+                            </td>
+                            <td>
+                                <b>2018-07-26</b>
+                                <b>08:30 ~ 09:30</b>
+                            </td>
                             <td>燃料添加完畢</td>
-                            <td>正常</td>
                         </tr>
                         <tr>
                             <td>2</td>
                             <td>燃料電池的燃料低落，前往進行燃料加入動作</td>
-                            <td><b>2018-07-26</b><b>08:00</b></td>
-                            <td>張嘉文</td>
-                            <td><b>2018-07-26</b><b>08:30 ~ 09:30</b></td>
+                            <td>04</td>
+                            <td>
+                                <b>2018-07-26</b>
+                                <b>08:00</b>
+                            </td>
+                            <td>
+                                <b>2018-07-26</b>
+                                <b>08:30 ~ 09:30</b>
+                            </td>
                             <td>燃料添加完畢</td>
-                            <td>正常</td>
                         </tr>
                         <tr>
-                            <td>3</td>
+                            <td>2</td>
                             <td>燃料電池的燃料低落，前往進行燃料加入動作</td>
-                            <td><b>2018-07-26</b><b>08:00</b></td>
-                            <td>張嘉文</td>
-                            <td><b>2018-07-26</b><b>08:30 ~ 09:30</b></td>
+                            <td>04</td>
+                            <td>
+                                <b>2018-07-26</b>
+                                <b>08:00</b>
+                            </td>
+                            <td>
+                                <b>2018-07-26</b>
+                                <b>08:30 ~ 09:30</b>
+                            </td>
                             <td>燃料添加完畢</td>
-                            <td>正常</td>
                         </tr>
                         <tr>
-                            <td>4</td>
+                            <td>2</td>
                             <td>燃料電池的燃料低落，前往進行燃料加入動作</td>
-                            <td><b>2018-07-26</b><b>08:00</b></td>
-                            <td>張嘉文</td>
-                            <td><b>2018-07-26</b><b>08:30 ~ 09:30</b></td>
+                            <td>04</td>
+                            <td>
+                                <b>2018-07-26</b>
+                                <b>08:00</b>
+                            </td>
+                            <td>
+                                <b>2018-07-26</b>
+                                <b>08:30 ~ 09:30</b>
+                            </td>
                             <td>燃料添加完畢</td>
-                            <td>正常</td>
                         </tr>
                         <tr>
-                            <td>5</td>
+                            <td>2</td>
                             <td>燃料電池的燃料低落，前往進行燃料加入動作</td>
-                            <td><b>2018-07-26</b><b>08:00</b></td>
-                            <td>張嘉文</td>
-                            <td><b>2018-07-26</b><b>08:30 ~ 09:30</b></td>
+                            <td>04</td>
+                            <td>
+                                <b>2018-07-26</b>
+                                <b>08:00</b>
+                            </td>
+                            <td>
+                                <b>2018-07-26</b>
+                                <b>08:30 ~ 09:30</b>
+                            </td>
                             <td>燃料添加完畢</td>
-                            <td>正常</td>
                         </tr>
                         <tr>
-                            <td>6</td>
+                            <td>2</td>
                             <td>燃料電池的燃料低落，前往進行燃料加入動作</td>
-                            <td><b>2018-07-26</b><b>08:00</b></td>
-                            <td>張嘉文</td>
-                            <td><b>2018-07-26</b><b>08:30 ~ 09:30</b></td>
+                            <td>04</td>
+                            <td>
+                                <b>2018-07-26</b>
+                                <b>08:00</b>
+                            </td>
+                            <td>
+                                <b>2018-07-26</b>
+                                <b>08:30 ~ 09:30</b>
+                            </td>
                             <td>燃料添加完畢</td>
-                            <td>正常</td>
                         </tr>
                         <tr>
-                            <td>7</td>
+                            <td>2</td>
                             <td>燃料電池的燃料低落，前往進行燃料加入動作</td>
-                            <td><b>2018-07-26</b><b>08:00</b></td>
-                            <td>張嘉文</td>
-                            <td><b>2018-07-26</b><b>08:30 ~ 09:30</b></td>
+                            <td>04</td>
+                            <td>
+                                <b>2018-07-26</b>
+                                <b>08:00</b>
+                            </td>
+                            <td>
+                                <b>2018-07-26</b>
+                                <b>08:30 ~ 09:30</b>
+                            </td>
                             <td>燃料添加完畢</td>
-                            <td>正常</td>
                         </tr>
                         <tr>
-                            <td>8</td>
+                            <td>2</td>
                             <td>燃料電池的燃料低落，前往進行燃料加入動作</td>
-                            <td><b>2018-07-26</b><b>08:00</b></td>
-                            <td>張嘉文</td>
-                            <td><b>2018-07-26</b><b>08:30 ~ 09:30</b></td>
+                            <td>04</td>
+                            <td>
+                                <b>2018-07-26</b>
+                                <b>08:00</b>
+                            </td>
+                            <td>
+                                <b>2018-07-26</b>
+                                <b>08:30 ~ 09:30</b>
+                            </td>
                             <td>燃料添加完畢</td>
-                            <td>正常</td>
                         </tr>
                         <tr>
-                            <td>9</td>
+                            <td>2</td>
                             <td>燃料電池的燃料低落，前往進行燃料加入動作</td>
-                            <td><b>2018-07-26</b><b>08:00</b></td>
-                            <td>張嘉文</td>
-                            <td><b>2018-07-26</b><b>08:30 ~ 09:30</b></td>
+                            <td>04</td>
+                            <td>
+                                <b>2018-07-26</b>
+                                <b>08:00</b>
+                            </td>
+                            <td>
+                                <b>2018-07-26</b>
+                                <b>08:30 ~ 09:30</b>
+                            </td>
                             <td>燃料添加完畢</td>
-                            <td>正常</td>
                         </tr>
                         <tr>
-                            <td>10</td>
+                            <td>2</td>
                             <td>燃料電池的燃料低落，前往進行燃料加入動作</td>
-                            <td><b>2018-07-26</b><b>08:00</b></td>
-                            <td>張嘉文</td>
-                            <td><b>2018-07-26</b><b>08:30 ~ 09:30</b></td>
+                            <td>04</td>
+                            <td>
+                                <b>2018-07-26</b>
+                                <b>08:00</b>
+                            </td>
+                            <td>
+                                <b>2018-07-26</b>
+                                <b>08:30 ~ 09:30</b>
+                            </td>
                             <td>燃料添加完畢</td>
-                            <td>正常</td>
                         </tr>
                     </tbody>
                 </table>
@@ -221,7 +270,7 @@
     </script>
     <script src="js/Chart.min.js"></script>
     <script src="js/moment.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/pageDetail.js"></script>
     <script src="js/amcharts.js"></script>
     <script src="js/pie.js"></script>
     <script src="js/light.js"></script>

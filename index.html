@@ -68,7 +68,7 @@
                 </ul>
             </div>
             <div class="btn_curve_information">
-                <a href="Curve_information.html"><h2>詳細頁面資訊</h2></a>
+                <a href="curves.blade.html"><h2>詳細頁面資訊</h2></a>
             </div>
         </section>
         <section class="data_list">
@@ -234,6 +234,9 @@
     <script src="js/Chart.min.js"></script>
     <script src="js/moment.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery-ui-timepicker-addon.js"></script>
+    <script src='js/jquery-ui-sliderAccess.js'></script>
     <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
     <script src="https://www.amcharts.com/lib/3/pie.js"></script>
     <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
@@ -280,7 +283,7 @@
             "colorField": "color",
             "labelText": "",
             "balloon": {
-                "drop": true,
+                "drop": false,
                 "adjustBorderColor": false,
                 "color": "#FFFFFF",
                 "fontSize": 16
