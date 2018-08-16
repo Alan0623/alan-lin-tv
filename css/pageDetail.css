@@ -2252,11 +2252,6 @@ body#inside.day img.day {
 .data_list_table .btn_info_img > a.active .btn_img {
   background-color: #ca9796;
 }
-/* line 362, ../sass/_data_list_table.scss */
-.data_list_table .btn_info_img > a.active .btn_img li {
-  color: #fff;
-  font-weight: bold;
-}
 /* line 370, ../sass/_data_list_table.scss */
 .data_list_table .tool_bar {
   display: inline-block;
