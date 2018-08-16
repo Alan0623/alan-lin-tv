@@ -330,7 +330,6 @@ body#inside.day img.day {
 /* line 141, ../sass/_base-ui.scss */
 #main_content {
   box-sizing: border-box;
-  min-height: 100vh;
 }
 /* line 150, ../sass/_base-ui.scss */
 #inside.night #main_content, #inside.day #main_content {
@@ -353,7 +352,6 @@ body#inside.day img.day {
 .info_block .community_photo {
   width: 100%;
   background-color: #422419;
-  margin-top: 12px;
   padding: 0px 10px 8px 10px;
   box-sizing: border-box;
 }
@@ -1299,143 +1297,135 @@ body#inside.day img.day {
 
 /* line 7, ../sass/_data_list_info.scss */
 .data_list_info {
+  display: block;
   color: #594a46;
   background-color: #ffece6;
-  margin-bottom: 2%;
-  padding: 1.2% 2%;
+  margin-bottom: 1%;
+  padding: .5% 2%;
   position: relative;
+  min-height: 90px;
 }
-/* line 13, ../sass/_data_list_info.scss */
+/* line 16, ../sass/_data_list_info.scss */
 .data_list_info h2 {
   display: inline-block;
   letter-spacing: 3px;
-  min-height: 90px;
   font-size: 1.3em;
+  /*
+  @media screen and (min-width: 1800px){font-size: 2.1em;}
+  @media screen and (min-width: 1900px){font-size: 2.2em;}
+  */
 }
 @media screen and (min-width: 1100px) {
-  /* line 13, ../sass/_data_list_info.scss */
+  /* line 16, ../sass/_data_list_info.scss */
   .data_list_info h2 {
     font-size: 1.4em;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 13, ../sass/_data_list_info.scss */
+  /* line 16, ../sass/_data_list_info.scss */
   .data_list_info h2 {
     font-size: 1.5em;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 13, ../sass/_data_list_info.scss */
+  /* line 16, ../sass/_data_list_info.scss */
   .data_list_info h2 {
     font-size: 1.6em;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 13, ../sass/_data_list_info.scss */
+  /* line 16, ../sass/_data_list_info.scss */
   .data_list_info h2 {
     font-size: 1.7em;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 13, ../sass/_data_list_info.scss */
+  /* line 16, ../sass/_data_list_info.scss */
   .data_list_info h2 {
     font-size: 1.8em;
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 13, ../sass/_data_list_info.scss */
+  /* line 16, ../sass/_data_list_info.scss */
   .data_list_info h2 {
     font-size: 1.9em;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 13, ../sass/_data_list_info.scss */
+  /* line 16, ../sass/_data_list_info.scss */
   .data_list_info h2 {
     font-size: 2em;
   }
 }
-@media screen and (min-width: 1800px) {
-  /* line 13, ../sass/_data_list_info.scss */
-  .data_list_info h2 {
-    font-size: 2.1em;
-  }
-}
-@media screen and (min-width: 1900px) {
-  /* line 13, ../sass/_data_list_info.scss */
-  .data_list_info h2 {
-    font-size: 2.2em;
-  }
-}
-/* line 27, ../sass/_data_list_info.scss */
+/* line 31, ../sass/_data_list_info.scss */
 .data_list_info .exception_message {
-  display: inline-block;
-  padding: 10px 0 0 10px;
-  position: absolute;
+  display: block;
+  padding: 10px 0 0 0px;
   left: .8em;
   bottom: 1em;
   font-size: 1em;
 }
 @media screen and (min-width: 1100px) {
-  /* line 27, ../sass/_data_list_info.scss */
+  /* line 31, ../sass/_data_list_info.scss */
   .data_list_info .exception_message {
     font-size: 1.05em;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 27, ../sass/_data_list_info.scss */
+  /* line 31, ../sass/_data_list_info.scss */
   .data_list_info .exception_message {
     font-size: 1.15em;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 27, ../sass/_data_list_info.scss */
+  /* line 31, ../sass/_data_list_info.scss */
   .data_list_info .exception_message {
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 27, ../sass/_data_list_info.scss */
+  /* line 31, ../sass/_data_list_info.scss */
   .data_list_info .exception_message {
     font-size: 1.25em;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 27, ../sass/_data_list_info.scss */
+  /* line 31, ../sass/_data_list_info.scss */
   .data_list_info .exception_message {
     font-size: 1.3em;
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 27, ../sass/_data_list_info.scss */
+  /* line 31, ../sass/_data_list_info.scss */
   .data_list_info .exception_message {
     font-size: 1.35em;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 27, ../sass/_data_list_info.scss */
+  /* line 31, ../sass/_data_list_info.scss */
   .data_list_info .exception_message {
     font-size: 1.4em;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 27, ../sass/_data_list_info.scss */
+  /* line 31, ../sass/_data_list_info.scss */
   .data_list_info .exception_message {
     font-size: 1.45em;
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 27, ../sass/_data_list_info.scss */
+  /* line 31, ../sass/_data_list_info.scss */
   .data_list_info .exception_message {
     font-size: 1.5em;
   }
 }
-/* line 45, ../sass/_data_list_info.scss */
+/* line 49, ../sass/_data_list_info.scss */
 .data_list_info .data_list_info_img {
   display: inline-block;
   position: absolute;
   width: 82%;
 }
-/* line 50, ../sass/_data_list_info.scss */
+/* line 54, ../sass/_data_list_info.scss */
 .data_list_info .data_list_info_img > a {
   width: 200px;
   display: inline-block;
@@ -1444,11 +1434,11 @@ body#inside.day img.day {
   padding: 5px;
   position: absolute;
 }
-/* line 57, ../sass/_data_list_info.scss */
+/* line 61, ../sass/_data_list_info.scss */
 .data_list_info .data_list_info_img > a ul.btn_img {
   border-radius: 5px;
 }
-/* line 59, ../sass/_data_list_info.scss */
+/* line 63, ../sass/_data_list_info.scss */
 .data_list_info .data_list_info_img > a ul.btn_img > li {
   text-align: center;
   color: #4c3a32;
@@ -1459,100 +1449,61 @@ body#inside.day img.day {
   float: left;
 }
 @media screen and (min-width: 1100px) {
-  /* line 59, ../sass/_data_list_info.scss */
+  /* line 63, ../sass/_data_list_info.scss */
   .data_list_info .data_list_info_img > a ul.btn_img > li {
     font-size: 1.05em;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 59, ../sass/_data_list_info.scss */
+  /* line 63, ../sass/_data_list_info.scss */
   .data_list_info .data_list_info_img > a ul.btn_img > li {
     font-size: 1.15em;
   }
 }
-@media screen and (min-width: 1300px) {
-  /* line 59, ../sass/_data_list_info.scss */
-  .data_list_info .data_list_info_img > a ul.btn_img > li {
-    font-size: 1.2em;
-  }
-}
-@media screen and (min-width: 1400px) {
-  /* line 59, ../sass/_data_list_info.scss */
-  .data_list_info .data_list_info_img > a ul.btn_img > li {
-    font-size: 1.25em;
-  }
-}
-@media screen and (min-width: 1500px) {
-  /* line 59, ../sass/_data_list_info.scss */
-  .data_list_info .data_list_info_img > a ul.btn_img > li {
-    font-size: 1.3em;
-  }
-}
-@media screen and (min-width: 1600px) {
-  /* line 59, ../sass/_data_list_info.scss */
-  .data_list_info .data_list_info_img > a ul.btn_img > li {
-    font-size: 1.35em;
-  }
-}
-@media screen and (min-width: 1700px) {
-  /* line 59, ../sass/_data_list_info.scss */
-  .data_list_info .data_list_info_img > a ul.btn_img > li {
-    font-size: 1.4em;
-  }
-}
-@media screen and (min-width: 1800px) {
-  /* line 59, ../sass/_data_list_info.scss */
-  .data_list_info .data_list_info_img > a ul.btn_img > li {
-    font-size: 1.45em;
-  }
-}
-@media screen and (min-width: 1900px) {
-  /* line 59, ../sass/_data_list_info.scss */
-  .data_list_info .data_list_info_img > a ul.btn_img > li {
-    font-size: 1.5em;
-  }
+/* line 73, ../sass/_data_list_info.scss */
+.data_list_info .data_list_info_img > a ul.btn_img > li img {
+  width: 90%;
 }
 /* line 76, ../sass/_data_list_info.scss */
-.data_list_info .data_list_info_img > a ul.btn_img > li img {
-  width: 100%;
-}
-/* line 79, ../sass/_data_list_info.scss */
 .data_list_info .data_list_info_img > a ul.btn_img > li > ul {
-  margin: 15px 0;
   width: 80px;
   margin-left: -20px;
 }
-/* line 84, ../sass/_data_list_info.scss */
+/* line 81, ../sass/_data_list_info.scss */
 .data_list_info .data_list_info_img > a ul.btn_img > li > ul li:nth-last-child(1) {
   font-size: .8em;
 }
-/* line 91, ../sass/_data_list_info.scss */
+/* line 88, ../sass/_data_list_info.scss */
 .data_list_info .data_list_info_img > a:nth-child(1) {
   position: relative;
 }
-/* line 95, ../sass/_data_list_info.scss */
+/* line 92, ../sass/_data_list_info.scss */
 .data_list_info .data_list_info_img > a:nth-child(1) ul.btn_img > li > ul {
   width: 120px;
 }
 @media screen and (min-width: 1300px) {
-  /* line 95, ../sass/_data_list_info.scss */
+  /* line 92, ../sass/_data_list_info.scss */
   .data_list_info .data_list_info_img > a:nth-child(1) ul.btn_img > li > ul {
     width: 150px;
   }
 }
-/* line 102, ../sass/_data_list_info.scss */
+@media screen and (min-width: 1400px) {
+  /* line 92, ../sass/_data_list_info.scss */
+  .data_list_info .data_list_info_img > a:nth-child(1) ul.btn_img > li > ul {
+    width: 200px;
+  }
+}
+/* line 100, ../sass/_data_list_info.scss */
 .data_list_info .data_list_info_img > a:nth-child(2) {
   right: 160px;
 }
-/* line 105, ../sass/_data_list_info.scss */
+/* line 103, ../sass/_data_list_info.scss */
 .data_list_info .data_list_info_img > a:nth-child(3) {
   right: 0px;
 }
 
 /* line 1, ../sass/_data_list_table.scss */
 .time_picker {
-  display: inline-block;
-  float: right;
   padding-top: 10px;
 }
 /* line 5, ../sass/_data_list_table.scss */
@@ -1745,32 +1696,44 @@ body#inside.day img.day {
   display: block;
   height: 400px;
 }
+@media screen and (min-width: 1800px) {
+  /* line 69, ../sass/_data_list_table.scss */
+  .instant_curve_chart {
+    height: 450px;
+  }
+}
 @media screen and (min-width: 1900px) {
   /* line 69, ../sass/_data_list_table.scss */
   .instant_curve_chart {
-    height: 550px;
+    height: 500px;
   }
 }
-/* line 75, ../sass/_data_list_table.scss */
+/* line 76, ../sass/_data_list_table.scss */
 .instant_curve_chart .line_graph {
   height: 400px;
 }
-@media screen and (min-width: 1900px) {
-  /* line 75, ../sass/_data_list_table.scss */
+@media screen and (min-width: 1800px) {
+  /* line 76, ../sass/_data_list_table.scss */
   .instant_curve_chart .line_graph {
-    height: 550px;
+    height: 450px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  /* line 76, ../sass/_data_list_table.scss */
+  .instant_curve_chart .line_graph {
+    height: 500px;
   }
 }
 
-/* line 80, ../sass/_data_list_table.scss */
+/* line 82, ../sass/_data_list_table.scss */
 .search {
   display: inline-block;
   margin-left: 6%;
   position: absolute;
   right: 1em;
-  top: 1.5em;
+  top: 14px;
 }
-/* line 85, ../sass/_data_list_table.scss */
+/* line 87, ../sass/_data_list_table.scss */
 .search a {
   background-color: #9e5637;
   color: #fffcd4;
@@ -1780,48 +1743,50 @@ body#inside.day img.day {
   padding-left: 38px;
 }
 @media screen and (min-width: 1300px) {
-  /* line 85, ../sass/_data_list_table.scss */
+  /* line 87, ../sass/_data_list_table.scss */
   .search a {
     font-size: 1.1em;
+    padding: 10px 22px;
+    padding-left: 38px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 85, ../sass/_data_list_table.scss */
+  /* line 87, ../sass/_data_list_table.scss */
   .search a {
     font-size: 1.15em;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 85, ../sass/_data_list_table.scss */
+  /* line 87, ../sass/_data_list_table.scss */
   .search a {
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 85, ../sass/_data_list_table.scss */
+  /* line 87, ../sass/_data_list_table.scss */
   .search a {
     font-size: 1.25em;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 85, ../sass/_data_list_table.scss */
+  /* line 87, ../sass/_data_list_table.scss */
   .search a {
     font-size: 1.3em;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 85, ../sass/_data_list_table.scss */
+  /* line 87, ../sass/_data_list_table.scss */
   .search a {
     font-size: 1.35em;
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 85, ../sass/_data_list_table.scss */
+  /* line 87, ../sass/_data_list_table.scss */
   .search a {
     font-size: 1.4em;
   }
 }
-/* line 99, ../sass/_data_list_table.scss */
+/* line 104, ../sass/_data_list_table.scss */
 .search a::before {
   content: "";
   position: absolute;
@@ -1834,21 +1799,28 @@ body#inside.day img.day {
   height: 100%;
   width: 30px;
 }
+@media screen and (min-width: 1300px) {
+  /* line 104, ../sass/_data_list_table.scss */
+  .search a::before {
+    left: 5px;
+    height: 90%;
+  }
+}
 
-/* line 113, ../sass/_data_list_table.scss */
+/* line 121, ../sass/_data_list_table.scss */
 .data_list_table {
   background-color: #fffaf9;
   color: #594a46;
   border: #ffece6 solid 5px;
-  padding: 15px;
+  padding: 15px 15px;
   position: relative;
 }
-/* line 119, ../sass/_data_list_table.scss */
+/* line 127, ../sass/_data_list_table.scss */
 .data_list_table .download {
   display: inline-block;
   margin-left: 6%;
 }
-/* line 120, ../sass/_data_list_table.scss */
+/* line 128, ../sass/_data_list_table.scss */
 .data_list_table .download a {
   background-color: #e6dcbe;
   color: #4a3a39;
@@ -1856,48 +1828,48 @@ body#inside.day img.day {
   border-radius: 2px;
 }
 @media screen and (min-width: 1300px) {
-  /* line 120, ../sass/_data_list_table.scss */
+  /* line 128, ../sass/_data_list_table.scss */
   .data_list_table .download a {
     font-size: 1.1em;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 120, ../sass/_data_list_table.scss */
+  /* line 128, ../sass/_data_list_table.scss */
   .data_list_table .download a {
     font-size: 1.15em;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 120, ../sass/_data_list_table.scss */
+  /* line 128, ../sass/_data_list_table.scss */
   .data_list_table .download a {
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 120, ../sass/_data_list_table.scss */
+  /* line 128, ../sass/_data_list_table.scss */
   .data_list_table .download a {
     font-size: 1.25em;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 120, ../sass/_data_list_table.scss */
+  /* line 128, ../sass/_data_list_table.scss */
   .data_list_table .download a {
     font-size: 1.3em;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 120, ../sass/_data_list_table.scss */
+  /* line 128, ../sass/_data_list_table.scss */
   .data_list_table .download a {
     font-size: 1.35em;
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 120, ../sass/_data_list_table.scss */
+  /* line 128, ../sass/_data_list_table.scss */
   .data_list_table .download a {
     font-size: 1.4em;
   }
 }
-/* line 134, ../sass/_data_list_table.scss */
+/* line 142, ../sass/_data_list_table.scss */
 .data_list_table .time_picker {
   display: inline-block;
   margin-bottom: 15px;
@@ -1905,161 +1877,127 @@ body#inside.day img.day {
   margin-left: 50px;
 }
 @media screen and (min-width: 1300px) {
-  /* line 134, ../sass/_data_list_table.scss */
+  /* line 142, ../sass/_data_list_table.scss */
   .data_list_table .time_picker {
     font-size: 1.1em;
     line-height: 38px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 134, ../sass/_data_list_table.scss */
+  /* line 142, ../sass/_data_list_table.scss */
   .data_list_table .time_picker {
     font-size: 1.15em;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 134, ../sass/_data_list_table.scss */
+  /* line 142, ../sass/_data_list_table.scss */
   .data_list_table .time_picker {
     font-size: 1.2em;
     line-height: 42px;
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 134, ../sass/_data_list_table.scss */
+  /* line 142, ../sass/_data_list_table.scss */
   .data_list_table .time_picker {
     font-size: 1.25em;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 134, ../sass/_data_list_table.scss */
+  /* line 142, ../sass/_data_list_table.scss */
   .data_list_table .time_picker {
     font-size: 1.3em;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 134, ../sass/_data_list_table.scss */
+  /* line 142, ../sass/_data_list_table.scss */
   .data_list_table .time_picker {
     font-size: 1.35em;
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 134, ../sass/_data_list_table.scss */
+  /* line 142, ../sass/_data_list_table.scss */
   .data_list_table .time_picker {
     font-size: 1.4em;
     line-height: 45px;
   }
 }
-/* line 148, ../sass/_data_list_table.scss */
+/* line 155, ../sass/_data_list_table.scss */
+.data_list_table .time_picker.compare_time {
+  display: block;
+  padding: 0;
+  margin-top: -15px;
+}
+/* line 161, ../sass/_data_list_table.scss */
 .data_list_table h2 {
   display: inline-block;
   letter-spacing: 3px;
   margin-bottom: 12px;
   padding-left: 5px;
 }
-/* line 153, ../sass/_data_list_table.scss */
+/* line 166, ../sass/_data_list_table.scss */
 .data_list_table table {
   border: #7d7d7d solid 1px;
 }
 @media screen and (min-width: 1300px) {
-  /* line 153, ../sass/_data_list_table.scss */
+  /* line 166, ../sass/_data_list_table.scss */
   .data_list_table table {
     font-size: 1.1em;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 153, ../sass/_data_list_table.scss */
+  /* line 166, ../sass/_data_list_table.scss */
   .data_list_table table {
     font-size: 1.15em;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 153, ../sass/_data_list_table.scss */
+  /* line 166, ../sass/_data_list_table.scss */
   .data_list_table table {
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 153, ../sass/_data_list_table.scss */
+  /* line 166, ../sass/_data_list_table.scss */
   .data_list_table table {
     font-size: 1.25em;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 153, ../sass/_data_list_table.scss */
+  /* line 166, ../sass/_data_list_table.scss */
   .data_list_table table {
     font-size: 1.3em;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 153, ../sass/_data_list_table.scss */
+  /* line 166, ../sass/_data_list_table.scss */
   .data_list_table table {
     font-size: 1.35em;
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 153, ../sass/_data_list_table.scss */
+  /* line 166, ../sass/_data_list_table.scss */
   .data_list_table table {
     font-size: 1.4em;
   }
 }
-/* line 162, ../sass/_data_list_table.scss */
+/* line 175, ../sass/_data_list_table.scss */
 .data_list_table table td, .data_list_table table th {
   border: none;
   padding: 5px;
   border-right: #bfbfbf solid 2px;
   border-left: #bfbfbf solid 2px;
   text-align: center;
-}
-/* line 167, ../sass/_data_list_table.scss */
-.data_list_table table thead {
-  border: none;
-  background-color: #9e5637;
-}
-/* line 168, ../sass/_data_list_table.scss */
-.data_list_table table thead tr {
-  border: none;
-}
-/* line 169, ../sass/_data_list_table.scss */
-.data_list_table table thead tr th {
-  margin: 0;
-  font-size: .9em;
-  background-color: #9e5637;
-  color: #fff;
-  padding: 10px 5px;
-  border-top: #bfbfbf solid 2px;
-  border-bottom: #bfbfbf solid 2px;
 }
 /* line 180, ../sass/_data_list_table.scss */
-.data_list_table table tbody tr td {
-  font-size: .9em;
-}
-/* line 182, ../sass/_data_list_table.scss */
-.data_list_table table tbody tr td b {
-  display: block;
-  font-weight: normal;
-}
-/* line 188, ../sass/_data_list_table.scss */
-.data_list_table table tbody tr:nth-last-child(1) td {
-  border-bottom: #bfbfbf solid 2px;
-}
-/* line 192, ../sass/_data_list_table.scss */
-.data_list_table table td, .data_list_table table th {
-  border: none;
-  padding: 5px;
-  border-right: #bfbfbf solid 2px;
-  border-left: #bfbfbf solid 2px;
-  text-align: center;
-}
-/* line 197, ../sass/_data_list_table.scss */
 .data_list_table table thead {
   border: none;
   background-color: #9e5637;
 }
-/* line 198, ../sass/_data_list_table.scss */
+/* line 181, ../sass/_data_list_table.scss */
 .data_list_table table thead tr {
   border: none;
 }
-/* line 199, ../sass/_data_list_table.scss */
+/* line 182, ../sass/_data_list_table.scss */
 .data_list_table table thead tr th {
   margin: 0;
   font-size: .9em;
@@ -2069,82 +2007,122 @@ body#inside.day img.day {
   border-top: #bfbfbf solid 2px;
   border-bottom: #bfbfbf solid 2px;
 }
-/* line 210, ../sass/_data_list_table.scss */
+/* line 193, ../sass/_data_list_table.scss */
 .data_list_table table tbody tr td {
   font-size: .9em;
 }
-/* line 212, ../sass/_data_list_table.scss */
+/* line 195, ../sass/_data_list_table.scss */
 .data_list_table table tbody tr td b {
   display: block;
   font-weight: normal;
 }
-/* line 218, ../sass/_data_list_table.scss */
+/* line 201, ../sass/_data_list_table.scss */
 .data_list_table table tbody tr:nth-last-child(1) td {
   border-bottom: #bfbfbf solid 2px;
 }
-/* line 227, ../sass/_data_list_table.scss */
+/* line 205, ../sass/_data_list_table.scss */
+.data_list_table table td, .data_list_table table th {
+  border: none;
+  padding: 5px;
+  border-right: #bfbfbf solid 2px;
+  border-left: #bfbfbf solid 2px;
+  text-align: center;
+}
+/* line 210, ../sass/_data_list_table.scss */
+.data_list_table table thead {
+  border: none;
+  background-color: #9e5637;
+}
+/* line 211, ../sass/_data_list_table.scss */
+.data_list_table table thead tr {
+  border: none;
+}
+/* line 212, ../sass/_data_list_table.scss */
+.data_list_table table thead tr th {
+  margin: 0;
+  font-size: .9em;
+  background-color: #9e5637;
+  color: #fff;
+  padding: 10px 5px;
+  border-top: #bfbfbf solid 2px;
+  border-bottom: #bfbfbf solid 2px;
+}
+/* line 223, ../sass/_data_list_table.scss */
+.data_list_table table tbody tr td {
+  font-size: .9em;
+}
+/* line 225, ../sass/_data_list_table.scss */
+.data_list_table table tbody tr td b {
+  display: block;
+  font-weight: normal;
+}
+/* line 231, ../sass/_data_list_table.scss */
+.data_list_table table tbody tr:nth-last-child(1) td {
+  border-bottom: #bfbfbf solid 2px;
+}
+/* line 240, ../sass/_data_list_table.scss */
 .data_list_table table.maintenance thead tr th:nth-child(1) {
   width: 6%;
 }
-/* line 228, ../sass/_data_list_table.scss */
+/* line 241, ../sass/_data_list_table.scss */
 .data_list_table table.maintenance thead tr th:nth-child(3) {
   width: 12%;
 }
-/* line 229, ../sass/_data_list_table.scss */
+/* line 242, ../sass/_data_list_table.scss */
 .data_list_table table.maintenance thead tr th:nth-child(4) {
   width: 10%;
 }
-/* line 230, ../sass/_data_list_table.scss */
+/* line 243, ../sass/_data_list_table.scss */
 .data_list_table table.maintenance thead tr th:nth-child(5) {
   width: 14%;
 }
-/* line 231, ../sass/_data_list_table.scss */
+/* line 244, ../sass/_data_list_table.scss */
 .data_list_table table.maintenance thead tr th:nth-child(6) {
   min-width: 80px;
 }
-/* line 232, ../sass/_data_list_table.scss */
+/* line 245, ../sass/_data_list_table.scss */
 .data_list_table table.maintenance thead tr th:nth-child(7) {
   width: 10%;
 }
-/* line 238, ../sass/_data_list_table.scss */
+/* line 251, ../sass/_data_list_table.scss */
 .data_list_table table.maintenance tbody tr td {
   padding: 6px 0;
   text-align: left;
 }
-/* line 240, ../sass/_data_list_table.scss */
+/* line 253, ../sass/_data_list_table.scss */
 .data_list_table table.maintenance tbody tr td:nth-child(1), .data_list_table table.maintenance tbody tr td:nth-child(4) {
   text-align: center;
 }
-/* line 253, ../sass/_data_list_table.scss */
+/* line 266, ../sass/_data_list_table.scss */
 .data_list_table table.alarm thead tr th:nth-child(1) {
   width: 5%;
 }
-/* line 254, ../sass/_data_list_table.scss */
+/* line 267, ../sass/_data_list_table.scss */
 .data_list_table table.alarm thead tr th:nth-child(3) {
   width: 5%;
 }
-/* line 255, ../sass/_data_list_table.scss */
+/* line 268, ../sass/_data_list_table.scss */
 .data_list_table table.alarm thead tr th:nth-child(4) {
   width: 14%;
 }
-/* line 256, ../sass/_data_list_table.scss */
+/* line 269, ../sass/_data_list_table.scss */
 .data_list_table table.alarm thead tr th:nth-child(5) {
   width: 14%;
 }
-/* line 257, ../sass/_data_list_table.scss */
+/* line 270, ../sass/_data_list_table.scss */
 .data_list_table table.alarm thead tr th:nth-child(6) {
   min-width: 120px;
 }
-/* line 263, ../sass/_data_list_table.scss */
+/* line 276, ../sass/_data_list_table.scss */
 .data_list_table table.alarm tbody tr td {
   padding: 6px 0;
   text-align: left;
 }
-/* line 265, ../sass/_data_list_table.scss */
+/* line 278, ../sass/_data_list_table.scss */
 .data_list_table table.alarm tbody tr td:nth-child(1), .data_list_table table.alarm tbody tr td:nth-child(3) {
   text-align: center;
 }
-/* line 275, ../sass/_data_list_table.scss */
+/* line 288, ../sass/_data_list_table.scss */
 .data_list_table .page_no {
   clear: both;
   margin-top: 30px;
@@ -2152,54 +2130,54 @@ body#inside.day img.day {
   text-align: center;
 }
 @media screen and (min-width: 1300px) {
-  /* line 275, ../sass/_data_list_table.scss */
+  /* line 288, ../sass/_data_list_table.scss */
   .data_list_table .page_no {
     font-size: 1.1em;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 275, ../sass/_data_list_table.scss */
+  /* line 288, ../sass/_data_list_table.scss */
   .data_list_table .page_no {
     font-size: 1.15em;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 275, ../sass/_data_list_table.scss */
+  /* line 288, ../sass/_data_list_table.scss */
   .data_list_table .page_no {
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 275, ../sass/_data_list_table.scss */
+  /* line 288, ../sass/_data_list_table.scss */
   .data_list_table .page_no {
     font-size: 1.25em;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 275, ../sass/_data_list_table.scss */
+  /* line 288, ../sass/_data_list_table.scss */
   .data_list_table .page_no {
     font-size: 1.3em;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 275, ../sass/_data_list_table.scss */
+  /* line 288, ../sass/_data_list_table.scss */
   .data_list_table .page_no {
     font-size: 1.35em;
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 275, ../sass/_data_list_table.scss */
+  /* line 288, ../sass/_data_list_table.scss */
   .data_list_table .page_no {
     font-size: 1.4em;
   }
 }
-/* line 288, ../sass/_data_list_table.scss */
+/* line 301, ../sass/_data_list_table.scss */
 .data_list_table .page_no .page li {
   margin: 0;
   padding: 0;
   display: inline-block;
 }
-/* line 289, ../sass/_data_list_table.scss */
+/* line 302, ../sass/_data_list_table.scss */
 .data_list_table .page_no .page li a {
   background-color: #9e5637;
   color: #fffcd4;
@@ -2207,19 +2185,19 @@ body#inside.day img.day {
   border-radius: 2px;
   position: relative;
 }
-/* line 295, ../sass/_data_list_table.scss */
-.data_list_table .page_no .page li a.active {
+/* line 308, ../sass/_data_list_table.scss */
+.data_list_table .page_no .page li a.action, .data_list_table .page_no .page li a.active {
   background-color: #fffcd4;
   color: #9e5637;
   border: #9e5637 solid thin;
 }
-/* line 304, ../sass/_data_list_table.scss */
+/* line 318, ../sass/_data_list_table.scss */
 .data_list_table .btn_info_img {
   display: inline-block;
   clear: both;
   width: 82%;
 }
-/* line 308, ../sass/_data_list_table.scss */
+/* line 322, ../sass/_data_list_table.scss */
 .data_list_table .btn_info_img > a {
   width: calc(100% / 7);
   width: -moz-calc(100% / 7);
@@ -2230,103 +2208,69 @@ body#inside.day img.day {
   box-sizing: border-box;
   padding: 5px;
 }
-/* line 317, ../sass/_data_list_table.scss */
+/* line 331, ../sass/_data_list_table.scss */
 .data_list_table .btn_info_img > a .btn_img {
   background-color: #ffe9df;
   border-radius: 5px;
 }
-/* line 320, ../sass/_data_list_table.scss */
+/* line 334, ../sass/_data_list_table.scss */
 .data_list_table .btn_info_img > a .btn_img li {
   text-align: center;
   color: #4c3a32;
-  padding: 1px 0;
   letter-spacing: 2px;
+  /*
+  @media screen and (min-width: 1300px){font-size: 1.2em;}
+  @media screen and (min-width: 1400px){font-size: 1.25em;}
+  @media screen and (min-width: 1500px){font-size: 1.3em;}
+  @media screen and (min-width: 1600px){font-size: 1.35em;}
+  @media screen and (min-width: 1700px){font-size: 1.4em;}
+  @media screen and (min-width: 1800px){font-size: 1.45em;}
+  @media screen and (min-width: 1900px){font-size: 1.5em;}  
+  */
 }
 @media screen and (min-width: 1100px) {
-  /* line 320, ../sass/_data_list_table.scss */
+  /* line 334, ../sass/_data_list_table.scss */
   .data_list_table .btn_info_img > a .btn_img li {
     font-size: 1.05em;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 320, ../sass/_data_list_table.scss */
+  /* line 334, ../sass/_data_list_table.scss */
   .data_list_table .btn_info_img > a .btn_img li {
     font-size: 1.15em;
   }
 }
-@media screen and (min-width: 1300px) {
-  /* line 320, ../sass/_data_list_table.scss */
-  .data_list_table .btn_info_img > a .btn_img li {
-    font-size: 1.2em;
-  }
-}
-@media screen and (min-width: 1400px) {
-  /* line 320, ../sass/_data_list_table.scss */
-  .data_list_table .btn_info_img > a .btn_img li {
-    font-size: 1.25em;
-  }
-}
-@media screen and (min-width: 1500px) {
-  /* line 320, ../sass/_data_list_table.scss */
-  .data_list_table .btn_info_img > a .btn_img li {
-    font-size: 1.3em;
-  }
-}
-@media screen and (min-width: 1600px) {
-  /* line 320, ../sass/_data_list_table.scss */
-  .data_list_table .btn_info_img > a .btn_img li {
-    font-size: 1.35em;
-  }
-}
-@media screen and (min-width: 1700px) {
-  /* line 320, ../sass/_data_list_table.scss */
-  .data_list_table .btn_info_img > a .btn_img li {
-    font-size: 1.4em;
-  }
-}
-@media screen and (min-width: 1800px) {
-  /* line 320, ../sass/_data_list_table.scss */
-  .data_list_table .btn_info_img > a .btn_img li {
-    font-size: 1.45em;
-  }
-}
-@media screen and (min-width: 1900px) {
-  /* line 320, ../sass/_data_list_table.scss */
-  .data_list_table .btn_info_img > a .btn_img li {
-    font-size: 1.5em;
-  }
-}
-/* line 334, ../sass/_data_list_table.scss */
+/* line 351, ../sass/_data_list_table.scss */
 .data_list_table .btn_info_img > a .btn_img li:nth-child(1) {
-  padding: 5px 10px;
+  padding: 5px 10px 0px 10px;
 }
-/* line 337, ../sass/_data_list_table.scss */
+/* line 354, ../sass/_data_list_table.scss */
 .data_list_table .btn_info_img > a .btn_img li img {
-  width: 100%;
+  width: 65%;
 }
-/* line 343, ../sass/_data_list_table.scss */
+/* line 360, ../sass/_data_list_table.scss */
 .data_list_table .btn_info_img > a.active .btn_img {
   background-color: #ca9796;
 }
-/* line 345, ../sass/_data_list_table.scss */
+/* line 362, ../sass/_data_list_table.scss */
 .data_list_table .btn_info_img > a.active .btn_img li {
   color: #fff;
   font-weight: bold;
 }
-/* line 353, ../sass/_data_list_table.scss */
+/* line 370, ../sass/_data_list_table.scss */
 .data_list_table .tool_bar {
   display: inline-block;
   width: 100%;
   clear: both;
   line-height: 42px;
 }
-/* line 361, ../sass/_data_list_table.scss */
+/* line 378, ../sass/_data_list_table.scss */
 .data_list_table .tool_bar li {
   display: block;
   float: left;
   margin: 0px 2px;
 }
-/* line 365, ../sass/_data_list_table.scss */
+/* line 382, ../sass/_data_list_table.scss */
 .data_list_table .tool_bar li h2 {
   padding: 0;
   margin: 0;
@@ -2334,127 +2278,127 @@ body#inside.day img.day {
   letter-spacing: 1px;
 }
 @media screen and (min-width: 1100px) {
-  /* line 365, ../sass/_data_list_table.scss */
+  /* line 382, ../sass/_data_list_table.scss */
   .data_list_table .tool_bar li h2 {
     font-size: 1.4em;
     letter-spacing: 3px;
   }
 }
 @media screen and (min-width: 1250px) {
-  /* line 365, ../sass/_data_list_table.scss */
+  /* line 382, ../sass/_data_list_table.scss */
   .data_list_table .tool_bar li h2 {
     font-size: 1.65em;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 365, ../sass/_data_list_table.scss */
+  /* line 382, ../sass/_data_list_table.scss */
   .data_list_table .tool_bar li h2 {
     font-size: 1.7em;
   }
 }
 @media screen and (min-width: 1350px) {
-  /* line 365, ../sass/_data_list_table.scss */
+  /* line 382, ../sass/_data_list_table.scss */
   .data_list_table .tool_bar li h2 {
     font-size: 1.8em;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 365, ../sass/_data_list_table.scss */
+  /* line 382, ../sass/_data_list_table.scss */
   .data_list_table .tool_bar li h2 {
     font-size: 1.9em;
   }
 }
-/* line 375, ../sass/_data_list_table.scss */
+/* line 392, ../sass/_data_list_table.scss */
 .data_list_table .tool_bar li h2.color_white {
   background-color: #fec037;
   color: #fff;
   padding: 0 10px;
 }
-/* line 382, ../sass/_data_list_table.scss */
+/* line 399, ../sass/_data_list_table.scss */
 .data_list_table .tool_bar li:nth-last-child(1) {
   float: right;
 }
 @media screen and (min-width: 1300px) {
-  /* line 386, ../sass/_data_list_table.scss */
+  /* line 403, ../sass/_data_list_table.scss */
   .data_list_table .tool_bar > li.sub_title {
     font-size: 1.1em;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 386, ../sass/_data_list_table.scss */
+  /* line 403, ../sass/_data_list_table.scss */
   .data_list_table .tool_bar > li.sub_title {
     font-size: 1.15em;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 386, ../sass/_data_list_table.scss */
+  /* line 403, ../sass/_data_list_table.scss */
   .data_list_table .tool_bar > li.sub_title {
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 386, ../sass/_data_list_table.scss */
+  /* line 403, ../sass/_data_list_table.scss */
   .data_list_table .tool_bar > li.sub_title {
     font-size: 1.25em;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 386, ../sass/_data_list_table.scss */
+  /* line 403, ../sass/_data_list_table.scss */
   .data_list_table .tool_bar > li.sub_title {
     font-size: 1.3em;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 386, ../sass/_data_list_table.scss */
+  /* line 403, ../sass/_data_list_table.scss */
   .data_list_table .tool_bar > li.sub_title {
     font-size: 1.35em;
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 386, ../sass/_data_list_table.scss */
+  /* line 403, ../sass/_data_list_table.scss */
   .data_list_table .tool_bar > li.sub_title {
     font-size: 1.4em;
   }
 }
-/* line 397, ../sass/_data_list_table.scss */
+/* line 414, ../sass/_data_list_table.scss */
 .data_list_table .comparison h2 {
   font-size: 1.4em;
 }
 @media screen and (min-width: 1250px) {
-  /* line 397, ../sass/_data_list_table.scss */
+  /* line 414, ../sass/_data_list_table.scss */
   .data_list_table .comparison h2 {
     font-size: 1.65em;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 397, ../sass/_data_list_table.scss */
+  /* line 414, ../sass/_data_list_table.scss */
   .data_list_table .comparison h2 {
     font-size: 1.7em;
   }
 }
 @media screen and (min-width: 1350px) {
-  /* line 397, ../sass/_data_list_table.scss */
+  /* line 414, ../sass/_data_list_table.scss */
   .data_list_table .comparison h2 {
     font-size: 1.8em;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 397, ../sass/_data_list_table.scss */
+  /* line 414, ../sass/_data_list_table.scss */
   .data_list_table .comparison h2 {
     font-size: 1.9em;
   }
 }
-/* line 404, ../sass/_data_list_table.scss */
+/* line 421, ../sass/_data_list_table.scss */
 .data_list_table .comparison h2 a.active {
   background-color: #fec037;
 }
-/* line 410, ../sass/_data_list_table.scss */
+/* line 427, ../sass/_data_list_table.scss */
 .data_list_table .comparison_ul {
   display: table;
   clear: both;
   margin-left: 60px;
 }
-/* line 414, ../sass/_data_list_table.scss */
+/* line 431, ../sass/_data_list_table.scss */
 .data_list_table .comparison_ul li {
   background-color: #e6ddbe;
   line-height: 1.5em;
@@ -2463,48 +2407,48 @@ body#inside.day img.day {
   padding-left: 25px;
 }
 @media screen and (min-width: 1300px) {
-  /* line 414, ../sass/_data_list_table.scss */
+  /* line 431, ../sass/_data_list_table.scss */
   .data_list_table .comparison_ul li {
     font-size: 1.1em;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 414, ../sass/_data_list_table.scss */
+  /* line 431, ../sass/_data_list_table.scss */
   .data_list_table .comparison_ul li {
     font-size: 1.15em;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 414, ../sass/_data_list_table.scss */
+  /* line 431, ../sass/_data_list_table.scss */
   .data_list_table .comparison_ul li {
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 414, ../sass/_data_list_table.scss */
+  /* line 431, ../sass/_data_list_table.scss */
   .data_list_table .comparison_ul li {
     font-size: 1.25em;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 414, ../sass/_data_list_table.scss */
+  /* line 431, ../sass/_data_list_table.scss */
   .data_list_table .comparison_ul li {
     font-size: 1.3em;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 414, ../sass/_data_list_table.scss */
+  /* line 431, ../sass/_data_list_table.scss */
   .data_list_table .comparison_ul li {
     font-size: 1.35em;
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 414, ../sass/_data_list_table.scss */
+  /* line 431, ../sass/_data_list_table.scss */
   .data_list_table .comparison_ul li {
     font-size: 1.4em;
   }
 }
-/* line 426, ../sass/_data_list_table.scss */
+/* line 443, ../sass/_data_list_table.scss */
 .data_list_table .comparison_ul li::before {
   position: absolute;
   top: 7px;
@@ -2514,7 +2458,7 @@ body#inside.day img.day {
   background-color: #9be66f;
   border-radius: 50%;
 }
-/* line 437, ../sass/_data_list_table.scss */
+/* line 454, ../sass/_data_list_table.scss */
 .data_list_table .comparison_ul li span {
   display: inline-block;
   position: absolute;
@@ -2523,118 +2467,110 @@ body#inside.day img.day {
   width: 10px;
   height: 10px;
 }
-/* line 443, ../sass/_data_list_table.scss */
+@media screen and (min-width: 1300px) {
+  /* line 454, ../sass/_data_list_table.scss */
+  .data_list_table .comparison_ul li span {
+    top: 13px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  /* line 454, ../sass/_data_list_table.scss */
+  .data_list_table .comparison_ul li span {
+    top: 16px;
+  }
+}
+/* line 462, ../sass/_data_list_table.scss */
 .data_list_table .smart_user {
   position: absolute;
   bottom: 5px;
   right: 5px;
 }
-/* line 448, ../sass/_data_list_table.scss */
+/* line 467, ../sass/_data_list_table.scss */
 .data_list_table .smart_user .comparison_ul li {
   float: left;
   margin: 0 5px;
   background-color: #fff5d2;
 }
-/* line 455, ../sass/_data_list_table.scss */
+/* line 474, ../sass/_data_list_table.scss */
 .data_list_table .btn_info_table {
   margin-bottom: 10px;
 }
-/* line 457, ../sass/_data_list_table.scss */
+/* line 476, ../sass/_data_list_table.scss */
 .data_list_table .btn_info_table .query_table {
   display: table;
   margin: 0 auto;
 }
-/* line 460, ../sass/_data_list_table.scss */
+/* line 479, ../sass/_data_list_table.scss */
 .data_list_table .btn_info_table .query_table li {
   display: inline-block;
   float: left;
   background-color: #fff4d4;
   color: #59584a;
   margin-right: 20px;
-  height: 136px;
   text-align: center;
+  /*
+  @media screen and (min-width: 1500px){font-size: 1.2em;}
+  @media screen and (min-width: 1600px){font-size: 1.25em;}
+  @media screen and (min-width: 1700px){font-size: 1.3em;}
+  @media screen and (min-width: 1800px){font-size: 1.35em;}
+  @media screen and (min-width: 1900px){font-size: 1.4em;}
+  */
 }
 @media screen and (min-width: 1300px) {
-  /* line 460, ../sass/_data_list_table.scss */
+  /* line 479, ../sass/_data_list_table.scss */
   .data_list_table .btn_info_table .query_table li {
     font-size: 1.1em;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 460, ../sass/_data_list_table.scss */
+  /* line 479, ../sass/_data_list_table.scss */
   .data_list_table .btn_info_table .query_table li {
     font-size: 1.15em;
   }
 }
-@media screen and (min-width: 1500px) {
-  /* line 460, ../sass/_data_list_table.scss */
-  .data_list_table .btn_info_table .query_table li {
-    font-size: 1.2em;
-  }
-}
-@media screen and (min-width: 1600px) {
-  /* line 460, ../sass/_data_list_table.scss */
-  .data_list_table .btn_info_table .query_table li {
-    font-size: 1.25em;
-  }
-}
-@media screen and (min-width: 1700px) {
-  /* line 460, ../sass/_data_list_table.scss */
-  .data_list_table .btn_info_table .query_table li {
-    font-size: 1.3em;
-  }
-}
-@media screen and (min-width: 1800px) {
-  /* line 460, ../sass/_data_list_table.scss */
-  .data_list_table .btn_info_table .query_table li {
-    font-size: 1.35em;
-  }
-}
-@media screen and (min-width: 1900px) {
-  /* line 460, ../sass/_data_list_table.scss */
-  .data_list_table .btn_info_table .query_table li {
-    font-size: 1.4em;
-  }
-}
-/* line 475, ../sass/_data_list_table.scss */
+/* line 496, ../sass/_data_list_table.scss */
 .data_list_table .btn_info_table .query_table li b {
   display: block;
   background-color: #40b3af;
   color: #fff;
-  padding: 10px 20px;
-  height: 60px;
+  padding: 5px 20px;
   vertical-align: middle;
 }
-@media screen and (min-width: 1900px) {
-  /* line 475, ../sass/_data_list_table.scss */
+@media screen and (min-width: 1300px) {
+  /* line 496, ../sass/_data_list_table.scss */
   .data_list_table .btn_info_table .query_table li b {
-    height: 70px;
-    padding: 10px 50px;
+    padding: 5px 40px;
   }
 }
-/* line 487, ../sass/_data_list_table.scss */
+@media screen and (min-width: 1900px) {
+  /* line 496, ../sass/_data_list_table.scss */
+  .data_list_table .btn_info_table .query_table li b {
+    padding: 5px 60px;
+  }
+}
+/* line 506, ../sass/_data_list_table.scss */
 .data_list_table .btn_info_table .query_table li a {
   display: block;
   cursor: pointer;
   color: #59584a;
 }
-/* line 491, ../sass/_data_list_table.scss */
+/* line 510, ../sass/_data_list_table.scss */
 .data_list_table .btn_info_table .query_table li a.active {
   color: #2a2920;
   background-color: #fff9e6;
   height: 100%;
 }
-/* line 495, ../sass/_data_list_table.scss */
+/* line 514, ../sass/_data_list_table.scss */
 .data_list_table .btn_info_table .query_table li a.active b {
   background-color: #238884;
 }
-/* line 500, ../sass/_data_list_table.scss */
+/* line 519, ../sass/_data_list_table.scss */
 .data_list_table .btn_info_table .query_table li p {
   display: block;
   padding: 10px 8px 0 8px;
   min-height: 38px;
 }
-/* line 505, ../sass/_data_list_table.scss */
+/* line 524, ../sass/_data_list_table.scss */
 .data_list_table .btn_info_table .query_table li i {
   display: block;
   padding: 5px 0 8px 0;
@@ -2642,29 +2578,29 @@ body#inside.day img.day {
   font-size: .9em;
 }
 @media screen and (min-width: 1900px) {
-  /* line 505, ../sass/_data_list_table.scss */
+  /* line 524, ../sass/_data_list_table.scss */
   .data_list_table .btn_info_table .query_table li i {
     padding: 5px 0 10px 0;
   }
 }
-/* line 515, ../sass/_data_list_table.scss */
+/* line 534, ../sass/_data_list_table.scss */
 .data_list_table .btn_info_table .query_table li:nth-child(1) b, .data_list_table .btn_info_table .query_table li:nth-child(2) b, .data_list_table .btn_info_table .query_table li:nth-child(3) b {
   line-height: 40px;
 }
 @media screen and (min-width: 1300px) {
-  /* line 515, ../sass/_data_list_table.scss */
+  /* line 534, ../sass/_data_list_table.scss */
   .data_list_table .btn_info_table .query_table li:nth-child(1) b, .data_list_table .btn_info_table .query_table li:nth-child(2) b, .data_list_table .btn_info_table .query_table li:nth-child(3) b {
     line-height: 43px;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 515, ../sass/_data_list_table.scss */
+  /* line 534, ../sass/_data_list_table.scss */
   .data_list_table .btn_info_table .query_table li:nth-child(1) b, .data_list_table .btn_info_table .query_table li:nth-child(2) b, .data_list_table .btn_info_table .query_table li:nth-child(3) b {
     line-height: 46px;
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 515, ../sass/_data_list_table.scss */
+  /* line 534, ../sass/_data_list_table.scss */
   .data_list_table .btn_info_table .query_table li:nth-child(1) b, .data_list_table .btn_info_table .query_table li:nth-child(2) b, .data_list_table .btn_info_table .query_table li:nth-child(3) b {
     line-height: 50px;
   }

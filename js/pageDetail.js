@@ -119,7 +119,8 @@ $(function () {
 
 /*///////////////////////////////////////////////////////////
 日期選擇器
-
+///////////////////////////////////////////////////////////*/
+/*
 $(document).ready(function () {
     var opt1 = {
         //以下為日期選擇器部分
@@ -146,10 +147,13 @@ $(document).ready(function () {
         pmNames: ["下午", "PM", "P"],
         showSecond: false,
         timeFormat: ""//取消時間選擇
-        //timeFormat: "HH:mm:ss"
+        //timeFormat: "HH:mm:ss:l"
     };
     $(".datetimepicker1").datetimepicker(opt1);
+
 });
+
+
 $(document).ready(function () {
     var opt2 = {
         //以下為日期選擇器部分
@@ -175,16 +179,152 @@ $(document).ready(function () {
         amNames: ["上午", "AM", "A"],
         pmNames: ["下午", "PM", "P"],
         showSecond: false,
-        timeFormat: ""//取消時間選擇
-        //timeFormat: "HH:mm:ss"
+        //timeFormat: ""//取消時間選擇
+        timeFormat: "HH:mm:ss:l",
+        timeOnlyShowDate:true
     };
     $(".datetimepicker2").datetimepicker(opt2);
+    //console.log($("input.datetimepicker2")[0].value);
 });
-///////////////////////////////////////////////////////////*/
+*/
+var choseStartTimeStamp;
+var choseEndTimeStamp;
+var choseCompareTimeStamp;
+
+$(document).ready(function () {
+    var startDateTextBox = $('.datetimepicker1');
+    var endDateTextBox = $('.datetimepicker2');
+    var compareDateStartTextBox = $('.datetimepicker3');
+    var compareDateEndTextBox = $('.datetimepicker4');
+
+    startDateTextBox.datetimepicker({
+        dayNames: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+        dayNamesMin: ["日", "一", "二", "三", "四", "五", "六"],
+        monthNames: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+        monthNamesShort: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+        currentText: "今天日期",
+        closeText: "確定",
+        timeFormat: '',
+        //timeFormat: 'HH:mm z',
+        dateFormat: "yy-mm-dd",
+        onClose: function (dateText, inst) {
+            if (endDateTextBox.val() != '') {
+                var testStartDate = startDateTextBox.datetimepicker('getDate');
+                var testEndDate = endDateTextBox.datetimepicker('getDate');
+                if (testStartDate > testEndDate)
+                    endDateTextBox.datetimepicker('setDate', testStartDate);
+            }
+            else {
+                endDateTextBox.val(dateText);
+            }
+            //write here
+        },
+        onSelect: function (selectedDateTime) {
+            var limitDay = startDateTextBox.datetimepicker('getDate').getDate() + 1;
+            choseStartTimeStamp = startDateTextBox.datetimepicker('getDate').getTime();
+            console.log(choseStartTimeStamp + "starttime");
+            var date = new Date(startDateTextBox.datetimepicker('getDate').setDate(limitDay));
+
+            endDateTextBox.datetimepicker('option', 'minDate', date);
+            endDateTextBox.datetimepicker('setDate', date);
+            choseEndTimeStamp = (date.getTime());
+            console.log(choseEndTimeStamp + "endtime");
+            nowChart(choseStartTimeStamp, choseEndTimeStamp, choseEndTimeStamp);
+        }
+    });
+    endDateTextBox.datetimepicker(
+        {
+            dayNames: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+            dayNamesMin: ["日", "一", "二", "三", "四", "五", "六"],
+            monthNames: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+            monthNamesShort: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+            currentText: "今天日期",
+            closeText: "確定",
+            timeFormat: '',
+            //timeFormat: 'HH:mm z',
+            dateFormat: "yy-mm-dd",
+            onClose: function (dateText, inst) {
+                if (startDateTextBox.val() != '') {
+                    var testStartDate = startDateTextBox.datetimepicker('getDate');
+                    var testEndDate = endDateTextBox.datetimepicker('getDate');
+                    if (testStartDate > testEndDate)
+                        startDateTextBox.datetimepicker('setDate', testEndDate);
+                }
+                else {
+                    startDateTextBox.val(dateText);
+                }
+            },
+            onSelect: function (selectedDateTime) {
+                startDateTextBox.datetimepicker('option', 'maxDate', endDateTextBox.datetimepicker('getDate'));
+                choseEndTimeStamp = endDateTextBox.datetimepicker('getDate').getTime();
+                console.log(choseStartTimeStamp + "starttime");
+                console.log(choseEndTimeStamp + "endtime");
+                nowChart(choseStartTimeStamp, choseEndTimeStamp, choseEndTimeStamp);
+            }
+        });
+    compareDateStartTextBox.datetimepicker({
+        dayNames: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+        dayNamesMin: ["日", "一", "二", "三", "四", "五", "六"],
+        monthNames: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+        monthNamesShort: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+        currentText: "今天日期",
+        closeText: "確定",
+        timeFormat: '',
+        //timeFormat: 'HH:mm z',
+        dateFormat: "yy-mm-dd",
+        onSelect: function (selectedDateTime) {
+
+            var limitDay = compareDateStartTextBox.datetimepicker('getDate').getDate() + datediff(choseStartTimeStamp, choseEndTimeStamp);
+            console.log(limitDay + "limitDay");
+            //choseStartTimeStamp =  startDateTextBox.datetimepicker('getDate').getTime();
+            //console.log(choseStartTimeStamp);
+            var date = new Date(startDateTextBox.datetimepicker('getDate').setDate(limitDay));
+            choseCompareTimeStamp = compareDateStartTextBox.datetimepicker('getDate').getTime();
+
+            compareDateEndTextBox.val(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate());
+            console.log(choseStartTimeStamp + "starttime");
+            console.log(choseEndTimeStamp + "endtime");
+            console.log(choseCompareTimeStamp + "comparetime");
+            nowChart(choseStartTimeStamp, choseEndTimeStamp, choseCompareTimeStamp);
+
+            //console.log(choseCompareTimeStamp);
+        }
+
+    });
+
+
+
+});
+
+function datediff(first, second) {
+    // Take the difference between the dates and divide by milliseconds per day.
+    // Round to nearest whole number to deal with DST.
+    return Math.round((second - first) / (1000 * 60 * 60 * 24));
+}
+
+function solarCahrt1(timestart, timeend, compareFrom) {
+    console.log("you click this solarCahrt button");
+    timestart = timestart / 1000;
+    timeend = timeend / 1000;
+    if (!compareFrom) {
+        compareFrom = 1493596800;
+    }
+    $.ajax({
+        method: "GET",
+        url: phpPathforWeb + "/ajaxCurvesGetSloarEngData/" + timestart + "/" + timeend + "/" + compareFrom,
+        //http://allwin.tvws.com.tw:1688/LIC/public/ajaxGetPublicEngNow/data
+        //大公用電累積用電量 amChart Data
+        dataType: "json"
+    }).done(function (data) {
+        //console.log(data);
+        draw(data)
+    });
+}
 
 /*///////////////////////////////////////////////////////////
 active
 ///////////////////////////////////////////////////////////*/
+//warningInfo.blade.html
 $(function () {
     $(".page_no li a").click(function () {
         $(".page_no li a").removeClass('active');
@@ -192,7 +332,7 @@ $(function () {
     });
 });
 
-//30戶用電比對 對比差曲線
+//useElectAllInfo.blade.html 30戶用電比對 對比差曲線
 $(function () {
     $(".comparison h2 a").click(function () {
         $(".comparison h2 a").removeClass('active');
@@ -202,35 +342,60 @@ $(function () {
 
 //curves.blade.html
 $(function () {
+
+    var $target = $(".compare_time"),
+        $switch = $(".time_picker input");
+
+    $target.hide();
+    $switch.removeClass('show_compare_time');
+
+    $(".add_compare_time").click(function () {
+        $switch.addClass('show_compare_time');
+        $(".time_picker input.show_compare_time").click(function () {
+            $target.show();
+            return false;
+        });
+        return false;
+    });
+
+    $(".btn_info_img a:not('.add_compare_time')").click(function () {
+        $switch.removeClass('show_compare_time');
+        $target.hide();
+        $switch.click(function () {
+            $target.hide();
+        });
+    });
+
+    //active 按了換色
     $(".btn_info_img a").click(function () {
         $(".btn_info_img a").removeClass('active');
         $(this).addClass('active');
     });
-});
 
-//useElectInfo.blade.html
-$(function () {
+    $(".btn_info_img a.active").click();//載入先點擊一次
+
+    
+    //useElectInfo.blade.html
+    $(".query_table a:not('.add_compare_time')").click(function () {
+        $switch.removeClass('show_compare_time');
+        $target.hide();
+        $switch.click(function () {
+            $target.hide();
+        });
+    });
+
+    //active 按了換色
     $(".query_table a").click(function () {
         $(".query_table a").removeClass('active');
         $(this).addClass('active');
     });
-});
 
-//比較時間 大公 30用戶 按鈕按下 出現
-$(function () {
-    $(".compare_time").hide();
-    $(".btn_info_img a:not('.show_compare_time')").click(function () {
-        $(".compare_time").hide();
-    });
-    $(".show_compare_time").click(function () {
-        $(".compare_time").show();
-    });
-    $(".btn_info_img a.active").click();
-});
+    $(".query_table a.active").click();//載入先點擊一次
 
+    //useElectInfo.blade.html 
+    //當月累積電費 
+    //與前年當月整體用電量度數差異 按鈕按下 出現
 
-//當月累積電費 按鈕按下 出現
-$(function () {
     $(".smart_user").hide();
     $(".query_table a:not('.show_smart_user')").click(function () {
         $(".smart_user").hide();

@@ -556,7 +556,6 @@ body#inside.day img.day {
 /* line 141, ../sass/_base-ui.scss */
 #main_content {
   box-sizing: border-box;
-  min-height: 100vh;
 }
 /* line 150, ../sass/_base-ui.scss */
 #inside.night #main_content, #inside.day #main_content {
@@ -579,7 +578,6 @@ body#inside.day img.day {
 .info_block .community_photo {
   width: 100%;
   background-color: #422419;
-  margin-top: 12px;
   padding: 0px 10px 8px 10px;
   box-sizing: border-box;
 }
@@ -6661,67 +6659,73 @@ div.tab_container .tab_content h2 {
 @media screen and (min-width: 1350px) {
   /* line 1359, ../sass/_table_list.scss */
   .map_electric.map_electric4 {
-    top: 413px;
+    top: 438px;
   }
 }
 @media screen and (min-width: 1375px) {
   /* line 1359, ../sass/_table_list.scss */
   .map_electric.map_electric4 {
-    top: 413px;
+    top: 446px;
   }
 }
 @media screen and (min-width: 1400px) {
   /* line 1359, ../sass/_table_list.scss */
   .map_electric.map_electric4 {
-    top: 413px;
+    top: 454px;
   }
 }
 @media screen and (min-width: 1425px) {
   /* line 1359, ../sass/_table_list.scss */
   .map_electric.map_electric4 {
-    top: 413px;
+    top: 463px;
   }
 }
 @media screen and (min-width: 1450px) {
   /* line 1359, ../sass/_table_list.scss */
   .map_electric.map_electric4 {
-    top: 413px;
+    top: 471px;
   }
 }
 @media screen and (min-width: 1475px) {
   /* line 1359, ../sass/_table_list.scss */
   .map_electric.map_electric4 {
-    top: 413px;
+    top: 479px;
   }
 }
 @media screen and (min-width: 1500px) {
   /* line 1359, ../sass/_table_list.scss */
   .map_electric.map_electric4 {
-    top: 413px;
+    top: 486px;
+  }
+}
+@media screen and (min-width: 1515px) {
+  /* line 1359, ../sass/_table_list.scss */
+  .map_electric.map_electric4 {
+    top: 492px;
   }
 }
 @media screen and (min-width: 1525px) {
   /* line 1359, ../sass/_table_list.scss */
   .map_electric.map_electric4 {
-    top: 413px;
+    top: 495px;
   }
 }
 @media screen and (min-width: 1550px) {
   /* line 1359, ../sass/_table_list.scss */
   .map_electric.map_electric4 {
-    top: 413px;
+    top: 503px;
   }
 }
 @media screen and (min-width: 1575px) {
   /* line 1359, ../sass/_table_list.scss */
   .map_electric.map_electric4 {
-    top: 413px;
+    top: 510px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1580px) {
   /* line 1359, ../sass/_table_list.scss */
   .map_electric.map_electric4 {
-    top: 297px;
+    top: 513px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -6730,304 +6734,316 @@ div.tab_container .tab_content h2 {
     top: 523px;
   }
 }
-/* line 1386, ../sass/_table_list.scss */
+/* line 1387, ../sass/_table_list.scss */
 .map_electric.map_electric5 {
   top: 396px;
 }
 @media screen and (min-width: 1050px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
     top: 405px;
   }
 }
 @media screen and (min-width: 1075px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
     top: 415px;
   }
 }
 @media screen and (min-width: 1100px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
     top: 425px;
   }
 }
 @media screen and (min-width: 1125px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
     top: 435px;
   }
 }
 @media screen and (min-width: 1150px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
     top: 445px;
   }
 }
 @media screen and (min-width: 1175px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
     top: 455px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
     top: 464px;
   }
 }
 @media screen and (min-width: 1225px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
     top: 475px;
   }
 }
 @media screen and (min-width: 1250px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
     top: 485px;
   }
 }
 @media screen and (min-width: 1275px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
     top: 493px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
     top: 503px;
   }
 }
 @media screen and (min-width: 1325px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
     top: 514px;
   }
 }
 @media screen and (min-width: 1350px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
-    top: 493px;
+    top: 523px;
   }
 }
 @media screen and (min-width: 1375px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
-    top: 493px;
+    top: 533px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
-    top: 493px;
+    top: 542px;
   }
 }
 @media screen and (min-width: 1425px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
-    top: 493px;
+    top: 553px;
   }
 }
 @media screen and (min-width: 1450px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
-    top: 493px;
+    top: 562px;
   }
 }
 @media screen and (min-width: 1475px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
-    top: 493px;
+    top: 571px;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
-    top: 493px;
+    top: 580px;
+  }
+}
+@media screen and (min-width: 1515px) {
+  /* line 1387, ../sass/_table_list.scss */
+  .map_electric.map_electric5 {
+    top: 586px;
   }
 }
 @media screen and (min-width: 1525px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
-    top: 493px;
+    top: 590px;
   }
 }
 @media screen and (min-width: 1550px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
-    top: 493px;
+    top: 600px;
   }
 }
 @media screen and (min-width: 1575px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
-    top: 493px;
+    top: 610px;
+  }
+}
+@media screen and (min-width: 1580px) {
+  /* line 1387, ../sass/_table_list.scss */
+  .map_electric.map_electric5 {
+    top: 612px;
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 1386, ../sass/_table_list.scss */
-  .map_electric.map_electric5 {
-    top: 297px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  /* line 1386, ../sass/_table_list.scss */
+  /* line 1387, ../sass/_table_list.scss */
   .map_electric.map_electric5 {
     top: 620px;
   }
 }
-/* line 1413, ../sass/_table_list.scss */
+/* line 1415, ../sass/_table_list.scss */
 .map_electric.map_electric6 {
   top: 461px;
 }
 @media screen and (min-width: 1050px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 472px;
   }
 }
 @media screen and (min-width: 1075px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 482px;
   }
 }
 @media screen and (min-width: 1100px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 493px;
   }
 }
 @media screen and (min-width: 1125px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 504px;
   }
 }
 @media screen and (min-width: 1150px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 515px;
   }
 }
 @media screen and (min-width: 1175px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 526px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 538px;
   }
 }
 @media screen and (min-width: 1225px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 552px;
   }
 }
 @media screen and (min-width: 1250px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 563px;
   }
 }
 @media screen and (min-width: 1275px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 573px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 585px;
   }
 }
 @media screen and (min-width: 1325px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 600px;
   }
 }
 @media screen and (min-width: 1350px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 610px;
   }
 }
 @media screen and (min-width: 1375px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 622px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 632px;
   }
 }
 @media screen and (min-width: 1425px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 645px;
   }
 }
 @media screen and (min-width: 1450px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 656px;
   }
 }
 @media screen and (min-width: 1475px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 665px;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 675px;
   }
 }
+@media screen and (min-width: 1515px) {
+  /* line 1415, ../sass/_table_list.scss */
+  .map_electric.map_electric6 {
+    top: 683px;
+  }
+}
 @media screen and (min-width: 1525px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 688px;
   }
 }
 @media screen and (min-width: 1550px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 702px;
   }
 }
 @media screen and (min-width: 1575px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 713px;
   }
 }
 @media screen and (min-width: 1580px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 714px;
   }
 }
 @media screen and (min-width: 1590px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 715px;
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 1413, ../sass/_table_list.scss */
+  /* line 1415, ../sass/_table_list.scss */
   .map_electric.map_electric6 {
     top: 724px;
   }
