@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="utf-8">
-    <title>新北市智能生活社區 - 用戶用電資訊</title>
+    <title>新北市智能生活社區 - 30戶用電比對</title>
     <!--IE integration -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--viewport integration -->
@@ -79,17 +79,63 @@
                 <div class="exception_message">異常訊息:無</div>
             </div>
             <div class="data_list_table">
-                <div class="comparison">
-                    <h2 class="show"><a class="active">30戶用電比對</a></h2>
-                    <h2 class="show"><a>對比差曲線</a></h2>
-                    <ul class="comparison_ul">
-                        <li class="show" id="notSmart"><span style="background-color:#05c1fe;"></span>未安裝智慧電錶用戶</li>
-                        <li class="show" id="setSmart"><span style="background-color:#28fa1d;"></span>安裝智慧電錶用戶</li>
-                        <li class="show" id="diffSmart"><span style="background-color:#dc5303;"></span>對比差曲線</li>
+                <div class="btn_info_table">
+                    <ul class="query_table">
+                        <li><a href="javascript:;" class="active"><b>30戶即時<br/>平均用電量</b><p>1234567</p><i>kW</i></a></li>
+                        <li><a href="javascript:;"><b>30戶當月<br/>平均用電量</b><p>123</p><i>度</i></a></li>
+                        <li><a href="javascript:;" class="show_smart_user"><b>當月有裝與未裝電表<br/>住戶用電度數差異</b><p></p><i>度</i></a></li>
+                        <li><a href="javascript:;" class="show_smart_user add_compare_time"><b>與前年當月整體<br/>用電量度數差異</b><p></p><i>度</i></a></li>
+                        <li><a href="javascript:;"><b>當月整體<br/>節電比例</b><p></p><i>度</i></a></li>
                     </ul>
                 </div>
+                <ul class="tool_bar query">
+                    <li><h2 class="color_white">30戶用電比對</h2></li>
+                    <li>
+                        <ul class="time_picker time_interval" id="timeRange">
+                            <li>時間區間：</li>
+                            <li>
+                                <input class="datetimepicker1 show_compare_time" type="text" placeholder="年 - 月 - 日" />
+                            </li>
+                            <li>~</li>
+                            <li>
+                                <input class="datetimepicker2 show_compare_time" type="text" placeholder="年 - 月 - 日" />
+                            </li>
+                        </ul>
+                        
+                        <ul class="time_picker compare_time" id="timeRange" style="display: none;">
+                            <li>比較時間：</li>
+                            <li>
+                                <input class="datetimepicker3" type="text" placeholder="年 - 月 - 日" />
+                            </li>
+                            <li>~</li>
+                            <li>
+                                <input class="datetimepicker4" type="text" placeholder="年 - 月 - 日" />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="time_date">
+                            <li>顯示方式：</li>
+                            <li onclick="byDay()"><a href="javascript:;">日</a></li>
+                            <li onclick="byMonth()"><a href="javascript:;">月</a></li>
+                            <li onclick="byYears()"><a href="javascript:;">年</a></li>
+                            <li onclick="histery()"><a href="javascript:;">歷史</a></li>
+                            <!--li><a href="#">重新設定</a></li-->
+                        </ul>
+                    </li>
+                </ul>
                 <div class="instant_curve_chart">
                     <div id="chartdiv" class="line_graph"></div>
+                    <div class="smart_user" style="display: none;">
+                        <ul class="comparison_ul">
+                            <li class="show" id="notSmart">
+                                <span style="background-color:#05c1fe;"></span>未安裝智慧電錶用戶</li>
+                            <li class="show" id="setSmart">
+                                <span style="background-color:#28fa1d;"></span>安裝智慧電錶用戶</li>
+                            <li class="show" id="diffSmart">
+                                <span style="background-color:#dc5303;"></span>對比差曲線</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
