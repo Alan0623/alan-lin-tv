@@ -903,7 +903,7 @@ div.tab_container {
         }
     }
 }
-
+//single.blade.html
 .single_line_map{
     position: relative;
     display: inline-block;
@@ -932,6 +932,8 @@ div.tab_container {
         width: 100%;
         max-height: 834px;
         min-height: 533px;
+         @media screen and (min-width: 1075px){min-height: 612px;}
+         @media screen and (min-width: 1300px){min-height: 680px;}
     }
     table{
         width: 100%;
@@ -944,9 +946,10 @@ div.tab_container {
         display: inline-block;
     }
 }
+//single.blade.html
 .map_solar{
-    opacity: 0.5;
-    background: red;
+    //opacity: 0.5;
+    //background: red;
     position: absolute;
     left: 137px;
     width: 232px;
@@ -960,8 +963,11 @@ div.tab_container {
     @media screen and (min-width: 1125px){left: 150px;width: 256px;line-height: 32px;}
     @media screen and (min-width: 1145px){left: 153px;width: 261px;line-height: 33px;}
     @media screen and (min-width: 1150px){left: 154px;width: 261px;line-height: 33px;}
+    @media screen and (min-width: 1175px){left: 157px;width: 267px;line-height: 33px;}
     @media screen and (min-width: 1200px){left: 161px;width: 272px;line-height: 34px;}
+    @media screen and (min-width: 1225px){left: 164px;width: 279px;line-height: 35px;}
     @media screen and (min-width: 1250px){left: 168px;width: 282px;line-height: 36px;}
+    @media screen and (min-width: 1275px){left: 171px;width: 290px;line-height: 36px;}
     @media screen and (min-width: 1300px){left: 174px;width: 295px;line-height: 37px;}
     @media screen and (min-width: 1325px){left: 177px;width: 301px;line-height: 37.5px;}
     @media screen and (min-width: 1350px){left: 181px;width: 305px;line-height: 38px;}
@@ -1000,6 +1006,7 @@ div.tab_container {
         @media screen and (min-width: 1100px){top: 110px;}
         @media screen and (min-width: 1125px){top: 112px;}
         @media screen and (min-width: 1150px){top: 114px;}
+        @media screen and (min-width: 1175px){top: 117px;}
         @media screen and (min-width: 1200px){top: 119px;}
         @media screen and (min-width: 1250px){top: 124px;}
         @media screen and (min-width: 1300px){top: 130px;}
@@ -1020,12 +1027,19 @@ div.tab_container {
         @media screen and (min-width: 1100px){top: 194px;}
         @media screen and (min-width: 1125px){top: 198px;}
         @media screen and (min-width: 1150px){top: 203px;}
+        @media screen and (min-width: 1175px){top: 207px;}
         @media screen and (min-width: 1200px){top: 212px;}
+        @media screen and (min-width: 1225px){top: 216px;}
         @media screen and (min-width: 1250px){top: 220px;}
+        @media screen and (min-width: 1275px){top: 225px;}
         @media screen and (min-width: 1300px){top: 230px;}
+        @media screen and (min-width: 1325px){top: 235px;}
         @media screen and (min-width: 1350px){top: 240px;}
+        @media screen and (min-width: 1375px){top: 244px;}
         @media screen and (min-width: 1400px){top: 248px;}
+        @media screen and (min-width: 1425px){top: 253px;}
         @media screen and (min-width: 1450px){top: 256px;}
+        @media screen and (min-width: 1475px){top: 260px;}
         @media screen and (min-width: 1500px){top: 265px;}
         @media screen and (min-width: 1525px){top: 269px;}
         @media screen and (min-width: 1545px){top: 272px;}
@@ -1044,8 +1058,8 @@ div.tab_container {
     }
 }
 .map_wind{
-    opacity: 0.5;
-    background: red;
+    //opacity: 0.5;
+    //background: red;
     position: absolute;
     top: 296px;
     left: 53px;
@@ -1054,113 +1068,116 @@ div.tab_container {
     text-align: right;
     transition: all .3s;
     @media screen and (min-width: 1050px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1075px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1100px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1125px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1150px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1175px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1200px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1225px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1250px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1275px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1300px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1325px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1350px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1375px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1400px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1425px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1450px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1475px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1500px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1525px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1550px){top: 305px;line-height: 19px;}
-    @media screen and (min-width: 1575px){top: 305px;line-height: 19px;}
+    @media screen and (min-width: 1075px){top: 313px;line-height: 19px;}
+    @media screen and (min-width: 1100px){top: 320px;line-height: 20px;}
+    @media screen and (min-width: 1115px){top: 324px;line-height: 20px;}
+    @media screen and (min-width: 1125px){top: 327px;line-height: 21px;}
+    @media screen and (min-width: 1140px){top: 331px;line-height: 21px;}
+    @media screen and (min-width: 1150px){top: 334px;line-height: 21px;}
+    @media screen and (min-width: 1170px){top: 340px;line-height: 21px;}
+    @media screen and (min-width: 1175px){top: 341px;line-height: 22px;}
+    @media screen and (min-width: 1200px){top: 349px;line-height: 22px;}
+    @media screen and (min-width: 1225px){top: 356px;line-height: 23px;}
+    @media screen and (min-width: 1250px){top: 364px;line-height: 23px;}
+    @media screen and (min-width: 1275px){top: 370px;line-height: 24px;}
+    @media screen and (min-width: 1300px){top: 379px;line-height: 24px;}
+    @media screen and (min-width: 1325px){top: 385px;line-height: 25px;}
+    @media screen and (min-width: 1350px){top: 392px;line-height: 25px;}
+    @media screen and (min-width: 1375px){top: 400px;line-height: 26px;}
+    @media screen and (min-width: 1400px){top: 407px;line-height: 27px;}
+    @media screen and (min-width: 1425px){top: 415px;line-height: 27px;}
+    @media screen and (min-width: 1450px){top: 422px;line-height: 27px;}
+    @media screen and (min-width: 1475px){top: 429px;line-height: 28px;}
+    @media screen and (min-width: 1500px){top: 436px;line-height: 28px;}
+    @media screen and (min-width: 1525px){top: 444px;line-height: 29px;}
+    @media screen and (min-width: 1550px){top: 451px;line-height: 29px;}
+    @media screen and (min-width: 1575px){top: 459px;line-height: 30px;}
     @media screen and (min-width: 1600px){top: 465px;line-height: 31px;}
     &.map_wind1{
         left: 53px;
         width: 95px;
         @media screen and (min-width: 1050px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1075px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1100px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1125px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1150px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1175px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1200px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1225px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1250px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1275px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1300px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1325px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1350px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1375px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1400px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1425px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1450px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1475px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1500px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1525px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1550px){left: 55px;width: 97px;}
-        @media screen and (min-width: 1575px){left: 55px;width: 97px;}
+        @media screen and (min-width: 1075px){left: 57px;width: 98px;}
+        @media screen and (min-width: 1100px){left: 57px;width: 103px;}
+        @media screen and (min-width: 1125px){left: 59px;width: 104px;}
+        @media screen and (min-width: 1150px){left: 60px;width: 107px;}
+        @media screen and (min-width: 1175px){left: 61px;width: 110px;}
+        @media screen and (min-width: 1200px){left: 63px;width: 111px;}
+        @media screen and (min-width: 1225px){left: 64px;width: 115px;}
+        @media screen and (min-width: 1250px){left: 65px;width: 116px;}
+        @media screen and (min-width: 1275px){left: 67px;width: 119px;}
+        @media screen and (min-width: 1300px){left: 68px;width: 121px;}
+        @media screen and (min-width: 1325px){left: 69px;width: 124px;}
+        @media screen and (min-width: 1350px){left: 70px;width: 127px;}
+        @media screen and (min-width: 1375px){left: 72px;width: 128px;}
+        @media screen and (min-width: 1400px){left: 73px;width: 130px;}
+        @media screen and (min-width: 1425px){left: 74px;width: 133px;}
+        @media screen and (min-width: 1450px){left: 76px;width: 135px;}
+        @media screen and (min-width: 1475px){left: 77px;width: 136px;}
+        @media screen and (min-width: 1500px){left: 78px;width: 139px;}
+        @media screen and (min-width: 1525px){left: 80px;width: 141px;}
+        @media screen and (min-width: 1550px){left: 81px;width: 144px;}
+        @media screen and (min-width: 1575px){left: 82px;width: 146px;}
         @media screen and (min-width: 1600px){left: 85px;width: 150px;}
     }
     &.map_wind2{
         left: 180px;
         width: 92px;
         @media screen and (min-width: 1050px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1075px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1100px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1125px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1150px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1175px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1200px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1225px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1250px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1275px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1300px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1325px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1350px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1375px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1400px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1425px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1450px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1475px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1500px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1525px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1550px){left: 185px;width: 97px;}
-        @media screen and (min-width: 1575px){left: 185px;width: 97px;}
+        @media screen and (min-width: 1075px){left: 189px;width: 98px;}
+        @media screen and (min-width: 1100px){left: 193px;width: 100px;}
+        @media screen and (min-width: 1125px){left: 198px;width: 103px;}
+        @media screen and (min-width: 1150px){left: 202px;width: 105px;}
+        @media screen and (min-width: 1175px){left: 206px;width: 107px;}
+        @media screen and (min-width: 1200px){left: 211px;width: 109px;}
+        @media screen and (min-width: 1225px){left: 215px;width: 112px;}
+        @media screen and (min-width: 1250px){left: 220px;width: 113px;}
+        @media screen and (min-width: 1275px){left: 224px;width: 116px;}
+        @media screen and (min-width: 1300px){left: 229px;width: 118px;}
+        @media screen and (min-width: 1325px){left: 234px;width: 120px;}
+        @media screen and (min-width: 1350px){left: 237px;width: 122px;}
+        @media screen and (min-width: 1375px){left: 242px;width: 125px;}
+        @media screen and (min-width: 1400px){left: 246px;width: 128px;}
+        @media screen and (min-width: 1425px){left: 250px;width: 129px;}
+        @media screen and (min-width: 1450px){left: 256px;width: 131px;}
+        @media screen and (min-width: 1475px){left: 260px;width: 135px;}
+        @media screen and (min-width: 1500px){left: 264px;width: 136px;}
+        @media screen and (min-width: 1525px){left: 269px;width: 137px;}
+        @media screen and (min-width: 1550px){left: 273px;width: 140px;}
+        @media screen and (min-width: 1575px){left: 277px;width: 143px;}
         @media screen and (min-width: 1600px){left: 285px;width: 148px;}
     }
     &.map_wind3{
         left: 293px;
         width: 76px;
         @media screen and (min-width: 1050px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1075px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1100px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1125px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1150px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1175px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1200px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1225px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1250px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1275px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1300px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1325px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1350px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1375px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1400px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1425px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1450px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1475px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1500px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1525px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1550px){left: 301px;width: 77px;}
-        @media screen and (min-width: 1575px){left: 301px;width: 77px;}
+        @media screen and (min-width: 1075px){left: 308px;width: 80px;}
+        @media screen and (min-width: 1100px){left: 315px;width: 81px;}
+        @media screen and (min-width: 1125px){left: 323px;width: 83px;}
+        @media screen and (min-width: 1150px){left: 329px;width: 86px;}
+        @media screen and (min-width: 1175px){left: 336px;width: 87px;}
+        @media screen and (min-width: 1200px){left: 344px;width: 88px;}
+        @media screen and (min-width: 1225px){left: 350px;width: 92px;}
+        @media screen and (min-width: 1250px){left: 358px;width: 93px;}
+        @media screen and (min-width: 1275px){left: 366px;width: 94px;}
+        @media screen and (min-width: 1300px){left: 375px;width: 96px;}
+        @media screen and (min-width: 1325px){left: 380px;width: 98px;}
+        @media screen and (min-width: 1350px){left: 387px;width: 100px;}
+        @media screen and (min-width: 1375px){left: 395px;width: 101px;}
+        @media screen and (min-width: 1400px){left: 402px;width: 103px;}
+        @media screen and (min-width: 1425px){left: 409px;width: 105px;}
+        @media screen and (min-width: 1450px){left: 416px;width: 108px;}
+        @media screen and (min-width: 1475px){left: 422px;width: 111px;}
+        @media screen and (min-width: 1500px){left: 430px;width: 112px;}
+        @media screen and (min-width: 1525px){left: 437px;width: 113px;}
+        @media screen and (min-width: 1550px){left: 445px;width: 115px;}
+        @media screen and (min-width: 1575px){left: 452px;width: 117px;}
         @media screen and (min-width: 1600px){left: 465px;width: 120px;}
     }
 }
 .map_box{
-    opacity: 0.5;
-    background: red;
+    //opacity: 0.5;
+    //background: red;
     position: absolute;
     top: 452px;
     left: 53px;
@@ -1169,86 +1186,87 @@ div.tab_container {
     text-align: right;
     transition: all .3s;
         @media screen and (min-width: 1050px){top: 462px;line-height: 19px;} 
-        @media screen and (min-width: 1075px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1100px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1125px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1150px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1175px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1200px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1225px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1250px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1275px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1300px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1325px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1350px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1375px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1390px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1400px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1425px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1450px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1475px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1500px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1525px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1550px){top: 462px;line-height: 19px;}
-        @media screen and (min-width: 1575px){top: 462px;line-height: 19px;}
+        @media screen and (min-width: 1075px){top: 474px;line-height: 19px;}
+        @media screen and (min-width: 1100px){top: 484px;line-height: 20px;}
+        @media screen and (min-width: 1125px){top: 493px;line-height: 21px;}
+        @media screen and (min-width: 1150px){top: 505px;line-height: 21px;}
+        @media screen and (min-width: 1170px){top: 515px;line-height: 21px;}
+        @media screen and (min-width: 1175px){top: 518px;line-height: 21px;}
+        @media screen and (min-width: 1200px){top: 530px;line-height: 22px;}
+        @media screen and (min-width: 1225px){top: 541px;line-height: 22px;}
+        @media screen and (min-width: 1250px){top: 552px;line-height: 23px;}
+        @media screen and (min-width: 1275px){top: 560px;line-height: 24px;}
+        @media screen and (min-width: 1300px){top: 573px;line-height: 24px;}
+        @media screen and (min-width: 1325px){top: 584px;line-height: 24px;}
+        @media screen and (min-width: 1350px){top: 597px;line-height: 24px;}
+        @media screen and (min-width: 1375px){top: 608px;line-height: 25px;}
+        @media screen and (min-width: 1390px){top: 612px;line-height: 26px;}
+        @media screen and (min-width: 1400px){top: 617px;line-height: 26px;}
+        @media screen and (min-width: 1425px){top: 630px;line-height: 27px;}
+        @media screen and (min-width: 1450px){top: 640px;line-height: 27px;}
+        @media screen and (min-width: 1475px){top: 650px;line-height: 28px;}
+        @media screen and (min-width: 1500px){top: 661px;line-height: 28px;}
+        @media screen and (min-width: 1525px){top: 672px;line-height: 28px;}
+        @media screen and (min-width: 1550px){top: 685px;line-height: 29px;}
+        @media screen and (min-width: 1575px){top: 695px;line-height: 29px;}
         @media screen and (min-width: 1600px){top: 707px;line-height: 30px;}  
     &.map_box1{
         left: 120px;width: 102px;
         @media screen and (min-width: 1050px){left: 123px;width: 105px;} 
-        @media screen and (min-width: 1075px){left: 123px;width: 105px;}
-        @media screen and (min-width: 1100px){left: 123px;width: 105px;}
-        @media screen and (min-width: 1125px){left: 123px;width: 105px;}
-        @media screen and (min-width: 1150px){left: 123px;width: 105px;}
-        @media screen and (min-width: 1175px){left: 123px;width: 105px;}
-        @media screen and (min-width: 1200px){left: 123px;width: 105px;}
-        @media screen and (min-width: 1225px){left: 123px;width: 105px;}
-        @media screen and (min-width: 1250px){left: 123px;width: 105px;}
-        @media screen and (min-width: 1275px){left: 123px;width: 105px;}
-        @media screen and (min-width: 1300px){left: 123px;width: 105px;}
-        @media screen and (min-width: 1325px){left: 123px;width: 105px;}
-        @media screen and (min-width: 1350px){left: 123px;width: 105px;}
-        @media screen and (min-width: 1375px){left: 123px;width: 105px;}
-        @media screen and (min-width: 1400px){left: 123px;width: 105px;}
-        @media screen and (min-width: 1425px){left: 123px;width: 105px;}
-        @media screen and (min-width: 1450px){left: 123px;width: 105px;}
-        @media screen and (min-width: 1475px){left: 123px;width: 105px;}
-        @media screen and (min-width: 1500px){left: 123px;width: 105px;}
-        @media screen and (min-width: 1525px){left: 123px;width: 105px;}
-        @media screen and (min-width: 1550px){left: 123px;width: 105px;}
-        @media screen and (min-width: 1575px){left: 123px;width: 105px;}
+        @media screen and (min-width: 1075px){left: 127px;width: 105px;}
+        @media screen and (min-width: 1100px){left: 129px;width: 109px;}
+        @media screen and (min-width: 1125px){left: 132px;width: 112px;}
+        @media screen and (min-width: 1150px){left: 135px;width: 114px;}
+        @media screen and (min-width: 1175px){left: 138px;width: 116px;}
+        @media screen and (min-width: 1200px){left: 140px;width: 120px;}
+        @media screen and (min-width: 1225px){left: 144px;width: 121px;}
+        @media screen and (min-width: 1250px){left: 147px;width: 124px;}
+        @media screen and (min-width: 1275px){left: 150px;width: 126px;}
+        @media screen and (min-width: 1300px){left: 153px;width: 129px;}
+        @media screen and (min-width: 1325px){left: 156px;width: 132px;}
+        @media screen and (min-width: 1350px){left: 158px;width: 134px;}
+        @media screen and (min-width: 1375px){left: 161px;width: 137px;}
+        @media screen and (min-width: 1400px){left: 164px;width: 140px;}
+        @media screen and (min-width: 1425px){left: 168px;width: 142px;}
+        @media screen and (min-width: 1450px){left: 179px;width: 145px;}
+        @media screen and (min-width: 1475px){left: 173px;width: 147px;}
+        @media screen and (min-width: 1500px){left: 176px;width: 150px;}
+        @media screen and (min-width: 1525px){left: 179px;width: 156px;}
+        @media screen and (min-width: 1550px){left: 181px;width: 156px;}
+        @media screen and (min-width: 1575px){left: 185px;width: 156px;}
         @media screen and (min-width: 1600px){left: 190px;width: 162px;}    
     }
     &.map_box2{
         left: 350px;
         width: 92px;
         @media screen and (min-width: 1050px){left: 359px;width: 94px;}  
-        @media screen and (min-width: 1075px){left: 359px;width: 94px;}
-        @media screen and (min-width: 1100px){left: 359px;width: 94px;}
-        @media screen and (min-width: 1125px){left: 359px;width: 94px;}
-        @media screen and (min-width: 1150px){left: 359px;width: 94px;}
-        @media screen and (min-width: 1175px){left: 359px;width: 94px;}
-        @media screen and (min-width: 1200px){left: 359px;width: 94px;}
-        @media screen and (min-width: 1225px){left: 359px;width: 94px;}
-        @media screen and (min-width: 1250px){left: 359px;width: 94px;}
-        @media screen and (min-width: 1275px){left: 359px;width: 94px;}
-        @media screen and (min-width: 1300px){left: 359px;width: 94px;}
-        @media screen and (min-width: 1325px){left: 359px;width: 94px;}
-        @media screen and (min-width: 1350px){left: 359px;width: 94px;}
-        @media screen and (min-width: 1375px){left: 359px;width: 94px;}
-        @media screen and (min-width: 1400px){left: 359px;width: 94px;}
-        @media screen and (min-width: 1425px){left: 359px;width: 94px;}
-        @media screen and (min-width: 1450px){left: 359px;width: 94px;}
-        @media screen and (min-width: 1475px){left: 359px;width: 94px;}
-        @media screen and (min-width: 1500px){left: 359px;width: 94px;}
-        @media screen and (min-width: 1525px){left: 359px;width: 94px;}
-        @media screen and (min-width: 1550px){left: 359px;width: 94px;}
-        @media screen and (min-width: 1575px){left: 359px;width: 94px;}
+        @media screen and (min-width: 1075px){left: 369px;width: 95px;}
+        @media screen and (min-width: 1100px){left: 377px;width: 99px;}
+        @media screen and (min-width: 1125px){left: 386px;width: 101px;}
+        @media screen and (min-width: 1150px){left: 394px;width: 105px;}
+        @media screen and (min-width: 1175px){left: 402px;width: 106px;}
+        @media screen and (min-width: 1200px){left: 411px;width: 108px;}
+        @media screen and (min-width: 1225px){left: 419px;width: 110px;}
+        @media screen and (min-width: 1250px){left: 428px;width: 112px;}
+        @media screen and (min-width: 1275px){left: 437px;width: 116px;}
+        @media screen and (min-width: 1300px){left: 446px;width: 118px;}
+        @media screen and (min-width: 1325px){left: 454px;width: 119px;}
+        @media screen and (min-width: 1350px){left: 462px;width: 121px;}
+        @media screen and (min-width: 1375px){left: 470px;width: 125px;}
+        @media screen and (min-width: 1400px){left: 479px;width: 126px;}
+        @media screen and (min-width: 1425px){left: 488px;width: 128px;}
+        @media screen and (min-width: 1450px){left: 497px;width: 130px;}
+        @media screen and (min-width: 1475px){left: 506px;width: 132px;}
+        @media screen and (min-width: 1500px){left: 513px;width: 135px;}
+        @media screen and (min-width: 1525px){left: 522px;width: 139px;}
+        @media screen and (min-width: 1550px){left: 530px;width: 141px;}
+        @media screen and (min-width: 1575px){left: 539px;width: 142px;}
         @media screen and (min-width: 1600px){left: 555px;width: 146px;}
     }
 }
 .map_electric{
-    opacity: 0.5;
-    background: red;
+    //opacity: 0.5;
+    //background: red;
     position: absolute;
     left: 520px;
     width: 106px;
@@ -1274,17 +1292,20 @@ div.tab_container {
     @media screen and (min-width: 1290px){left: 657px;width: 133px;line-height: 22px;}
     @media screen and (min-width: 1300px){left: 662px;width: 134px;line-height: 23px;}
     @media screen and (min-width: 1325px){left: 676px;width: 135px;line-height: 23px;}
+    @media screen and (min-width: 1340px){left: 683px;width: 136px;line-height: 23px;}
     @media screen and (min-width: 1345px){left: 685px;width: 137px;line-height: 24px;}
     @media screen and (min-width: 1350px){left: 688px;width: 138px;line-height: 24px;}
     @media screen and (min-width: 1375px){left: 699px;width: 142px;line-height: 24px;}
     @media screen and (min-width: 1390px){left: 709px;width: 143px;line-height: 25px;}
     @media screen and (min-width: 1400px){left: 712px;width: 145px;line-height: 25px;}
     @media screen and (min-width: 1425px){left: 726px;width: 147px;line-height: 25px;}
+    @media screen and (min-width: 1440px){left: 735px;width: 148px;line-height: 25px;}
     @media screen and (min-width: 1450px){left: 740px;width: 149px;line-height: 25px;}
     @media screen and (min-width: 1475px){left: 754px;width: 150px;line-height: 26px;}
     @media screen and (min-width: 1490px){left: 762px;width: 152px;line-height: 26px;}
     @media screen and (min-width: 1500px){left: 765px;width: 153px;line-height: 26px;}
     @media screen and (min-width: 1525px){left: 780px;width: 155px;line-height: 27px;}
+    @media screen and (min-width: 1540px){left: 785px;width: 158px;line-height: 27px;}
     @media screen and (min-width: 1550px){left: 790px;width: 158px;line-height: 27px;}
     @media screen and (min-width: 1575px){left: 799px;width: 165px;line-height: 28px;}
     @media screen and (min-width: 1590px){left: 810px;width: 164px;line-height: 28px;}
@@ -1314,7 +1335,7 @@ div.tab_container {
         @media screen and (min-width: 1175px){top: 136px;}
         @media screen and (min-width: 1200px){top: 138px;}
         @media screen and (min-width: 1225px){top: 142px;}
-        @media screen and (min-width: 1250px){top: 148px;}
+        @media screen and (min-width: 1250px){top: 147px;}
         @media screen and (min-width: 1300px){top: 152px;}
         @media screen and (min-width: 1325px){top: 155px;}
         @media screen and (min-width: 1350px){top: 157px;}
@@ -1340,7 +1361,7 @@ div.tab_container {
         @media screen and (min-width: 1175px){top: 217px;}
         @media screen and (min-width: 1200px){top: 222px;}
         @media screen and (min-width: 1225px){top: 227px;}
-        @media screen and (min-width: 1250px){top: 237px;}
+        @media screen and (min-width: 1250px){top: 231px;}
         @media screen and (min-width: 1290px){top: 239px;}
         @media screen and (min-width: 1300px){top: 240px;}
         @media screen and (min-width: 1325px){top: 246px;}
@@ -1363,6 +1384,7 @@ div.tab_container {
         @media screen and (min-width: 1100px){top: 358px;}
         @media screen and (min-width: 1125px){top: 365px;}
         @media screen and (min-width: 1150px){top: 373px;}
+        @media screen and (min-width: 1170px){top: 379px;}
         @media screen and (min-width: 1175px){top: 381px;}
         @media screen and (min-width: 1200px){top: 390px;}
         @media screen and (min-width: 1225px){top: 399px;}
@@ -1391,6 +1413,7 @@ div.tab_container {
         @media screen and (min-width: 1100px){top: 425px;}
         @media screen and (min-width: 1125px){top: 435px;}
         @media screen and (min-width: 1150px){top: 445px;}
+        @media screen and (min-width: 1170px){top: 450px;}
         @media screen and (min-width: 1175px){top: 455px;}
         @media screen and (min-width: 1200px){top: 464px;}
         @media screen and (min-width: 1225px){top: 475px;}
@@ -1419,6 +1442,7 @@ div.tab_container {
         @media screen and (min-width: 1100px){top: 493px;}
         @media screen and (min-width: 1125px){top: 504px;}
         @media screen and (min-width: 1150px){top: 515px;}
+        @media screen and (min-width: 1170px){top: 525px;}
         @media screen and (min-width: 1175px){top: 526px;}
         @media screen and (min-width: 1200px){top: 538px;}
         @media screen and (min-width: 1225px){top: 552px;}
