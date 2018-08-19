@@ -1285,7 +1285,7 @@ body#inside.day img.day {
 /* line 1, ../sass/_data_list_info.scss */
 .inside_page {
   padding-left: 20%;
-  margin-top: 12px;
+  margin-top: 0px;
   padding-right: 1%;
 }
 @media screen and (min-width: 1100px) {
@@ -1300,7 +1300,7 @@ body#inside.day img.day {
   display: block;
   color: #594a46;
   background-color: #ffece6;
-  margin-bottom: 1%;
+  margin-bottom: 5px;
   padding: .5% 2%;
   position: relative;
   min-height: 90px;
@@ -1699,13 +1699,13 @@ body#inside.day img.day {
 @media screen and (min-width: 1800px) {
   /* line 69, ../sass/_data_list_table.scss */
   .instant_curve_chart {
-    height: 450px;
+    height: 420px;
   }
 }
 @media screen and (min-width: 1900px) {
   /* line 69, ../sass/_data_list_table.scss */
   .instant_curve_chart {
-    height: 500px;
+    height: 430px;
   }
 }
 /* line 76, ../sass/_data_list_table.scss */
@@ -1715,13 +1715,13 @@ body#inside.day img.day {
 @media screen and (min-width: 1800px) {
   /* line 76, ../sass/_data_list_table.scss */
   .instant_curve_chart .line_graph {
-    height: 450px;
+    height: 420px;
   }
 }
 @media screen and (min-width: 1900px) {
   /* line 76, ../sass/_data_list_table.scss */
   .instant_curve_chart .line_graph {
-    height: 500px;
+    height: 430px;
   }
 }
 
@@ -1812,7 +1812,7 @@ body#inside.day img.day {
   background-color: #fffaf9;
   color: #594a46;
   border: #ffece6 solid 5px;
-  padding: 15px 15px;
+  padding: 5px 15px;
   position: relative;
 }
 /* line 127, ../sass/_data_list_table.scss */
