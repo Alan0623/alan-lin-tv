@@ -4193,11 +4193,10 @@ a.news_search:focus,a.news_search:hover {
     border: none;
     border-bottom: #c0cfe4 6px solid;
     border-radius: 9px;
-    background: linear-gradient(0deg, #f6f4f7 0%, #fafafa 60%)!important; 
-    background: -moz-linear-gradient(0deg, #f6f4f7 0%, #fafafa 60%); 
-    background: -webkit-linear-gradient(0deg, #f6f4f7 0%, #fafafa 60%); 
-    background: -o-linear-gradient(0deg, #f6f4f7 0%, #fafafa 60%);
-    box-shadow: rgba(20,20,50,0.8)0px 1px 8px;
+    background: linear-gradient(0deg, #f6f4f7 0%, #fff 60%)!important; 
+    background: -moz-linear-gradient(0deg, #f6f4f7 0%, #fff 60%); 
+    background: -webkit-linear-gradient(0deg, #f6f4f7 0%, #fff 60%); 
+    background: -o-linear-gradient(0deg, #f6f4f7 0%, #fff 60%); 
 }
 .group-tab.default .area-essay.message .ct .div::after{
     content: "";
@@ -4219,9 +4218,6 @@ a.news_search:focus,a.news_search:hover {
     height: 60px;
     box-shadow: inset rgba(0,0,0,0.3) 2px 2px 4px;
     background: linear-gradient(0deg, #f6f4f7 0%, #eee 60%)!important;
-    background: -moz-linear-gradient(0deg, #f6f4f7 0%, #eee 60%)!important;
-    background: -webkit-linear-gradient(0deg, #f6f4f7 0%, #eee 60%)!important;
-    background: -o-linear-gradient(0deg, #f6f4f7 0%, #eee 60%)!important;
 }
 .group-tab.default .area-essay.message .ct .essay{
     padding: 0!important;
