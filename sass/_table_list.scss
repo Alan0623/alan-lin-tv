@@ -267,8 +267,8 @@
     &.THD_block_Battery{
         width: 20%;
         float: left;
-        margin-top: unset;
-        margin-left: unset;
+        margin-top: auto;
+        margin-left: auto;
         border-left: #000 solid 2px;
         &:nth-child(1){
             border-left:none;
@@ -291,7 +291,7 @@
             }
             &:nth-child(1){
                 div{
-                    background-color: unset;
+                    background-color: transparent;
                     padding: 10px;
                 }
                 span{
@@ -344,7 +344,7 @@
                 width: 7%;
                 padding-right: 0;           
                 div{
-                    background-color: unset;
+                    background-color: transparent;
                 }
                 span{
                 color: #b66d06;

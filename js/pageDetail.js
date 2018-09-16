@@ -346,55 +346,29 @@ $(function () {
     var $target = $(".compare_time"),
         $switch = $(".time_picker input");
 
-    $target.hide();
+    $target.show();
     $switch.removeClass('show_compare_time');
 
-    $(".add_compare_time").click(function () {
-        $switch.addClass('show_compare_time');
-        $(".time_picker input.show_compare_time").click(function () {
-            $target.show();
-            return false;
-        });
-        return false;
-    });
-
-    $(".btn_info_img a:not('.add_compare_time')").click(function () {
-        $switch.removeClass('show_compare_time');
+    $(".hide_compare_time").click(function () {
         $target.hide();
-        $switch.click(function () {
-            $target.hide();
-        });
     });
-
+    $(".add_compare_time").click(function () {
+        $target.show();
+    });
     //active 按了換色
     $(".btn_info_img a").click(function () {
         $(".btn_info_img a").removeClass('active');
         $(this).addClass('active');
     });
-
-    $(".btn_info_img a.active").click();//載入先點擊一次
-
     
-    //useElectInfo.blade.html
-    $(".query_table a:not('.add_compare_time')").click(function () {
-        $switch.removeClass('show_compare_time');
-        $target.hide();
-        $switch.click(function () {
-            $target.hide();
-        });
-    });
-
     //active 按了換色
     $(".query_table a").click(function () {
         $(".query_table a").removeClass('active');
         $(this).addClass('active');
     });
 
-    $(".query_table a.active").click();//載入先點擊一次
+    $(".query_table .active").click();//載入先點擊一次
 
-    //useElectInfo.blade.html 
-    //當月累積電費 
-    //與前年當月整體用電量度數差異 按鈕按下 出現
 
     $(".smart_user").hide();
     $(".query_table a:not('.show_smart_user')").click(function () {

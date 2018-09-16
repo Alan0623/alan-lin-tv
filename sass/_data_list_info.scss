@@ -14,15 +14,15 @@
     min-height: 90px;
     //min-height: 90px;
     h2{ display: inline-block;
-        letter-spacing: 3px;
-        font-size: 1.3em;
-        @media screen and (min-width: 1100px){font-size: 1.4em;}
-        @media screen and (min-width: 1200px){font-size: 1.5em;}
-        @media screen and (min-width: 1300px){font-size: 1.6em;}
-        @media screen and (min-width: 1400px){font-size: 1.7em;}
-        @media screen and (min-width: 1500px){font-size: 1.8em;}
-        @media screen and (min-width: 1600px){font-size: 1.9em;}
-        @media screen and (min-width: 1700px){font-size: 2em;}
+        letter-spacing: 1px;
+        font-size: .9em;
+        @media screen and (min-width: 1100px){}
+        @media screen and (min-width: 1200px){}
+        @media screen and (min-width: 1300px){font-size: .95em;}
+        @media screen and (min-width: 1400px){}
+        @media screen and (min-width: 1500px){}
+        @media screen and (min-width: 1600px){font-size: 1em;}
+        @media screen and (min-width: 1700px){}
         /*
         @media screen and (min-width: 1800px){font-size: 2.1em;}
         @media screen and (min-width: 1900px){font-size: 2.2em;}
@@ -50,7 +50,15 @@
         display: inline-block;
         //clear: both;
         position: absolute;
-        width: 82%;
+        width: 79%;
+        @media screen and (min-width: 1200px){width: 80%;}
+        @media screen and (min-width: 1300px){width: 81%;}
+        @media screen and (min-width: 1400px){width: 82%;}
+        @media screen and (min-width: 1500px){width: 83%;}
+        @media screen and (min-width: 1600px){width: 84%;}
+        @media screen and (min-width: 1700px){width: 85%;}
+        @media screen and (min-width: 1800px){width: 86%;}
+        @media screen and (min-width: 1900px){width: 88%;}
         >a{
             width: 200px;
             display: inline-block;
@@ -68,15 +76,17 @@
                     display: inline-block;
                     width: 50%;
                     float: left;
-                    @media screen and (min-width: 1100px){font-size: 1.05em;}
-                    @media screen and (min-width: 1200px){font-size: 1.15em;}
+                    font-size: .85em;
+                    @media screen and (min-width: 1300px){font-size: .9em;}
+                    @media screen and (min-width: 1600px){font-size: .95em;}
                     img{
                        width: 90%;
                     }
                     >ul{    //font-size: 2em;
                             //margin: 15px 0;
-                            width: 80px;
+                            width: 100px;
                             margin-left: -20px;
+                            padding-top: 5px;
                         li{
                             &:nth-last-child(1){
                             font-size: .8em;

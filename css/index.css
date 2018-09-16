@@ -163,7 +163,7 @@ body#inside.day img.day {
 #header .header_ul .logo_dudu img,
 #header .header_ul .logo_name img {
   width: 100% !important;
-  height: unset !important;
+  height: auto !important;
 }
 /* line 66, ../sass/_base-ui.scss */
 #header .header_ul .logo {
@@ -363,7 +363,7 @@ body#inside.day img.day {
   display: block;
   text-align: center;
   line-height: 1.7em;
-  font-size: 1.6em;
+  font-size: .9em;
   font-weight: bold;
 }
 @media screen and (min-width: 1250px) {
@@ -371,7 +371,7 @@ body#inside.day img.day {
   .info_block .btn_curve_information h2,
   .info_block .system_status h2,
   .info_block .community_photo h2 {
-    font-size: 1.65em;
+    font-size: .95em;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -379,7 +379,7 @@ body#inside.day img.day {
   .info_block .btn_curve_information h2,
   .info_block .system_status h2,
   .info_block .community_photo h2 {
-    font-size: 1.7em;
+    font-size: 1em;
   }
 }
 @media screen and (min-width: 1350px) {
@@ -387,7 +387,7 @@ body#inside.day img.day {
   .info_block .btn_curve_information h2,
   .info_block .system_status h2,
   .info_block .community_photo h2 {
-    font-size: 1.8em;
+    font-size: 1.1em;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -395,7 +395,7 @@ body#inside.day img.day {
   .info_block .btn_curve_information h2,
   .info_block .system_status h2,
   .info_block .community_photo h2 {
-    font-size: 1.9em;
+    font-size: 1.2em;
   }
 }
 /* line 184, ../sass/_base-ui.scss */
@@ -416,13 +416,13 @@ body#inside.day img.day {
 .info_block .community_photo .system_status_text img,
 .info_block .community_photo .community_photo_img img {
   width: 100% !important;
-  height: unset !important;
+  height: auto !important;
 }
 /* line 193, ../sass/_base-ui.scss */
 .info_block .btn_curve_information .community_photo_img,
 .info_block .system_status .community_photo_img,
 .info_block .community_photo .community_photo_img {
-  background-color: unset;
+  background-color: transparent;
   position: relative;
   min-height: 130px;
 }
@@ -441,7 +441,7 @@ body#inside.day img.day {
   bottom: 0;
   z-index: 11;
   height: 30px;
-  top: unset !important;
+  top: auto !important;
   right: -2px;
 }
 /* line 211, ../sass/_base-ui.scss */
@@ -586,45 +586,59 @@ body#inside.day img.day {
 /* line 263, ../sass/_base-ui.scss */
 .info_block .btn_curve_information a h2 {
   color: #fff;
-  font-size: 1.2em;
-  letter-spacing: .2em;
   padding: .2em 0;
-}
-@media screen and (min-width: 1250px) {
-  /* line 263, ../sass/_base-ui.scss */
-  .info_block .btn_curve_information a h2 {
-    font-size: 1.25em;
+  /*
+  @media screen and (min-width: 1250px){
+  font-size: 1.25em;
   }
-}
-@media screen and (min-width: 1300px) {
-  /* line 263, ../sass/_base-ui.scss */
-  .info_block .btn_curve_information a h2 {
-    font-size: 1.3em;
+  @media screen and (min-width: 1300px){
+  font-size: 1.3em;
   }
-}
-@media screen and (min-width: 1350px) {
-  /* line 263, ../sass/_base-ui.scss */
-  .info_block .btn_curve_information a h2 {
-    font-size: 1.4em;
+  @media screen and (min-width: 1350px){
+  font-size: 1.4em;
   }
-}
-@media screen and (min-width: 1400px) {
-  /* line 263, ../sass/_base-ui.scss */
-  .info_block .btn_curve_information a h2 {
-    font-size: 1.5em;
+  @media screen and (min-width: 1400px){
+  font-size: 1.5em;
   }
+  */
 }
 
-/* line 284, ../sass/_base-ui.scss */
+/* line 286, ../sass/_base-ui.scss */
 .system_menu {
   margin-top: 8%;
 }
-/* line 289, ../sass/_base-ui.scss */
+/* line 291, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li {
   color: #594a46;
   margin: 2% 0;
+  font-size: .85em;
+  letter-spacing: 1px;
 }
-/* line 293, ../sass/_base-ui.scss */
+@media screen and (min-width: 1200px) {
+  /* line 291, ../sass/_base-ui.scss */
+  .system_menu .system_menu_text li {
+    font-size: .9em;
+  }
+}
+@media screen and (min-width: 1300px) {
+  /* line 291, ../sass/_base-ui.scss */
+  .system_menu .system_menu_text li {
+    font-size: .95em;
+  }
+}
+@media screen and (min-width: 1800px) {
+  /* line 291, ../sass/_base-ui.scss */
+  .system_menu .system_menu_text li {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 1900px) {
+  /* line 291, ../sass/_base-ui.scss */
+  .system_menu .system_menu_text li {
+    font-size: 1em;
+  }
+}
+/* line 300, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li a {
   background-color: #f0f0f2;
   color: #594a46;
@@ -634,56 +648,44 @@ body#inside.day img.day {
   text-align: center;
   padding-left: 25%;
   position: relative;
-  letter-spacing: 3px;
   font-weight: bold;
 }
-@media screen and (min-width: 1200px) {
-  /* line 293, ../sass/_base-ui.scss */
-  .system_menu .system_menu_text li a {
-    font-size: 1.1em;
-  }
-}
 @media screen and (min-width: 1300px) {
-  /* line 293, ../sass/_base-ui.scss */
+  /* line 300, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li a {
     height: 50px;
     line-height: 50px;
-    font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 293, ../sass/_base-ui.scss */
+  /* line 300, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li a {
     height: 55px;
     line-height: 55px;
-    font-size: 1.3em;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 293, ../sass/_base-ui.scss */
+  /* line 300, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li a {
     height: 60px;
     line-height: 60px;
-    font-size: 1.4em;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 293, ../sass/_base-ui.scss */
+  /* line 300, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li a {
     height: 65px;
     line-height: 65px;
-    font-size: 1.5em;
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 293, ../sass/_base-ui.scss */
+  /* line 300, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li a {
     height: 70px;
     line-height: 70px;
-    font-size: 1.6em;
   }
 }
-/* line 310, ../sass/_base-ui.scss */
+/* line 316, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li a::before {
   display: block;
   position: absolute;
@@ -698,46 +700,50 @@ body#inside.day img.day {
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 1100px) {
-  /* line 310, ../sass/_base-ui.scss */
+  /* line 316, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li a::before {
     width: 28%;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 310, ../sass/_base-ui.scss */
+  /* line 316, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li a::before {
     height: 50px;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 310, ../sass/_base-ui.scss */
+  /* line 316, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li a::before {
     height: 55px;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 310, ../sass/_base-ui.scss */
+  /* line 316, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li a::before {
     height: 60px;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 310, ../sass/_base-ui.scss */
+  /* line 316, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li a::before {
     height: 65px;
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 310, ../sass/_base-ui.scss */
+  /* line 316, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li a::before {
     height: 70px;
   }
 }
-/* line 329, ../sass/_base-ui.scss */
+/* line 335, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li a.active {
   background-color: #4fdbd7;
 }
-/* line 335, ../sass/_base-ui.scss */
+/* line 340, ../sass/_base-ui.scss */
+.system_menu .system_menu_text li:nth-child(1) a {
+  padding-left: 40%;
+}
+/* line 341, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li:nth-child(1) a::after {
   display: block;
   position: absolute;
@@ -752,157 +758,151 @@ body#inside.day img.day {
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 1100px) {
-  /* line 335, ../sass/_base-ui.scss */
+  /* line 341, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-child(1) a::after {
     left: 30.5%;
     width: 28px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 335, ../sass/_base-ui.scss */
+  /* line 341, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-child(1) a::after {
     width: 30px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 335, ../sass/_base-ui.scss */
+  /* line 341, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-child(1) a::after {
     width: 32px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 335, ../sass/_base-ui.scss */
+  /* line 341, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-child(1) a::after {
     width: 38px;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 335, ../sass/_base-ui.scss */
+  /* line 341, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-child(1) a::after {
     width: 40px;
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 335, ../sass/_base-ui.scss */
+  /* line 341, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-child(1) a::after {
     width: 43px;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 335, ../sass/_base-ui.scss */
+  /* line 341, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-child(1) a::after {
     width: 45px;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 335, ../sass/_base-ui.scss */
+  /* line 341, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-child(1) a::after {
     width: 48px;
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 335, ../sass/_base-ui.scss */
+  /* line 341, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-child(1) a::after {
     width: 50px;
   }
 }
-/* line 359, ../sass/_base-ui.scss */
+/* line 365, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li:nth-child(2) a::before {
   background-image: url(../images/icon_b.jpg);
 }
-/* line 360, ../sass/_base-ui.scss */
+/* line 366, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li:nth-child(3) a::before {
   background-image: url(../images/icon_c.jpg);
 }
-/* line 361, ../sass/_base-ui.scss */
+/* line 367, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li:nth-child(4) a::before {
   background-image: url(../images/icon_d.jpg);
 }
-/* line 362, ../sass/_base-ui.scss */
+/* line 368, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li:nth-last-child(1), .system_menu .system_menu_text li:nth-last-child(2) {
   display: block;
 }
-/* line 365, ../sass/_base-ui.scss */
+/* line 371, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li:nth-last-child(1) a, .system_menu .system_menu_text li:nth-last-child(2) a {
   display: block;
-  background-color: unset;
+  background-color: transparent;
   background-size: contain;
   background-repeat: no-repeat;
 }
-/* line 371, ../sass/_base-ui.scss */
+/* line 377, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li:nth-last-child(1) a::before, .system_menu .system_menu_text li:nth-last-child(2) a::before {
   display: none;
 }
-/* line 376, ../sass/_base-ui.scss */
+/* line 382, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li:nth-last-child(3) {
   position: relative;
   margin-bottom: 10%;
 }
-/* line 378, ../sass/_base-ui.scss */
+/* line 384, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li:nth-last-child(3) b {
   background-color: #f0f0f2;
   line-height: 40px;
   display: block;
-  padding-right: 70px;
+  padding-right: 90px;
   text-align: center;
 }
 @media screen and (min-width: 1300px) {
-  /* line 378, ../sass/_base-ui.scss */
+  /* line 384, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(3) b {
     line-height: 50px;
-    font-size: 1.1em;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 378, ../sass/_base-ui.scss */
+  /* line 384, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(3) b {
     line-height: 55px;
-    font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 378, ../sass/_base-ui.scss */
+  /* line 384, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(3) b {
     line-height: 60px;
-    font-size: 1.3em;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 378, ../sass/_base-ui.scss */
+  /* line 384, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(3) b {
     line-height: 65px;
-    font-size: 1.4em;
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 378, ../sass/_base-ui.scss */
+  /* line 384, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(3) b {
     line-height: 70px;
-    font-size: 1.5em;
   }
 }
-/* line 389, ../sass/_base-ui.scss */
+/* line 395, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li:nth-last-child(3) a {
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 0 15px;
-  font-size: 1.2em;
+  padding: 7px 15px;
+  line-height: 1em;
   color: #594a46;
   background-color: #40b3af;
 }
-/* line 397, ../sass/_base-ui.scss */
+/* line 403, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li:nth-last-child(3) a::before {
   display: none;
 }
 @media screen and (min-width: 1900px) {
-  /* line 389, ../sass/_base-ui.scss */
+  /* line 395, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(3) a {
-    font-size: 2em;
-    letter-spacing: .2em;
+    padding: 19px 15px;
   }
 }
-/* line 405, ../sass/_base-ui.scss */
+/* line 410, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li:nth-last-child(3) input {
   width: 90%;
   color: #594a46;
@@ -914,11 +914,11 @@ body#inside.day img.day {
   outline: none;
   font-size: .9em;
 }
-/* line 416, ../sass/_base-ui.scss */
+/* line 421, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li:nth-last-child(3) input:focus, .system_menu .system_menu_text li:nth-last-child(3) input:hover {
   background-color: #fff;
 }
-/* line 421, ../sass/_base-ui.scss */
+/* line 426, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li:nth-last-child(1) {
   position: absolute;
   left: 0;
@@ -926,97 +926,97 @@ body#inside.day img.day {
   width: 30px;
   height: 30px;
 }
-/* line 427, ../sass/_base-ui.scss */
+/* line 432, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li:nth-last-child(1) a {
   background-image: url("../images/icon_setting.png");
   width: 30px;
   height: 30px;
 }
 @media screen and (min-width: 1300px) {
-  /* line 421, ../sass/_base-ui.scss */
+  /* line 426, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(1) {
     width: 35px;
     height: 35px;
   }
-  /* line 432, ../sass/_base-ui.scss */
+  /* line 437, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(1) a {
     width: 35px;
     height: 35px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 421, ../sass/_base-ui.scss */
+  /* line 426, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(1) {
     width: 40px;
     height: 40px;
   }
-  /* line 433, ../sass/_base-ui.scss */
+  /* line 438, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(1) a {
     width: 40px;
     height: 40px;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 421, ../sass/_base-ui.scss */
+  /* line 426, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(1) {
     width: 45px;
     height: 45px;
   }
-  /* line 434, ../sass/_base-ui.scss */
+  /* line 439, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(1) a {
     width: 45px;
     height: 45px;
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 421, ../sass/_base-ui.scss */
+  /* line 426, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(1) {
     width: 50px;
     height: 50px;
   }
-  /* line 435, ../sass/_base-ui.scss */
+  /* line 440, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(1) a {
     width: 50px;
     height: 50px;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 421, ../sass/_base-ui.scss */
+  /* line 426, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(1) {
     width: 55px;
     height: 55px;
   }
-  /* line 436, ../sass/_base-ui.scss */
+  /* line 441, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(1) a {
     width: 55px;
     height: 55px;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 421, ../sass/_base-ui.scss */
+  /* line 426, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(1) {
     width: 58px;
     height: 58px;
   }
-  /* line 437, ../sass/_base-ui.scss */
+  /* line 442, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(1) a {
     width: 58px;
     height: 58px;
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 421, ../sass/_base-ui.scss */
+  /* line 426, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(1) {
     width: 60px;
     height: 60px;
   }
-  /* line 438, ../sass/_base-ui.scss */
+  /* line 443, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(1) a {
     width: 60px;
     height: 60px;
   }
 }
-/* line 440, ../sass/_base-ui.scss */
+/* line 445, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li:nth-last-child(2) {
   position: absolute;
   right: 0;
@@ -1024,187 +1024,187 @@ body#inside.day img.day {
   width: 45px;
   height: 45px;
 }
-/* line 446, ../sass/_base-ui.scss */
+/* line 451, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li:nth-last-child(2) a {
   background-image: url("../images/icon_cude.png");
   width: 45px;
   height: 45px;
 }
-/* line 450, ../sass/_base-ui.scss */
+/* line 455, ../sass/_base-ui.scss */
 .system_menu .system_menu_text li:nth-last-child(2) a.active {
   background-color: #4fdbd7;
   border-radius: 50%;
   background-position: 1px 3px;
 }
 @media screen and (min-width: 1300px) {
-  /* line 440, ../sass/_base-ui.scss */
+  /* line 445, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(2) {
     width: 50px;
     height: 50px;
   }
-  /* line 456, ../sass/_base-ui.scss */
+  /* line 461, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(2) a {
     width: 50px;
     height: 50px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 440, ../sass/_base-ui.scss */
+  /* line 445, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(2) {
     width: 55px;
     height: 55px;
   }
-  /* line 457, ../sass/_base-ui.scss */
+  /* line 462, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(2) a {
     width: 55px;
     height: 55px;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 440, ../sass/_base-ui.scss */
+  /* line 445, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(2) {
     width: 60px;
     height: 60px;
   }
-  /* line 458, ../sass/_base-ui.scss */
+  /* line 463, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(2) a {
     width: 60px;
     height: 60px;
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 440, ../sass/_base-ui.scss */
+  /* line 445, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(2) {
     width: 65px;
     height: 65px;
   }
-  /* line 459, ../sass/_base-ui.scss */
+  /* line 464, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(2) a {
     width: 65px;
     height: 65px;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 440, ../sass/_base-ui.scss */
+  /* line 445, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(2) {
     width: 70px;
     height: 70px;
   }
-  /* line 460, ../sass/_base-ui.scss */
+  /* line 465, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(2) a {
     width: 70px;
     height: 70px;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 440, ../sass/_base-ui.scss */
+  /* line 445, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(2) {
     width: 75px;
     height: 75px;
   }
-  /* line 461, ../sass/_base-ui.scss */
+  /* line 466, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(2) a {
     width: 75px;
     height: 75px;
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 440, ../sass/_base-ui.scss */
+  /* line 445, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(2) {
     width: 80px;
     height: 80px;
   }
-  /* line 462, ../sass/_base-ui.scss */
+  /* line 467, ../sass/_base-ui.scss */
   .system_menu .system_menu_text li:nth-last-child(2) a {
     width: 80px;
     height: 80px;
   }
 }
 
-/* line 468, ../sass/_base-ui.scss */
+/* line 473, ../sass/_base-ui.scss */
 .tool_bar .time_picker {
   margin-right: 0;
 }
 
-/* line 472, ../sass/_base-ui.scss */
+/* line 477, ../sass/_base-ui.scss */
 .tool_bar.query li:nth-last-child(1) {
   float: right;
 }
 
-/* line 477, ../sass/_base-ui.scss */
+/* line 482, ../sass/_base-ui.scss */
 #fade_block1, #fade_block2 {
   width: 100%;
   top: 25px;
 }
-/* line 480, ../sass/_base-ui.scss */
+/* line 485, ../sass/_base-ui.scss */
 #fade_block1 .ad, #fade_block2 .ad {
   position: absolute;
   width: 100%;
   top: 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 8px;
+  padding-bottom: 0px;
   background-color: #ffece6;
   border: #f2e200 solid 5px;
   border-top: none;
   border-bottom: none;
 }
 @media screen and (min-width: 1100px) {
-  /* line 480, ../sass/_base-ui.scss */
+  /* line 485, ../sass/_base-ui.scss */
   #fade_block1 .ad, #fade_block2 .ad {
     border-width: 6px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 480, ../sass/_base-ui.scss */
+  /* line 485, ../sass/_base-ui.scss */
   #fade_block1 .ad, #fade_block2 .ad {
     border-width: 7px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 480, ../sass/_base-ui.scss */
+  /* line 485, ../sass/_base-ui.scss */
   #fade_block1 .ad, #fade_block2 .ad {
     border-width: 8px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 480, ../sass/_base-ui.scss */
+  /* line 485, ../sass/_base-ui.scss */
   #fade_block1 .ad, #fade_block2 .ad {
     border-width: 9px;
   }
 }
 
-/* line 492, ../sass/_base-ui.scss */
+/* line 497, ../sass/_base-ui.scss */
 #fade_block2 .ad {
   border: #f52f53 solid 5px;
   border-top: none;
   border-bottom: none;
 }
 @media screen and (min-width: 1100px) {
-  /* line 492, ../sass/_base-ui.scss */
+  /* line 497, ../sass/_base-ui.scss */
   #fade_block2 .ad {
     border-width: 6px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 492, ../sass/_base-ui.scss */
+  /* line 497, ../sass/_base-ui.scss */
   #fade_block2 .ad {
     border-width: 7px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 492, ../sass/_base-ui.scss */
+  /* line 497, ../sass/_base-ui.scss */
   #fade_block2 .ad {
     border-width: 8px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 492, ../sass/_base-ui.scss */
+  /* line 497, ../sass/_base-ui.scss */
   #fade_block2 .ad {
     border-width: 9px;
   }
 }
 
-/* line 500, ../sass/_base-ui.scss */
+/* line 505, ../sass/_base-ui.scss */
 .community_photo_img .control,
 #fade_block1 .control, #fade_block2 .control {
   position: absolute;
@@ -1212,7 +1212,7 @@ body#inside.day img.day {
   top: -10px;
 }
 
-/* line 506, ../sass/_base-ui.scss */
+/* line 511, ../sass/_base-ui.scss */
 .community_photo_img .control a,
 #fade_block1 .control a, #fade_block2 .control a {
   display: inline-block;
@@ -1225,63 +1225,63 @@ body#inside.day img.day {
   font-size: .7em;
 }
 @media screen and (min-width: 1250px) {
-  /* line 506, ../sass/_base-ui.scss */
+  /* line 511, ../sass/_base-ui.scss */
   .community_photo_img .control a,
   #fade_block1 .control a, #fade_block2 .control a {
     font-size: .8em;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 506, ../sass/_base-ui.scss */
+  /* line 511, ../sass/_base-ui.scss */
   .community_photo_img .control a,
   #fade_block1 .control a, #fade_block2 .control a {
     font-size: .9em;
   }
 }
 @media screen and (min-width: 1350px) {
-  /* line 506, ../sass/_base-ui.scss */
+  /* line 511, ../sass/_base-ui.scss */
   .community_photo_img .control a,
   #fade_block1 .control a, #fade_block2 .control a {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 506, ../sass/_base-ui.scss */
+  /* line 511, ../sass/_base-ui.scss */
   .community_photo_img .control a,
   #fade_block1 .control a, #fade_block2 .control a {
     font-size: 1.1em;
   }
 }
 
-/* line 529, ../sass/_base-ui.scss */
+/* line 534, ../sass/_base-ui.scss */
 .community_photo_img .control a {
   padding: 3px 7px;
 }
 @media screen and (min-width: 1300px) {
-  /* line 529, ../sass/_base-ui.scss */
+  /* line 534, ../sass/_base-ui.scss */
   .community_photo_img .control a {
     padding: 3px 8px;
   }
 }
 
-/* line 534, ../sass/_base-ui.scss */
+/* line 539, ../sass/_base-ui.scss */
 .community_photo_img .control a.on,
 #fade_block1 .control a.on, #fade_block2 .control a.on {
   font-weight: bold;
   color: #f00;
 }
 
-/* line 541, ../sass/_base-ui.scss */
+/* line 546, ../sass/_base-ui.scss */
 .ui-widget {
   font-size: .7em;
 }
 
-/* line 544, ../sass/_base-ui.scss */
+/* line 549, ../sass/_base-ui.scss */
 .ui-timepicker-div {
   display: none;
 }
 
-/* line 547, ../sass/_base-ui.scss */
+/* line 552, ../sass/_base-ui.scss */
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
   border: none;
   background: none;
@@ -1302,7 +1302,7 @@ body#inside.day img.day {
 /* line 11, ../sass/_index-status.scss */
 .data_list img {
   width: 100% !important;
-  height: unset !important;
+  height: auto !important;
 }
 /* line 12, ../sass/_index-status.scss */
 .data_list .solar_energy,
@@ -1312,12 +1312,12 @@ body#inside.day img.day {
 .data_list .user_point {
   width: 18%;
   min-width: 190px;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-top: 5px;
   background-color: #ffece6;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
+  font-size: .9em;
 }
 @media screen and (min-width: 1100px) {
   /* line 12, ../sass/_index-status.scss */
@@ -1326,7 +1326,7 @@ body#inside.day img.day {
   .data_list .storage_battery,
   .data_list .fuel_battery,
   .data_list .user_point {
-    width: 17%;
+    width: 19%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1336,10 +1336,10 @@ body#inside.day img.day {
   .data_list .storage_battery,
   .data_list .fuel_battery,
   .data_list .user_point {
-    width: 17.5%;
+    width: 19.5%;
   }
 }
-/* line 31, ../sass/_index-status.scss */
+/* line 32, ../sass/_index-status.scss */
 .data_list .solar_energy h2,
 .data_list .wind_power h2,
 .data_list .storage_battery h2,
@@ -1351,7 +1351,7 @@ body#inside.day img.day {
   margin-bottom: 2px;
 }
 @media screen and (min-width: 1500px) {
-  /* line 31, ../sass/_index-status.scss */
+  /* line 32, ../sass/_index-status.scss */
   .data_list .solar_energy h2,
   .data_list .wind_power h2,
   .data_list .storage_battery h2,
@@ -1361,7 +1361,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1650px) {
-  /* line 31, ../sass/_index-status.scss */
+  /* line 32, ../sass/_index-status.scss */
   .data_list .solar_energy h2,
   .data_list .wind_power h2,
   .data_list .storage_battery h2,
@@ -1370,7 +1370,7 @@ body#inside.day img.day {
     margin-bottom: 10px;
   }
 }
-/* line 43, ../sass/_index-status.scss */
+/* line 44, ../sass/_index-status.scss */
 .data_list .solar_energy ul,
 .data_list .wind_power ul,
 .data_list .storage_battery ul,
@@ -1382,7 +1382,7 @@ body#inside.day img.day {
   padding: 0 0%;
 }
 @media screen and (min-width: 1100px) {
-  /* line 43, ../sass/_index-status.scss */
+  /* line 44, ../sass/_index-status.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -1393,7 +1393,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 43, ../sass/_index-status.scss */
+  /* line 44, ../sass/_index-status.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -1403,7 +1403,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1250px) {
-  /* line 43, ../sass/_index-status.scss */
+  /* line 44, ../sass/_index-status.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -1413,7 +1413,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 43, ../sass/_index-status.scss */
+  /* line 44, ../sass/_index-status.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -1423,7 +1423,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1370px) {
-  /* line 43, ../sass/_index-status.scss */
+  /* line 44, ../sass/_index-status.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -1434,7 +1434,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 43, ../sass/_index-status.scss */
+  /* line 44, ../sass/_index-status.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -1444,7 +1444,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 43, ../sass/_index-status.scss */
+  /* line 44, ../sass/_index-status.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -1454,7 +1454,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1550px) {
-  /* line 43, ../sass/_index-status.scss */
+  /* line 44, ../sass/_index-status.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -1464,7 +1464,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 43, ../sass/_index-status.scss */
+  /* line 44, ../sass/_index-status.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -1474,7 +1474,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 43, ../sass/_index-status.scss */
+  /* line 44, ../sass/_index-status.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -1484,7 +1484,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 43, ../sass/_index-status.scss */
+  /* line 44, ../sass/_index-status.scss */
   .data_list .solar_energy ul,
   .data_list .wind_power ul,
   .data_list .storage_battery ul,
@@ -1493,7 +1493,7 @@ body#inside.day img.day {
     font-size: 1.1em;
   }
 }
-/* line 83, ../sass/_index-status.scss */
+/* line 84, ../sass/_index-status.scss */
 .data_list .solar_energy ul li,
 .data_list .wind_power ul li,
 .data_list .storage_battery ul li,
@@ -1502,8 +1502,9 @@ body#inside.day img.day {
   display: block;
   width: 100%;
   line-height: 1.6em;
+  padding: 5px 0;
 }
-/* line 86, ../sass/_index-status.scss */
+/* line 88, ../sass/_index-status.scss */
 .data_list .solar_energy ul li::after,
 .data_list .wind_power ul li::after,
 .data_list .storage_battery ul li::after,
@@ -1513,7 +1514,7 @@ body#inside.day img.day {
   display: block;
   clear: both;
 }
-/* line 91, ../sass/_index-status.scss */
+/* line 93, ../sass/_index-status.scss */
 .data_list .solar_energy ul li b,
 .data_list .wind_power ul li b,
 .data_list .storage_battery ul li b,
@@ -1522,7 +1523,7 @@ body#inside.day img.day {
   display: inline-block;
   float: left;
 }
-/* line 95, ../sass/_index-status.scss */
+/* line 98, ../sass/_index-status.scss */
 .data_list .solar_energy ul li b:nth-child(1),
 .data_list .wind_power ul li b:nth-child(1),
 .data_list .storage_battery ul li b:nth-child(1),
@@ -1530,8 +1531,9 @@ body#inside.day img.day {
 .data_list .user_point ul li b:nth-child(1) {
   width: 40%;
   text-align: right;
+  line-height: 1em;
 }
-/* line 99, ../sass/_index-status.scss */
+/* line 103, ../sass/_index-status.scss */
 .data_list .solar_energy ul li b:nth-child(2),
 .data_list .wind_power ul li b:nth-child(2),
 .data_list .storage_battery ul li b:nth-child(2),
@@ -1541,7 +1543,7 @@ body#inside.day img.day {
   text-align: right;
   color: #d20915;
 }
-/* line 104, ../sass/_index-status.scss */
+/* line 108, ../sass/_index-status.scss */
 .data_list .solar_energy ul li b:nth-child(3),
 .data_list .wind_power ul li b:nth-child(3),
 .data_list .storage_battery ul li b:nth-child(3),
@@ -1550,143 +1552,143 @@ body#inside.day img.day {
   text-align: left;
   padding-left: 3px;
 }
-/* line 111, ../sass/_index-status.scss */
+/* line 115, ../sass/_index-status.scss */
 .data_list .solar_energy {
   border-top: none;
   border-bottom: none;
   color: #726f20;
   top: 60px;
   left: 20%;
-  background-color: unset;
+  background-color: transparent;
 }
 @media screen and (min-width: 1100px) {
-  /* line 111, ../sass/_index-status.scss */
+  /* line 115, ../sass/_index-status.scss */
   .data_list .solar_energy {
     border-width: 6px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 111, ../sass/_index-status.scss */
+  /* line 115, ../sass/_index-status.scss */
   .data_list .solar_energy {
     border-width: 7px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 111, ../sass/_index-status.scss */
+  /* line 115, ../sass/_index-status.scss */
   .data_list .solar_energy {
     border-width: 8px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 111, ../sass/_index-status.scss */
+  /* line 115, ../sass/_index-status.scss */
   .data_list .solar_energy {
     border-width: 9px;
   }
 }
-/* line 123, ../sass/_index-status.scss */
+/* line 127, ../sass/_index-status.scss */
 .data_list .wind_power {
   border-top: none;
   border-bottom: none;
   color: #c21f3d;
   top: 250px;
   left: 20%;
-  background-color: unset;
+  background-color: transparent;
 }
 @media screen and (min-width: 1100px) {
-  /* line 123, ../sass/_index-status.scss */
+  /* line 127, ../sass/_index-status.scss */
   .data_list .wind_power {
     border-width: 6px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 123, ../sass/_index-status.scss */
+  /* line 127, ../sass/_index-status.scss */
   .data_list .wind_power {
     border-width: 7px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 123, ../sass/_index-status.scss */
+  /* line 127, ../sass/_index-status.scss */
   .data_list .wind_power {
     border-width: 8px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 123, ../sass/_index-status.scss */
+  /* line 127, ../sass/_index-status.scss */
   .data_list .wind_power {
     border-width: 9px;
   }
 }
-/* line 136, ../sass/_index-status.scss */
+/* line 140, ../sass/_index-status.scss */
 .data_list .storage_battery {
   border: #70e5b1 solid 5px;
   border-top: none;
   border-bottom: none;
   color: #006030;
-  top: 177px;
+  top: 167px;
   right: 5%;
 }
 @media screen and (min-width: 1100px) {
-  /* line 136, ../sass/_index-status.scss */
+  /* line 140, ../sass/_index-status.scss */
   .data_list .storage_battery {
     border-width: 6px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 136, ../sass/_index-status.scss */
+  /* line 140, ../sass/_index-status.scss */
   .data_list .storage_battery {
     border-width: 7px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 136, ../sass/_index-status.scss */
+  /* line 140, ../sass/_index-status.scss */
   .data_list .storage_battery {
     border-width: 8px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 136, ../sass/_index-status.scss */
+  /* line 140, ../sass/_index-status.scss */
   .data_list .storage_battery {
     border-width: 9px;
   }
 }
-/* line 148, ../sass/_index-status.scss */
+/* line 152, ../sass/_index-status.scss */
 .data_list .fuel_battery {
   border: #6faf3d solid 5px;
   border-top: none;
   border-bottom: none;
   color: #55872f;
-  top: 295px;
+  top: 305px;
   right: 12%;
 }
 @media screen and (min-width: 1100px) {
-  /* line 148, ../sass/_index-status.scss */
+  /* line 152, ../sass/_index-status.scss */
   .data_list .fuel_battery {
     border-width: 6px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 148, ../sass/_index-status.scss */
+  /* line 152, ../sass/_index-status.scss */
   .data_list .fuel_battery {
     border-width: 7px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 148, ../sass/_index-status.scss */
+  /* line 152, ../sass/_index-status.scss */
   .data_list .fuel_battery {
     border-width: 8px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 148, ../sass/_index-status.scss */
+  /* line 152, ../sass/_index-status.scss */
   .data_list .fuel_battery {
     border-width: 9px;
   }
 }
-/* line 159, ../sass/_index-status.scss */
+/* line 163, ../sass/_index-status.scss */
 .data_list .fuel_battery ul {
   top: 22%;
 }
-/* line 163, ../sass/_index-status.scss */
+/* line 167, ../sass/_index-status.scss */
 .data_list .user_point {
   border: #0224ba solid 5px;
   border-top: none;
@@ -1696,442 +1698,446 @@ body#inside.day img.day {
   right: 5%;
 }
 @media screen and (min-width: 1100px) {
-  /* line 163, ../sass/_index-status.scss */
+  /* line 167, ../sass/_index-status.scss */
   .data_list .user_point {
     border-width: 6px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 163, ../sass/_index-status.scss */
+  /* line 167, ../sass/_index-status.scss */
   .data_list .user_point {
     border-width: 7px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 163, ../sass/_index-status.scss */
+  /* line 167, ../sass/_index-status.scss */
   .data_list .user_point {
     border-width: 8px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 163, ../sass/_index-status.scss */
+  /* line 167, ../sass/_index-status.scss */
   .data_list .user_point {
     border-width: 9px;
   }
 }
-/* line 174, ../sass/_index-status.scss */
+/* line 178, ../sass/_index-status.scss */
 .data_list .user_point ul {
   top: 22%;
 }
 @media screen and (min-width: 1100px) {
-  /* line 179, ../sass/_index-status.scss */
+  /* line 183, ../sass/_index-status.scss */
   .data_list .solar_energy {
     top: 65px;
   }
-  /* line 180, ../sass/_index-status.scss */
+  /* line 184, ../sass/_index-status.scss */
   .data_list .wind_power {
     top: 255px;
   }
-  /* line 181, ../sass/_index-status.scss */
+  /* line 185, ../sass/_index-status.scss */
   .data_list .storage_battery {
-    top: 182px;
+    top: 172px;
   }
-  /* line 182, ../sass/_index-status.scss */
+  /* line 186, ../sass/_index-status.scss */
   .data_list .fuel_battery {
-    top: 294px;
+    top: 304px;
   }
-  /* line 183, ../sass/_index-status.scss */
+  /* line 187, ../sass/_index-status.scss */
   .data_list .user_point {
     top: 405px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 186, ../sass/_index-status.scss */
+  /* line 190, ../sass/_index-status.scss */
   .data_list .solar_energy {
     top: 70px;
   }
-  /* line 187, ../sass/_index-status.scss */
+  /* line 191, ../sass/_index-status.scss */
   .data_list .wind_power {
     top: 260px;
   }
-  /* line 188, ../sass/_index-status.scss */
+  /* line 192, ../sass/_index-status.scss */
   .data_list .storage_battery {
-    top: 187px;
+    top: 177px;
   }
-  /* line 189, ../sass/_index-status.scss */
+  /* line 193, ../sass/_index-status.scss */
   .data_list .fuel_battery {
-    top: 310px;
+    top: 320px;
   }
-  /* line 190, ../sass/_index-status.scss */
+  /* line 194, ../sass/_index-status.scss */
   .data_list .user_point {
     top: 430px;
   }
 }
 @media screen and (min-width: 1250px) {
-  /* line 193, ../sass/_index-status.scss */
+  /* line 197, ../sass/_index-status.scss */
   .data_list .solar_energy {
     top: 72px;
   }
-  /* line 194, ../sass/_index-status.scss */
+  /* line 198, ../sass/_index-status.scss */
   .data_list .wind_power {
     top: 280px;
   }
-  /* line 195, ../sass/_index-status.scss */
+  /* line 199, ../sass/_index-status.scss */
   .data_list .storage_battery {
-    top: 218px;
+    top: 208px;
   }
-  /* line 196, ../sass/_index-status.scss */
+  /* line 200, ../sass/_index-status.scss */
   .data_list .fuel_battery {
-    top: 350px;
+    top: 360px;
     right: 13%;
   }
-  /* line 197, ../sass/_index-status.scss */
+  /* line 201, ../sass/_index-status.scss */
   .data_list .user_point {
     top: 480px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 200, ../sass/_index-status.scss */
+  /* line 204, ../sass/_index-status.scss */
   .data_list .solar_energy {
     top: 75px;
   }
-  /* line 201, ../sass/_index-status.scss */
+  /* line 205, ../sass/_index-status.scss */
   .data_list .wind_power {
     top: 300px;
   }
-  /* line 202, ../sass/_index-status.scss */
+  /* line 206, ../sass/_index-status.scss */
   .data_list .storage_battery {
-    top: 228px;
+    top: 218px;
   }
-  /* line 203, ../sass/_index-status.scss */
+  /* line 207, ../sass/_index-status.scss */
   .data_list .fuel_battery {
-    top: 366px;
+    top: 376px;
   }
-  /* line 204, ../sass/_index-status.scss */
+  /* line 208, ../sass/_index-status.scss */
   .data_list .user_point {
     top: 500px;
   }
 }
 @media screen and (min-width: 1350px) {
-  /* line 207, ../sass/_index-status.scss */
+  /* line 211, ../sass/_index-status.scss */
   .data_list .solar_energy {
     top: 78px;
   }
-  /* line 208, ../sass/_index-status.scss */
+  /* line 212, ../sass/_index-status.scss */
   .data_list .wind_power {
     top: 305px;
   }
-  /* line 209, ../sass/_index-status.scss */
+  /* line 213, ../sass/_index-status.scss */
   .data_list .storage_battery {
-    top: 228px;
+    top: 218px;
   }
-  /* line 210, ../sass/_index-status.scss */
+  /* line 214, ../sass/_index-status.scss */
   .data_list .fuel_battery {
-    top: 366px;
+    top: 376px;
   }
-  /* line 211, ../sass/_index-status.scss */
+  /* line 215, ../sass/_index-status.scss */
   .data_list .user_point {
     top: 500px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 214, ../sass/_index-status.scss */
+  /* line 218, ../sass/_index-status.scss */
   .data_list .solar_energy {
     top: 79px;
   }
-  /* line 215, ../sass/_index-status.scss */
+  /* line 219, ../sass/_index-status.scss */
   .data_list .wind_power {
     top: 315px;
   }
-  /* line 216, ../sass/_index-status.scss */
+  /* line 220, ../sass/_index-status.scss */
   .data_list .storage_battery {
-    top: 246px;
+    top: 236px;
   }
-  /* line 217, ../sass/_index-status.scss */
+  /* line 221, ../sass/_index-status.scss */
   .data_list .fuel_battery {
-    top: 390px;
+    top: 400px;
   }
-  /* line 218, ../sass/_index-status.scss */
+  /* line 222, ../sass/_index-status.scss */
   .data_list .user_point {
     top: 530px;
   }
 }
 @media screen and (min-width: 1450px) {
-  /* line 221, ../sass/_index-status.scss */
+  /* line 225, ../sass/_index-status.scss */
   .data_list .solar_energy {
     top: 79px;
     left: 20.1%;
   }
-  /* line 222, ../sass/_index-status.scss */
+  /* line 226, ../sass/_index-status.scss */
   .data_list .wind_power {
     top: 325px;
     left: 20.1%;
   }
-  /* line 223, ../sass/_index-status.scss */
+  /* line 227, ../sass/_index-status.scss */
   .data_list .storage_battery {
-    top: 256px;
+    top: 246px;
   }
-  /* line 224, ../sass/_index-status.scss */
+  /* line 228, ../sass/_index-status.scss */
   .data_list .fuel_battery {
-    top: 405px;
+    top: 415px;
     right: 13%;
   }
-  /* line 225, ../sass/_index-status.scss */
+  /* line 229, ../sass/_index-status.scss */
   .data_list .user_point {
     top: 550px;
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 228, ../sass/_index-status.scss */
+  /* line 232, ../sass/_index-status.scss */
   .data_list .solar_energy {
     top: 79px;
   }
-  /* line 229, ../sass/_index-status.scss */
+  /* line 233, ../sass/_index-status.scss */
   .data_list .wind_power {
     top: 335px;
   }
-  /* line 230, ../sass/_index-status.scss */
+  /* line 234, ../sass/_index-status.scss */
   .data_list .storage_battery {
-    top: 260px;
+    top: 250px;
   }
-  /* line 231, ../sass/_index-status.scss */
+  /* line 235, ../sass/_index-status.scss */
   .data_list .fuel_battery {
-    top: 410px;
+    top: 420px;
     right: 13%;
   }
-  /* line 232, ../sass/_index-status.scss */
+  /* line 236, ../sass/_index-status.scss */
   .data_list .user_point {
     top: 555px;
   }
 }
 @media screen and (min-width: 1550px) {
-  /* line 235, ../sass/_index-status.scss */
+  /* line 239, ../sass/_index-status.scss */
   .data_list .solar_energy {
     top: 79px;
   }
-  /* line 236, ../sass/_index-status.scss */
+  /* line 240, ../sass/_index-status.scss */
   .data_list .wind_power {
     top: 350px;
   }
-  /* line 237, ../sass/_index-status.scss */
+  /* line 241, ../sass/_index-status.scss */
   .data_list .storage_battery {
-    top: 265px;
+    top: 255px;
   }
-  /* line 238, ../sass/_index-status.scss */
+  /* line 242, ../sass/_index-status.scss */
   .data_list .fuel_battery {
-    top: 420px;
+    top: 430px;
     right: 13%;
   }
-  /* line 239, ../sass/_index-status.scss */
+  /* line 243, ../sass/_index-status.scss */
   .data_list .user_point {
     top: 570px;
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 242, ../sass/_index-status.scss */
+  /* line 246, ../sass/_index-status.scss */
   .data_list .solar_energy {
     top: 79px;
   }
-  /* line 243, ../sass/_index-status.scss */
+  /* line 247, ../sass/_index-status.scss */
   .data_list .wind_power {
     top: 365px;
   }
-  /* line 244, ../sass/_index-status.scss */
+  /* line 248, ../sass/_index-status.scss */
   .data_list .storage_battery {
-    top: 275px;
+    top: 265px;
   }
-  /* line 245, ../sass/_index-status.scss */
+  /* line 249, ../sass/_index-status.scss */
   .data_list .fuel_battery {
-    top: 435px;
+    top: 445px;
     right: 13%;
   }
-  /* line 246, ../sass/_index-status.scss */
+  /* line 250, ../sass/_index-status.scss */
   .data_list .user_point {
     top: 590px;
   }
 }
 @media screen and (min-width: 1650px) {
-  /* line 249, ../sass/_index-status.scss */
+  /* line 253, ../sass/_index-status.scss */
   .data_list .solar_energy {
     top: 79px;
   }
-  /* line 250, ../sass/_index-status.scss */
+  /* line 254, ../sass/_index-status.scss */
   .data_list .wind_power {
     top: 375px;
   }
-  /* line 251, ../sass/_index-status.scss */
+  /* line 255, ../sass/_index-status.scss */
   .data_list .storage_battery {
-    top: 290px;
+    top: 280px;
   }
-  /* line 252, ../sass/_index-status.scss */
+  /* line 256, ../sass/_index-status.scss */
   .data_list .fuel_battery {
-    top: 460px;
+    top: 470px;
     right: 13%;
   }
-  /* line 253, ../sass/_index-status.scss */
+  /* line 257, ../sass/_index-status.scss */
   .data_list .user_point {
     top: 628px;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 256, ../sass/_index-status.scss */
+  /* line 260, ../sass/_index-status.scss */
   .data_list .solar_energy {
     top: 79px;
   }
-  /* line 257, ../sass/_index-status.scss */
+  /* line 261, ../sass/_index-status.scss */
   .data_list .wind_power {
     top: 385px;
   }
-  /* line 258, ../sass/_index-status.scss */
+  /* line 262, ../sass/_index-status.scss */
   .data_list .storage_battery {
-    top: 292px;
+    top: 282px;
   }
-  /* line 259, ../sass/_index-status.scss */
+  /* line 263, ../sass/_index-status.scss */
   .data_list .fuel_battery {
-    top: 465px;
+    top: 475px;
     right: 13%;
   }
-  /* line 260, ../sass/_index-status.scss */
+  /* line 264, ../sass/_index-status.scss */
   .data_list .user_point {
     top: 632px;
   }
 }
 @media screen and (min-width: 1750px) {
-  /* line 263, ../sass/_index-status.scss */
+  /* line 267, ../sass/_index-status.scss */
   .data_list .solar_energy {
     top: 79px;
   }
-  /* line 264, ../sass/_index-status.scss */
+  /* line 268, ../sass/_index-status.scss */
   .data_list .wind_power {
     top: 395px;
   }
-  /* line 265, ../sass/_index-status.scss */
+  /* line 269, ../sass/_index-status.scss */
   .data_list .storage_battery {
-    top: 300px;
+    top: 290px;
   }
-  /* line 266, ../sass/_index-status.scss */
+  /* line 270, ../sass/_index-status.scss */
   .data_list .fuel_battery {
-    top: 475px;
+    top: 485px;
     right: 13%;
   }
-  /* line 267, ../sass/_index-status.scss */
+  /* line 271, ../sass/_index-status.scss */
   .data_list .user_point {
     top: 645px;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 270, ../sass/_index-status.scss */
+  /* line 274, ../sass/_index-status.scss */
   .data_list .solar_energy {
     top: 79px;
   }
-  /* line 271, ../sass/_index-status.scss */
+  /* line 275, ../sass/_index-status.scss */
   .data_list .wind_power {
     top: 405px;
   }
-  /* line 272, ../sass/_index-status.scss */
+  /* line 276, ../sass/_index-status.scss */
   .data_list .storage_battery {
-    top: 310px;
+    top: 300px;
   }
-  /* line 273, ../sass/_index-status.scss */
+  /* line 277, ../sass/_index-status.scss */
   .data_list .fuel_battery {
-    top: 490px;
+    top: 500px;
     right: 13%;
   }
-  /* line 274, ../sass/_index-status.scss */
+  /* line 278, ../sass/_index-status.scss */
   .data_list .user_point {
     top: 665px;
   }
 }
 @media screen and (min-width: 1850px) {
-  /* line 277, ../sass/_index-status.scss */
+  /* line 281, ../sass/_index-status.scss */
   .data_list .solar_energy {
     top: 79px;
   }
-  /* line 278, ../sass/_index-status.scss */
+  /* line 282, ../sass/_index-status.scss */
   .data_list .wind_power {
     top: 411px;
   }
-  /* line 279, ../sass/_index-status.scss */
+  /* line 283, ../sass/_index-status.scss */
   .data_list .storage_battery {
-    top: 315px;
+    top: 305px;
   }
-  /* line 280, ../sass/_index-status.scss */
+  /* line 284, ../sass/_index-status.scss */
   .data_list .fuel_battery {
-    top: 500px;
+    top: 510px;
     right: 13%;
   }
-  /* line 281, ../sass/_index-status.scss */
+  /* line 285, ../sass/_index-status.scss */
   .data_list .user_point {
     top: 679px;
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 284, ../sass/_index-status.scss */
+  /* line 288, ../sass/_index-status.scss */
   .data_list .solar_energy {
     top: 79px;
   }
-  /* line 285, ../sass/_index-status.scss */
+  /* line 289, ../sass/_index-status.scss */
   .data_list .wind_power {
     top: 421px;
   }
-  /* line 286, ../sass/_index-status.scss */
+  /* line 290, ../sass/_index-status.scss */
   .data_list .storage_battery {
-    top: 328px;
+    top: 318px;
   }
-  /* line 287, ../sass/_index-status.scss */
+  /* line 291, ../sass/_index-status.scss */
   .data_list .fuel_battery {
-    top: 526px;
+    top: 536px;
     right: 13%;
   }
-  /* line 288, ../sass/_index-status.scss */
+  /* line 292, ../sass/_index-status.scss */
   .data_list .user_point {
     top: 720px;
   }
 }
-/* line 290, ../sass/_index-status.scss */
+/* line 294, ../sass/_index-status.scss */
 .data_list .doughnut {
   position: absolute;
   top: 10px;
   right: 0px;
+  font-size: .8em;
 }
 @media screen and (min-width: 1100px) {
-  /* line 290, ../sass/_index-status.scss */
+  /* line 294, ../sass/_index-status.scss */
+  .data_list .doughnut {
+    right: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* line 294, ../sass/_index-status.scss */
   .data_list .doughnut {
     right: 10px;
   }
 }
-@media screen and (min-width: 1200px) {
-  /* line 290, ../sass/_index-status.scss */
-  .data_list .doughnut {
-    right: 20px;
-  }
-}
 @media screen and (min-width: 1600px) {
-  /* line 290, ../sass/_index-status.scss */
+  /* line 294, ../sass/_index-status.scss */
   .data_list .doughnut {
     top: 20px;
+    font-size: .85em;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 290, ../sass/_index-status.scss */
+  /* line 294, ../sass/_index-status.scss */
   .data_list .doughnut {
     top: 30px;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 290, ../sass/_index-status.scss */
+  /* line 294, ../sass/_index-status.scss */
   .data_list .doughnut {
     top: 40px;
+    font-size: .9em;
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 290, ../sass/_index-status.scss */
+  /* line 294, ../sass/_index-status.scss */
   .data_list .doughnut {
     top: 50px;
     right: 60px;
+    font-size: .95em;
   }
 }
-/* line 298, ../sass/_index-status.scss */
+/* line 303, ../sass/_index-status.scss */
 .data_list .doughnut span {
   color: #61bc86;
   position: absolute;
@@ -2140,13 +2146,13 @@ body#inside.day img.day {
   font-size: 2em;
 }
 @media screen and (min-width: 1050px) {
-  /* line 298, ../sass/_index-status.scss */
+  /* line 303, ../sass/_index-status.scss */
   .data_list .doughnut span {
     right: 200px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 298, ../sass/_index-status.scss */
+  /* line 303, ../sass/_index-status.scss */
   .data_list .doughnut span {
     font-size: 2.1em;
     top: 68px;
@@ -2154,7 +2160,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1270px) {
-  /* line 298, ../sass/_index-status.scss */
+  /* line 303, ../sass/_index-status.scss */
   .data_list .doughnut span {
     font-size: 2.1em;
     top: 68px;
@@ -2162,7 +2168,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 298, ../sass/_index-status.scss */
+  /* line 303, ../sass/_index-status.scss */
   .data_list .doughnut span {
     font-size: 2.15em;
     top: 68px;
@@ -2170,7 +2176,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1350px) {
-  /* line 298, ../sass/_index-status.scss */
+  /* line 303, ../sass/_index-status.scss */
   .data_list .doughnut span {
     font-size: 2.2em;
     top: 68px;
@@ -2178,7 +2184,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 298, ../sass/_index-status.scss */
+  /* line 303, ../sass/_index-status.scss */
   .data_list .doughnut span {
     font-size: 2.25em;
     top: 67px;
@@ -2186,7 +2192,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1450px) {
-  /* line 298, ../sass/_index-status.scss */
+  /* line 303, ../sass/_index-status.scss */
   .data_list .doughnut span {
     font-size: 2.3em;
     top: 67px;
@@ -2194,7 +2200,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 298, ../sass/_index-status.scss */
+  /* line 303, ../sass/_index-status.scss */
   .data_list .doughnut span {
     font-size: 2.5em;
     top: 66px;
@@ -2202,7 +2208,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1550px) {
-  /* line 298, ../sass/_index-status.scss */
+  /* line 303, ../sass/_index-status.scss */
   .data_list .doughnut span {
     font-size: 2.8em;
     top: 66px;
@@ -2210,7 +2216,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 298, ../sass/_index-status.scss */
+  /* line 303, ../sass/_index-status.scss */
   .data_list .doughnut span {
     font-size: 3em;
     top: 65px;
@@ -2218,7 +2224,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1650px) {
-  /* line 298, ../sass/_index-status.scss */
+  /* line 303, ../sass/_index-status.scss */
   .data_list .doughnut span {
     font-size: 3.2em;
     top: 65px;
@@ -2226,7 +2232,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 298, ../sass/_index-status.scss */
+  /* line 303, ../sass/_index-status.scss */
   .data_list .doughnut span {
     font-size: 3.3em;
     top: 64px;
@@ -2234,7 +2240,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1750px) {
-  /* line 298, ../sass/_index-status.scss */
+  /* line 303, ../sass/_index-status.scss */
   .data_list .doughnut span {
     font-size: 3.4em;
     top: 64px;
@@ -2242,7 +2248,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1780px) {
-  /* line 298, ../sass/_index-status.scss */
+  /* line 303, ../sass/_index-status.scss */
   .data_list .doughnut span {
     font-size: 3.5em;
     top: 64px;
@@ -2250,7 +2256,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 298, ../sass/_index-status.scss */
+  /* line 303, ../sass/_index-status.scss */
   .data_list .doughnut span {
     font-size: 3.6em;
     top: 63px;
@@ -2258,7 +2264,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1850px) {
-  /* line 298, ../sass/_index-status.scss */
+  /* line 303, ../sass/_index-status.scss */
   .data_list .doughnut span {
     font-size: 3.7em;
     top: 68px;
@@ -2266,7 +2272,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 298, ../sass/_index-status.scss */
+  /* line 303, ../sass/_index-status.scss */
   .data_list .doughnut span {
     font-size: 3.8em;
     top: 61px;
@@ -2274,7 +2280,7 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1920px) {
-  /* line 298, ../sass/_index-status.scss */
+  /* line 303, ../sass/_index-status.scss */
   .data_list .doughnut span {
     font-size: 4em;
     top: 60px;
@@ -2282,29 +2288,29 @@ body#inside.day img.day {
   }
 }
 @media screen and (min-width: 1500px) {
-  /* line 323, ../sass/_index-status.scss */
+  /* line 328, ../sass/_index-status.scss */
   .data_list .doughnut ul {
-    font-size: 1.1em;
+    font-size: .9em;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 323, ../sass/_index-status.scss */
+  /* line 328, ../sass/_index-status.scss */
   .data_list .doughnut ul {
-    font-size: 1.2em;
+    font-size: .95em;
   }
 }
-/* line 326, ../sass/_index-status.scss */
+/* line 331, ../sass/_index-status.scss */
 .data_list .doughnut ul li {
   color: #fff;
   margin: 10px 0;
 }
-/* line 331, ../sass/_index-status.scss */
+/* line 336, ../sass/_index-status.scss */
 .data_list .doughnut ul li b {
   display: inline-block;
   padding: 6px 10px;
   position: relative;
 }
-/* line 333, ../sass/_index-status.scss */
+/* line 338, ../sass/_index-status.scss */
 .data_list .doughnut ul li b::before {
   content: "";
   position: absolute;
@@ -2316,7 +2322,7 @@ body#inside.day img.day {
   top: 0;
 }
 @media screen and (min-width: 1800px) {
-  /* line 333, ../sass/_index-status.scss */
+  /* line 338, ../sass/_index-status.scss */
   .data_list .doughnut ul li b::before {
     width: 44px;
     height: 44px;
@@ -2324,369 +2330,369 @@ body#inside.day img.day {
     left: -48px;
   }
 }
-/* line 348, ../sass/_index-status.scss */
+/* line 353, ../sass/_index-status.scss */
 .data_list .doughnut ul li:nth-child(1) b {
   background-color: #0224ba;
 }
-/* line 350, ../sass/_index-status.scss */
+/* line 355, ../sass/_index-status.scss */
 .data_list .doughnut ul li:nth-child(2) {
   margin-left: -20px;
 }
-/* line 352, ../sass/_index-status.scss */
+/* line 357, ../sass/_index-status.scss */
 .data_list .doughnut ul li:nth-child(2) b {
   background-color: #f590a3;
 }
-/* line 353, ../sass/_index-status.scss */
+/* line 358, ../sass/_index-status.scss */
 .data_list .doughnut ul li:nth-child(2) b::before {
   background-image: url("../images/icon2.png");
 }
-/* line 359, ../sass/_index-status.scss */
+/* line 364, ../sass/_index-status.scss */
 .data_list .doughnut ul li:nth-child(3) b {
   background-color: #6faf3d;
 }
-/* line 360, ../sass/_index-status.scss */
+/* line 365, ../sass/_index-status.scss */
 .data_list .doughnut ul li:nth-child(3) b::before {
   background-image: url("../images/icon3.png");
 }
-/* line 365, ../sass/_index-status.scss */
+/* line 370, ../sass/_index-status.scss */
 .data_list .doughnut ul li:nth-child(4) {
   margin-left: -20px;
 }
-/* line 367, ../sass/_index-status.scss */
+/* line 372, ../sass/_index-status.scss */
 .data_list .doughnut ul li:nth-child(4) b {
   background-color: #f3ea6b;
 }
-/* line 368, ../sass/_index-status.scss */
+/* line 373, ../sass/_index-status.scss */
 .data_list .doughnut ul li:nth-child(4) b::before {
   background-image: url("../images/icon4.png");
 }
 
-/* line 379, ../sass/_index-status.scss */
+/* line 384, ../sass/_index-status.scss */
 .pie_chart {
   width: 100%;
   height: 280px;
   position: absolute;
   top: 0;
 }
-/* line 384, ../sass/_index-status.scss */
+/* line 389, ../sass/_index-status.scss */
 .pie_chart path {
   stroke-opacity: 0;
 }
-/* line 387, ../sass/_index-status.scss */
+/* line 392, ../sass/_index-status.scss */
 .pie_chart .amcharts-main-div {
   position: absolute !important;
-  right: -285px;
+  right: -255px;
   top: -40px;
 }
 @media screen and (min-width: 1050px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
-    right: -295px;
+    right: -265px;
   }
 }
 @media screen and (min-width: 1070px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
-    right: -300px;
+    right: -270px;
   }
 }
 @media screen and (min-width: 1085px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
-    right: -305px;
+    right: -275px;
   }
 }
 @media screen and (min-width: 1100px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
+  .pie_chart .amcharts-main-div {
+    transform: scale(1.1);
+    right: -275px;
+  }
+}
+@media screen and (min-width: 1120px) {
+  /* line 392, ../sass/_index-status.scss */
+  .pie_chart .amcharts-main-div {
+    transform: scale(1.1);
+    right: -285px;
+  }
+}
+@media screen and (min-width: 1140px) {
+  /* line 392, ../sass/_index-status.scss */
+  .pie_chart .amcharts-main-div {
+    transform: scale(1.1);
+    right: -295px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.1);
     right: -305px;
   }
 }
-@media screen and (min-width: 1120px) {
-  /* line 387, ../sass/_index-status.scss */
+@media screen and (min-width: 1180px) {
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.1);
     right: -315px;
   }
 }
-@media screen and (min-width: 1140px) {
-  /* line 387, ../sass/_index-status.scss */
-  .pie_chart .amcharts-main-div {
-    transform: scale(1.1);
-    right: -325px;
-  }
-}
-@media screen and (min-width: 1150px) {
-  /* line 387, ../sass/_index-status.scss */
-  .pie_chart .amcharts-main-div {
-    transform: scale(1.1);
-    right: -335px;
-  }
-}
-@media screen and (min-width: 1180px) {
-  /* line 387, ../sass/_index-status.scss */
-  .pie_chart .amcharts-main-div {
-    transform: scale(1.1);
-    right: -345px;
-  }
-}
 @media screen and (min-width: 1200px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.15);
     top: -38px;
   }
 }
 @media screen and (min-width: 1230px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.15);
     top: -38px;
-    right: -355px;
+    right: -325px;
   }
 }
 @media screen and (min-width: 1250px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.15);
     top: -38px;
-    right: -365px;
+    right: -335px;
   }
 }
 @media screen and (min-width: 1280px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.15);
     top: -37px;
-    right: -375px;
+    right: -345px;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.2);
     top: -36px;
-    right: -385px;
+    right: -355px;
   }
 }
 @media screen and (min-width: 1310px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.2);
     top: -35px;
-    right: -390px;
+    right: -360px;
   }
 }
 @media screen and (min-width: 1330px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.2);
     top: -35px;
-    right: -400px;
+    right: -370px;
   }
 }
 @media screen and (min-width: 1350px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.2);
     top: -34px;
-    right: -410px;
+    right: -380px;
   }
 }
 @media screen and (min-width: 1365px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.2);
     top: -34px;
-    right: -415px;
+    right: -385px;
   }
 }
 @media screen and (min-width: 1380px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.2);
     top: -33px;
-    right: -420px;
+    right: -390px;
   }
 }
 @media screen and (min-width: 1400px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.25);
     top: -33px;
-    right: -430px;
+    right: -400px;
   }
 }
 @media screen and (min-width: 1410px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.25);
     top: -32px;
-    right: -440px;
+    right: -410px;
   }
 }
 @media screen and (min-width: 1430px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.25);
     top: -32px;
-    right: -450px;
+    right: -420px;
   }
 }
 @media screen and (min-width: 1450px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.25);
     top: -31px;
-    right: -460px;
+    right: -430px;
   }
 }
 @media screen and (min-width: 1480px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.25);
+    top: -30px;
+    right: -440px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  /* line 392, ../sass/_index-status.scss */
+  .pie_chart .amcharts-main-div {
+    transform: scale(1.3);
+    top: -30px;
+    right: -450px;
+  }
+}
+@media screen and (min-width: 1530px) {
+  /* line 392, ../sass/_index-status.scss */
+  .pie_chart .amcharts-main-div {
+    transform: scale(1.3);
+    top: -30px;
+    right: -460px;
+  }
+}
+@media screen and (min-width: 1550px) {
+  /* line 392, ../sass/_index-status.scss */
+  .pie_chart .amcharts-main-div {
+    transform: scale(1.3);
     top: -30px;
     right: -470px;
   }
 }
-@media screen and (min-width: 1500px) {
-  /* line 387, ../sass/_index-status.scss */
+@media screen and (min-width: 1580px) {
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.3);
     top: -30px;
     right: -480px;
   }
 }
-@media screen and (min-width: 1530px) {
-  /* line 387, ../sass/_index-status.scss */
+@media screen and (min-width: 1600px) {
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
-    transform: scale(1.3);
+    transform: scale(1.35);
     top: -30px;
     right: -490px;
   }
 }
-@media screen and (min-width: 1550px) {
-  /* line 387, ../sass/_index-status.scss */
+@media screen and (min-width: 1630px) {
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
-    transform: scale(1.3);
+    transform: scale(1.35);
     top: -30px;
     right: -500px;
   }
 }
-@media screen and (min-width: 1580px) {
-  /* line 387, ../sass/_index-status.scss */
-  .pie_chart .amcharts-main-div {
-    transform: scale(1.3);
-    top: -30px;
-    right: -510px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  /* line 387, ../sass/_index-status.scss */
-  .pie_chart .amcharts-main-div {
-    transform: scale(1.35);
-    top: -30px;
-    right: -520px;
-  }
-}
-@media screen and (min-width: 1630px) {
-  /* line 387, ../sass/_index-status.scss */
-  .pie_chart .amcharts-main-div {
-    transform: scale(1.35);
-    top: -30px;
-    right: -530px;
-  }
-}
 @media screen and (min-width: 1650px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.35);
     top: -28px;
-    right: -540px;
+    right: -510px;
   }
 }
 @media screen and (min-width: 1680px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.35);
     top: -25px;
-    right: -550px;
+    right: -520px;
   }
 }
 @media screen and (min-width: 1700px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.4);
     top: -23px;
-    right: -550px;
+    right: -520px;
   }
 }
 @media screen and (min-width: 1730px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.4);
     top: -22px;
-    right: -550px;
+    right: -520px;
   }
 }
 @media screen and (min-width: 1750px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.4);
     top: -20px;
-    right: -550px;
+    right: -520px;
   }
 }
 @media screen and (min-width: 1780px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.4);
     top: -15px;
-    right: -555px;
+    right: -525px;
   }
 }
 @media screen and (min-width: 1800px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.45);
     top: -10px;
-    right: -560px;
+    right: -530px;
   }
 }
 @media screen and (min-width: 1830px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.45);
     top: -5px;
-    right: -565px;
+    right: -535px;
   }
 }
 @media screen and (min-width: 1850px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.45);
     top: 0px;
-    right: -570px;
+    right: -540px;
   }
 }
 @media screen and (min-width: 1880px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.45);
     top: 5px;
-    right: -575px;
+    right: -545px;
   }
 }
 @media screen and (min-width: 1900px) {
-  /* line 387, ../sass/_index-status.scss */
+  /* line 392, ../sass/_index-status.scss */
   .pie_chart .amcharts-main-div {
     transform: scale(1.5);
     top: 10px;
-    right: -580px;
+    right: -550px;
   }
 }
-/* line 432, ../sass/_index-status.scss */
+/* line 437, ../sass/_index-status.scss */
 .pie_chart tspan {
   font-size: 1.2em;
   display: block;
@@ -2695,7 +2701,7 @@ body#inside.day img.day {
   text-shadow: #fff 1px 1px 5px, #fff 1px 1px 8px ,#fff 1px 1px 10px;
   font-weight: bold;
 }
-/* line 440, ../sass/_index-status.scss */
+/* line 445, ../sass/_index-status.scss */
 .pie_chart .amcharts-chart-div a {
   display: none;
 }

@@ -60,7 +60,7 @@ body#inside.day{
     .logo_name{
         img{
             width: 100%!important;
-            height: unset!important;
+            height: auto!important;
         }  
     }
     .logo{
@@ -174,12 +174,12 @@ body#inside.day{
             display: block;
             text-align: center;
             line-height: 1.7em;
-            font-size: 1.6em;
+            font-size: .9em;
             font-weight: bold;
-            @media screen and (min-width: 1250px){font-size: 1.65em;}
-            @media screen and (min-width: 1300px){font-size: 1.7em;}
-            @media screen and (min-width: 1350px){font-size: 1.8em;}
-            @media screen and (min-width: 1400px){font-size: 1.9em;}
+            @media screen and (min-width: 1250px){font-size: .95em;}
+            @media screen and (min-width: 1300px){font-size: 1em;}
+            @media screen and (min-width: 1350px){font-size: 1.1em;}
+            @media screen and (min-width: 1400px){font-size: 1.2em;}
         }
         .system_status_text,
         .community_photo_img{
@@ -187,11 +187,11 @@ body#inside.day{
             width: 100%;
             img{
                 width: 100%!important;
-                height: unset!important;
+                height: auto!important;
             }            
         }
         .community_photo_img{
-            background-color: unset;
+            background-color: transparent;
             //min-height: 232px;
             position: relative;
             min-height: 130px;
@@ -204,7 +204,7 @@ body#inside.day{
                 bottom: 0;
                 z-index: 11;
                 height: 30px;
-                top: unset!important;
+                top: auto!important;
                 right: -2px;
             }
         }
@@ -262,9 +262,10 @@ body#inside.day{
             //box-shadow: inset rgba(255,255,255,.5) 1px 1px 8px, inset rgba(255,255,255,.1) 1px 1px 12px, rgba(0,0,0,.5) 1px 1px 1px;
             h2{
                 color: #fff;
-                font-size: 1.2em;
-                letter-spacing: .2em;
+                //font-size: 1.2em;
+                //letter-spacing: .2em;
                 padding: .2em 0;
+                /*
                 @media screen and (min-width: 1250px){
                 font-size: 1.25em;
                 }
@@ -277,6 +278,7 @@ body#inside.day{
                 @media screen and (min-width: 1400px){
                 font-size: 1.5em;
                 }
+                */
             }
         }
     }
@@ -290,6 +292,11 @@ body#inside.day{
             //height: 40px;
             margin: 2% 0;
             //background-color: #f0f0f2;
+            font-size: .85em;letter-spacing: 1px;
+            @media screen and (min-width: 1200px){font-size: .9em;}
+                @media screen and (min-width: 1300px){font-size: .95em;}
+                @media screen and (min-width: 1800px){font-size: 1em;}
+                @media screen and (min-width: 1900px){font-size: 1em;}
             a{  
                 background-color: #f0f0f2;
                 color: #594a46;
@@ -299,14 +306,13 @@ body#inside.day{
                 text-align: center;
                 padding-left: 25%;
                 position: relative;
-                letter-spacing: 3px;
                 font-weight: bold;
-                @media screen and (min-width: 1200px){font-size: 1.1em;}
-                @media screen and (min-width: 1300px){height: 50px;line-height: 50px;font-size: 1.2em;}
-                @media screen and (min-width: 1500px){height: 55px;line-height: 55px;font-size: 1.3em;}
-                @media screen and (min-width: 1700px){height: 60px;line-height: 60px;font-size: 1.4em;}
-                @media screen and (min-width: 1800px){height: 65px;line-height: 65px;font-size: 1.5em;}
-                @media screen and (min-width: 1900px){height: 70px;line-height: 70px;font-size: 1.6em;}
+                
+                @media screen and (min-width: 1300px){height: 50px;line-height: 50px;}
+                @media screen and (min-width: 1500px){height: 55px;line-height: 55px;}
+                @media screen and (min-width: 1700px){height: 60px;line-height: 60px;}
+                @media screen and (min-width: 1800px){height: 65px;line-height: 65px;}
+                @media screen and (min-width: 1900px){height: 70px;line-height: 70px;}
                 &::before{
                     display: block;
                     position: absolute;
@@ -331,7 +337,7 @@ body#inside.day{
                 }
             }
             &:nth-child(1){
-                a{
+                a{  padding-left: 40%;
                     &::after{
                         display: block;
                         position: absolute;
@@ -364,7 +370,7 @@ body#inside.day{
                 display: block;
                 a{ display: block;
                     @extend %hide-text;
-                    background-color: unset;
+                    background-color: transparent;
                     background-size: contain;
                     background-repeat: no-repeat;
                     
@@ -378,28 +384,27 @@ body#inside.day{
                 b{ background-color: #f0f0f2;
                     line-height: 40px;
                     display: block;
-                    padding-right: 70px;
+                    padding-right: 90px;
                     text-align: center;
-                    @media screen and (min-width: 1300px){line-height: 50px;font-size: 1.1em;}
-                    @media screen and (min-width: 1500px){line-height: 55px;font-size: 1.2em;}
-                    @media screen and (min-width: 1700px){line-height: 60px;font-size: 1.3em;}
-                    @media screen and (min-width: 1800px){line-height: 65px;font-size: 1.4em;}
-                    @media screen and (min-width: 1900px){line-height: 70px;font-size: 1.5em;}
+                    @media screen and (min-width: 1300px){line-height: 50px;}
+                    @media screen and (min-width: 1500px){line-height: 55px;}
+                    @media screen and (min-width: 1700px){line-height: 60px;}
+                    @media screen and (min-width: 1800px){line-height: 65px;}
+                    @media screen and (min-width: 1900px){line-height: 70px; }
                 }
                 a{
                     position: absolute;
                     bottom: 0;
                     right: 0;
-                    padding: 0 15px;
-                    font-size: 1.2em;
+                    padding: 7px 15px;
+                    line-height: 1em;
                     color: #594a46;
                     background-color: #40b3af;
                     &::before{
                         display: none;
                     }
                     @media screen and (min-width: 1900px){
-                        font-size: 2em;
-                        letter-spacing: .2em;
+                        padding: 19px 15px;
                     }
                 }
                 input{
@@ -480,7 +485,7 @@ margin-right:0;
     .ad {
         position: absolute;
         width: 100%;
-        top: 0;    padding-top: 15px;padding-bottom: 15px;background-color: #ffece6;border: #f2e200 solid 5px;
+        top: 0;    padding-top: 8px;padding-bottom: 0px;background-color: #ffece6;border: #f2e200 solid 5px;
         border-top: none;
         border-bottom: none;
         @media screen and (min-width: 1100px){ border-width: 6px;}

@@ -8,7 +8,7 @@
     background-size: contain;
     background-position: top right;
     position: relative;
-    img{width: 100%!important;height: unset!important;}
+    img{width: 100%!important;height: auto!important;}
     .solar_energy,//太陽能
     .wind_power,
     .storage_battery,
@@ -16,17 +16,18 @@
     .user_point{
         width: 18%;
         min-width: 190px;
-        padding-bottom: 15px;
-        padding-top: 15px;
+        //padding-bottom: 15px;
+        padding-top: 5px;
         background-color: #ffece6;
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
+        font-size: .9em;
         @media screen and (min-width: 1100px){
-            width: 17%;
+            width: 19%;
         }
         @media screen and (min-width: 1200px){
-            width: 17.5%;
+            width: 19.5%;
         }
         h2{
             width: 100%;
@@ -83,6 +84,7 @@
             li{ display: block;
                 width: 100%;
                 line-height: 1.6em;
+                padding: 5px 0;
                 &::after{
                     content: "";
                     display: block;
@@ -91,10 +93,12 @@
                 b{
                     display: inline-block;
                     float: left;
+                    
                 }
                 b:nth-child(1){
                     width:40%;
                     text-align: right;
+                    line-height: 1em;
                 }
                 b:nth-child(2){
                     width:40%;
@@ -114,7 +118,7 @@
         color: #726f20;
         top: 60px;
         left: 20%;
-        background-color: unset;
+        background-color: transparent;
         @media screen and (min-width: 1100px){ border-width: 6px;}
         @media screen and (min-width: 1200px){ border-width: 7px;}
         @media screen and (min-width: 1300px){ border-width: 8px;}
@@ -127,7 +131,7 @@
         color: #c21f3d;
         top: 250px;
         left: 20%;
-        background-color: unset;
+        background-color: transparent;
         @media screen and (min-width: 1100px){ border-width: 6px;}
         @media screen and (min-width: 1200px){ border-width: 7px;}
         @media screen and (min-width: 1300px){ border-width: 8px;}
@@ -138,7 +142,7 @@
         border-top: none;
         border-bottom: none;
         color: #006030;
-        top: 177px;
+        top: 167px;
         right: 5%;
         @media screen and (min-width: 1100px){ border-width: 6px;}
         @media screen and (min-width: 1200px){ border-width: 7px;}
@@ -150,7 +154,7 @@
         border-top: none;
         border-bottom: none;
         color: #55872f;
-        top: 295px;
+        top: 305px;
         right: 12%;
         @media screen and (min-width: 1100px){ border-width: 6px;}
         @media screen and (min-width: 1200px){ border-width: 7px;}
@@ -178,123 +182,124 @@
     @media screen and (min-width: 1100px){
         .solar_energy{top: 65px;}
         .wind_power{top: 255px;}
-        .storage_battery{top: 182px;}
-        .fuel_battery{top: 294px;}
+        .storage_battery{top: 172px;}
+        .fuel_battery{top: 304px;}
         .user_point{top: 405px;}
     }
     @media screen and (min-width: 1200px){
         .solar_energy{top: 70px;}
         .wind_power{top: 260px;}
-        .storage_battery{top: 187px;}
-        .fuel_battery{top: 310px;}
+        .storage_battery{top: 177px;}
+        .fuel_battery{top: 320px;}
         .user_point{top: 430px;}
     }
     @media screen and (min-width: 1250px){
         .solar_energy{top: 72px;}
         .wind_power{top: 280px;}
-        .storage_battery{top: 218px;}
-        .fuel_battery{top: 350px;right: 13%;}
+        .storage_battery{top: 208px;}
+        .fuel_battery{top: 360px;right: 13%;}
         .user_point{top: 480px;}
     }
     @media screen and (min-width: 1300px){
         .solar_energy{top: 75px;}
         .wind_power{top: 300px;}
-        .storage_battery{top: 228px;}
-        .fuel_battery{top: 366px;}
+        .storage_battery{top: 218px;}
+        .fuel_battery{top: 376px;}
         .user_point{top: 500px;}
     }
     @media screen and (min-width: 1350px){
         .solar_energy{top: 78px;}
         .wind_power{top: 305px;}
-        .storage_battery{top: 228px;}
-        .fuel_battery{top: 366px;}
+        .storage_battery{top: 218px;}
+        .fuel_battery{top: 376px;}
         .user_point{top: 500px;}
     }
     @media screen and (min-width: 1400px){
         .solar_energy{top: 79px;}
         .wind_power{top: 315px;}
-        .storage_battery{top: 246px;}
-        .fuel_battery{top: 390px;}
+        .storage_battery{top: 236px;}
+        .fuel_battery{top: 400px;}
         .user_point{top: 530px;}
     }
     @media screen and (min-width: 1450px){
         .solar_energy{top: 79px;left: 20.1%;}
         .wind_power{top: 325px;left: 20.1%;}
-        .storage_battery{top: 256px;}
-        .fuel_battery{top: 405px;right: 13%;}
+        .storage_battery{top: 246px;}
+        .fuel_battery{top: 415px;right: 13%;}
         .user_point{top: 550px;}
     }
     @media screen and (min-width: 1500px){
         .solar_energy{top: 79px;}
         .wind_power{top: 335px;}
-        .storage_battery{top: 260px;}
-        .fuel_battery{top: 410px;right: 13%;}
+        .storage_battery{top: 250px;}
+        .fuel_battery{top: 420px;right: 13%;}
         .user_point{top: 555px;}
     }
     @media screen and (min-width: 1550px){
         .solar_energy{top: 79px;}
         .wind_power{top: 350px;}
-        .storage_battery{top: 265px;}
-        .fuel_battery{top: 420px;right: 13%;}
+        .storage_battery{top: 255px;}
+        .fuel_battery{top: 430px;right: 13%;}
         .user_point{top: 570px;}
     }
     @media screen and (min-width: 1600px){
         .solar_energy{top: 79px;}
         .wind_power{top: 365px;}
-        .storage_battery{top: 275px;}
-        .fuel_battery{top: 435px;right: 13%;}
+        .storage_battery{top: 265px;}
+        .fuel_battery{top: 445px;right: 13%;}
         .user_point{top: 590px;}
     }
     @media screen and (min-width: 1650px){
         .solar_energy{top: 79px;}
         .wind_power{top: 375px;}
-        .storage_battery{top: 290px;}
-        .fuel_battery{top: 460px;right: 13%;}
+        .storage_battery{top: 280px;}
+        .fuel_battery{top: 470px;right: 13%;}
         .user_point{top: 628px;}
     }
     @media screen and (min-width: 1700px){
         .solar_energy{top: 79px;}
         .wind_power{top: 385px;}
-        .storage_battery{top: 292px;}
-        .fuel_battery{top: 465px;right: 13%;}
+        .storage_battery{top: 282px;}
+        .fuel_battery{top: 475px;right: 13%;}
         .user_point{top: 632px;}
     }
     @media screen and (min-width: 1750px){
         .solar_energy{top: 79px;}
         .wind_power{top: 395px;}
-        .storage_battery{top: 300px;}
-        .fuel_battery{top: 475px;right: 13%;}
+        .storage_battery{top: 290px;}
+        .fuel_battery{top: 485px;right: 13%;}
         .user_point{top: 645px;}
     }
     @media screen and (min-width: 1800px){
         .solar_energy{top: 79px;}
         .wind_power{top: 405px;}
-        .storage_battery{top: 310px;}
-        .fuel_battery{top: 490px;right: 13%;}
+        .storage_battery{top: 300px;}
+        .fuel_battery{top: 500px;right: 13%;}
         .user_point{top: 665px;}
     }
     @media screen and (min-width: 1850px){
         .solar_energy{top: 79px;}
         .wind_power{top: 411px;}
-        .storage_battery{top: 315px;}
-        .fuel_battery{top: 500px;right: 13%;}
+        .storage_battery{top: 305px;}
+        .fuel_battery{top: 510px;right: 13%;}
         .user_point{top: 679px;}
     }
     @media screen and (min-width: 1900px){
         .solar_energy{top: 79px;}
         .wind_power{top: 421px;}
-        .storage_battery{top: 328px;}
-        .fuel_battery{top: 526px;right: 13%;}
+        .storage_battery{top: 318px;}
+        .fuel_battery{top: 536px;right: 13%;}
         .user_point{top: 720px;}
     }
     .doughnut{
         position: absolute; top: 10px; right: 0px;
-        @media screen and (min-width: 1100px){right: 10px;}
-        @media screen and (min-width: 1200px){right: 20px;}
-        @media screen and (min-width: 1600px){top: 20px;}
+        font-size: .8em;
+        @media screen and (min-width: 1100px){right: 5px;}
+        @media screen and (min-width: 1200px){right: 10px;}
+        @media screen and (min-width: 1600px){top: 20px;font-size: .85em;}
         @media screen and (min-width: 1700px){top: 30px;}
-        @media screen and (min-width: 1800px){top: 40px;}
-        @media screen and (min-width: 1900px){top: 50px;right: 60px;}
+        @media screen and (min-width: 1800px){top: 40px;font-size: .9em;}
+        @media screen and (min-width: 1900px){top: 50px;right: 60px;font-size: .95em;}
         span{
             color: #61bc86;
             position: absolute;
@@ -321,8 +326,8 @@
             @media screen and (min-width: 1920px){font-size: 4em;top: 60px;right: 253px;}
         }
         ul{ 
-            @media screen and (min-width: 1500px){font-size: 1.1em;}
-            @media screen and (min-width: 1800px){font-size: 1.2em;}
+            @media screen and (min-width: 1500px){font-size: .9em;}
+            @media screen and (min-width: 1800px){font-size: .95em;}
             li{
                 color: #fff;
                 //display: inline-block;
@@ -386,48 +391,48 @@
     }
     .amcharts-main-div {
         position: absolute !important;
-        right: -285px;
+        right: -255px;
         top: -40px;
-        @media screen and (min-width: 1050px){right: -295px;}
-        @media screen and (min-width: 1070px){right: -300px;}
-        @media screen and (min-width: 1085px){right: -305px;}
-        @media screen and (min-width: 1100px){transform: scale(1.1);right: -305px;}
-        @media screen and (min-width: 1120px){transform: scale(1.1);right: -315px;}
-        @media screen and (min-width: 1140px){transform: scale(1.1);right: -325px;}
-        @media screen and (min-width: 1150px){transform: scale(1.1);right: -335px;}
-        @media screen and (min-width: 1180px){transform: scale(1.1);right: -345px;}
+        @media screen and (min-width: 1050px){right: -265px;}
+        @media screen and (min-width: 1070px){right: -270px;}
+        @media screen and (min-width: 1085px){right: -275px;}
+        @media screen and (min-width: 1100px){transform: scale(1.1);right: -275px;}
+        @media screen and (min-width: 1120px){transform: scale(1.1);right: -285px;}
+        @media screen and (min-width: 1140px){transform: scale(1.1);right: -295px;}
+        @media screen and (min-width: 1150px){transform: scale(1.1);right: -305px;}
+        @media screen and (min-width: 1180px){transform: scale(1.1);right: -315px;}
         @media screen and (min-width: 1200px){transform: scale(1.15);top: -38px;}
-        @media screen and (min-width: 1230px){transform: scale(1.15);top: -38px;right: -355px;}
-        @media screen and (min-width: 1250px){transform: scale(1.15);top: -38px;right: -365px;}
-        @media screen and (min-width: 1280px){transform: scale(1.15);top: -37px;right: -375px;}
-        @media screen and (min-width: 1300px){transform: scale(1.2);top: -36px;right: -385px;}
-        @media screen and (min-width: 1310px){transform: scale(1.2);top: -35px;right: -390px;}
-        @media screen and (min-width: 1330px){transform: scale(1.2);top: -35px;right: -400px;}
-        @media screen and (min-width: 1350px){transform: scale(1.2);top: -34px;right: -410px;}
-        @media screen and (min-width: 1365px){transform: scale(1.2);top: -34px;right: -415px;}
-        @media screen and (min-width: 1380px){transform: scale(1.2);top: -33px;right: -420px;}
-        @media screen and (min-width: 1400px){transform: scale(1.25);top: -33px;right: -430px;}
-        @media screen and (min-width: 1410px){transform: scale(1.25);top: -32px;right: -440px;}
-        @media screen and (min-width: 1430px){transform: scale(1.25);top: -32px;right: -450px;}
-        @media screen and (min-width: 1450px){transform: scale(1.25);top: -31px;right: -460px;}
-        @media screen and (min-width: 1480px){transform: scale(1.25);top: -30px;right: -470px;}
-        @media screen and (min-width: 1500px){transform: scale(1.3);top: -30px;right: -480px;}
-        @media screen and (min-width: 1530px){transform: scale(1.3);top: -30px;right: -490px;}
-        @media screen and (min-width: 1550px){transform: scale(1.3);top: -30px;right: -500px;}
-        @media screen and (min-width: 1580px){transform: scale(1.3);top: -30px;right: -510px;}
-        @media screen and (min-width: 1600px){transform: scale(1.35);top: -30px;right: -520px;}
-        @media screen and (min-width: 1630px){transform: scale(1.35);top: -30px;right: -530px;}
-        @media screen and (min-width: 1650px){transform: scale(1.35);top: -28px;right: -540px;}
-        @media screen and (min-width: 1680px){transform: scale(1.35);top: -25px;right: -550px;}
-        @media screen and (min-width: 1700px){transform: scale(1.4);top: -23px;right: -550px;}
-        @media screen and (min-width: 1730px){transform: scale(1.4);top: -22px;right: -550px;}
-        @media screen and (min-width: 1750px){transform: scale(1.4);top: -20px;right: -550px;}
-        @media screen and (min-width: 1780px){transform: scale(1.4);top: -15px;right: -555px;}
-        @media screen and (min-width: 1800px){transform: scale(1.45);top: -10px;right: -560px;}
-        @media screen and (min-width: 1830px){transform: scale(1.45);top: -5px;right: -565px;}
-        @media screen and (min-width: 1850px){transform: scale(1.45);top: 0px;right: -570px;}
-        @media screen and (min-width: 1880px){transform: scale(1.45);top: 5px;right: -575px;}
-        @media screen and (min-width: 1900px){transform: scale(1.5);top: 10px;right: -580px;}        
+        @media screen and (min-width: 1230px){transform: scale(1.15);top: -38px;right: -325px;}
+        @media screen and (min-width: 1250px){transform: scale(1.15);top: -38px;right: -335px;}
+        @media screen and (min-width: 1280px){transform: scale(1.15);top: -37px;right: -345px;}
+        @media screen and (min-width: 1300px){transform: scale(1.2);top: -36px;right: -355px;}
+        @media screen and (min-width: 1310px){transform: scale(1.2);top: -35px;right: -360px;}
+        @media screen and (min-width: 1330px){transform: scale(1.2);top: -35px;right: -370px;}
+        @media screen and (min-width: 1350px){transform: scale(1.2);top: -34px;right: -380px;}
+        @media screen and (min-width: 1365px){transform: scale(1.2);top: -34px;right: -385px;}
+        @media screen and (min-width: 1380px){transform: scale(1.2);top: -33px;right: -390px;}
+        @media screen and (min-width: 1400px){transform: scale(1.25);top: -33px;right: -400px;}
+        @media screen and (min-width: 1410px){transform: scale(1.25);top: -32px;right: -410px;}
+        @media screen and (min-width: 1430px){transform: scale(1.25);top: -32px;right: -420px;}
+        @media screen and (min-width: 1450px){transform: scale(1.25);top: -31px;right: -430px;}
+        @media screen and (min-width: 1480px){transform: scale(1.25);top: -30px;right: -440px;}
+        @media screen and (min-width: 1500px){transform: scale(1.3);top: -30px;right: -450px;}
+        @media screen and (min-width: 1530px){transform: scale(1.3);top: -30px;right: -460px;}
+        @media screen and (min-width: 1550px){transform: scale(1.3);top: -30px;right: -470px;}
+        @media screen and (min-width: 1580px){transform: scale(1.3);top: -30px;right: -480px;}
+        @media screen and (min-width: 1600px){transform: scale(1.35);top: -30px;right: -490px;}
+        @media screen and (min-width: 1630px){transform: scale(1.35);top: -30px;right: -500px;}
+        @media screen and (min-width: 1650px){transform: scale(1.35);top: -28px;right: -510px;}
+        @media screen and (min-width: 1680px){transform: scale(1.35);top: -25px;right: -520px;}
+        @media screen and (min-width: 1700px){transform: scale(1.4);top: -23px;right: -520px;}
+        @media screen and (min-width: 1730px){transform: scale(1.4);top: -22px;right: -520px;}
+        @media screen and (min-width: 1750px){transform: scale(1.4);top: -20px;right: -520px;}
+        @media screen and (min-width: 1780px){transform: scale(1.4);top: -15px;right: -525px;}
+        @media screen and (min-width: 1800px){transform: scale(1.45);top: -10px;right: -530px;}
+        @media screen and (min-width: 1830px){transform: scale(1.45);top: -5px;right: -535px;}
+        @media screen and (min-width: 1850px){transform: scale(1.45);top: 0px;right: -540px;}
+        @media screen and (min-width: 1880px){transform: scale(1.45);top: 5px;right: -545px;}
+        @media screen and (min-width: 1900px){transform: scale(1.5);top: 10px;right: -550px;}        
     }
     tspan{
         font-size: 1.2em;
